@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "Xy2.png",
 
-  repo: "leamus/MakerFrame",
+  repo: "ccd2s/MakerFrameDocs",
 
   favicon: "Xy2.png",
 
