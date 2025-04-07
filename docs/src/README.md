@@ -3,7 +3,7 @@ home: true
 title: 主页
 icon: home
 heroImage: Xy2.png
-heroText: 鹰歌游戏引擎
+heroText: 鹰歌游戏引擎文档
 tagline: 一款具有强大功能的开放式游戏制作引擎✨
 actions:
   - text: 快速上手
@@ -81,27 +81,6 @@ features:
     link: /zh/guide/feature/
 
 ---
-
-在当前目录下的 `<dir>` 文件夹内创建 vuepress-theme-hope 项目:
-::: center
-```bash
-pnpm create vuepress-theme-hope <dir>
-```
-:::
-
-```bash
-npm init vuepress-theme-hope@latest <dir>
-```
-
-要将 vuepress-theme-hope 作为文档构建器添加到现有项目中，请在项目根目录中运行以下命令:
-
-```bash
-pnpm create vuepress-theme-hope add <dir>
-```
-
-```bash
-npm init vuepress-theme-hope@latest add <dir>
-```
 
 ## 官方 QQ 群
 

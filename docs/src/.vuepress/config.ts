@@ -6,7 +6,7 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "鹰歌游戏引擎",
+  title: "鹰歌游戏引擎文档",
   description: "鹰歌游戏引擎的文档。",
 
   theme,
