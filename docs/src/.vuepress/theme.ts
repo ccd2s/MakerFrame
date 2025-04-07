@@ -135,6 +135,21 @@ export default hopeTheme({
       assets: "https://kit.fontawesome.com/f5a8b26a3f.js",
     },
 
+    notice: [
+      {
+        path: "/",
+        title: "引擎公告",
+        content: "因为目前鹰歌游戏引擎已经完善，所以开发者现在的重心并不在这里，不过如果有问题的话也可以去找开发者深林孤鹰咨询。",
+        confirm: true,
+        actions: [
+          {
+            text: "关闭",
+            type: "primary",
+          }
+        ],
+      },
+    ],
+
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
     // pwa: {
     //   favicon: "/favicon.ico",

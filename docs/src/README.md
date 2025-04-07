@@ -3,7 +3,7 @@ home: true
 title: 主页
 icon: home
 heroImage: Xy2.png
-heroText: 鹰歌游戏引擎文档
+heroText: 鹰歌游戏引擎
 tagline: 一款具有强大功能的开放式游戏制作引擎✨
 actions:
   - text: 快速上手
