@@ -6,18 +6,18 @@ heroImage: Xy2.png
 heroText: 鹰歌游戏引擎
 tagline: 一款具有强大功能的开放式游戏制作引擎✨
 actions:
-  - text: 快速上手
-    link: /zh/get-started/
+  - text: 开始使用
+    link: /start/
     icon: signs-post
     type: primary
 
-  - text: 指南
-    icon: lightbulb
-    link: /zh/guide/
-
   - text: 案例
     icon: star
-    link: /zh/demo/
+    link: /demo/
+    
+  - text: 介绍
+    icon: info
+    link: /info/
 
 features:
   - title: 跨平台
