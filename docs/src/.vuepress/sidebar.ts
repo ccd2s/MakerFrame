@@ -10,5 +10,11 @@ export default sidebar({
       link: "start/",
       children: "structure",
     },
+    {
+      text: "介绍",
+      icon: "circle-info",
+      prefix: "info/",
+      link: "info/",
+    },
   ],
 });
