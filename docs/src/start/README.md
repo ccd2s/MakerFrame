@@ -4,6 +4,4 @@ index: false
 icon: signs-post
 ---
 
-## 功能亮点
-
 <Catalog />
