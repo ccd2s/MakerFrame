@@ -32,16 +32,6 @@ export default hopeTheme({
   displayFooter: true,
   contributors: false,
 
-  // 加密配置
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": {
-        hint: "Password: 1234",
-        password: "1234",
-      },
-    },
-  },
-
   // // 多语言配置
   // metaLocales: {
   //   editLink: "在 GitHub 上编辑此页",
