@@ -12,6 +12,9 @@ export default hopeTheme({
     email: "studio@tasaed.top",
   },
 
+  navbarTitle: "",
+
+
   logo: "Xy2.png",
 
   repo: "ccd2s/MakerFrameDocs",
