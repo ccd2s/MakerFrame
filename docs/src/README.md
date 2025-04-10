@@ -11,13 +11,13 @@ actions:
     icon: signs-post
     type: primary
 
+  - text: 介绍
+    icon: circle-info
+    link: /info/
+
   - text: 案例
     icon: star
     link: /demo/
-    
-  - text: 介绍
-    icon: info
-    link: /info/
 
 features:
   - title: 跨平台
