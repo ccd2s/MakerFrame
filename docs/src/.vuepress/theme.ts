@@ -14,12 +14,11 @@ export default hopeTheme({
 
   navbarTitle: "",
 
-
-  logo: "Xy2.png",
+  logo: "assets/image/logo.png",
 
   repo: "ccd2s/MakerFrameDocs",
 
-  favicon: "Xy2.png",
+  favicon: "favicon.ico",
 
   docsDir: "docs/src",
 

@@ -2,7 +2,7 @@
 home: true
 title: 主页
 icon: home
-heroImage: Xy2.png
+heroImage: assets/image/logo.png
 heroText: 鹰歌游戏引擎
 tagline: 一款具有强大功能的开放式游戏制作引擎✨
 actions:
@@ -16,8 +16,8 @@ actions:
     link: /info/
 
   - text: 案例
-    icon: star
-    link: /demo/
+    icon: splotch
+    link: /projects/
 
 features:
   - title: 跨平台

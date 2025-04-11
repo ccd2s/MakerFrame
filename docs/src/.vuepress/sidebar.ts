@@ -16,5 +16,11 @@ export default sidebar({
       prefix: "info/",
       link: "info/",
     },
+    {
+      text: "案例",
+      icon: "splotch",
+      prefix: "projects/",
+      link: "projects/",
+    },
   ],
 });
