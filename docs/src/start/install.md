@@ -3,6 +3,7 @@ title: 安装&运行
 author:
   name: 深林孤鹰
   url: https://github.com/leamus
+order: 1
 icon: download
 ---
 
