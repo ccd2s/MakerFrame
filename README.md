@@ -1,6 +1,6 @@
 # 鹰歌游戏引擎文档
 
-这里是鹰歌游戏引擎文档的代码储存库，你可以选择访问 [https://makerframe.docs.tasaed.top/](https://makerframe.docs.tasaed.top/) 查看实时版本。
+这里是鹰歌游戏引擎文档的代码储存库，你可以选择访问 [docs-mf.tasaed.top](https://docs-mf.tasaed.top/) 查看实时版本。
 
 ## 贡献指南
 
