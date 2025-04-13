@@ -1,4 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import { umamiAnalyticsPlugin } from '@vuepress/plugin-umami-analytics'
 
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
