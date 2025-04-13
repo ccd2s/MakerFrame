@@ -32,7 +32,6 @@ export default hopeTheme({
   footer: '<a href=\"http://localhost:8081/\">鹰歌游戏引擎文档</a> | Copyright © 2025 <a href=\"https://www.tasaed.top\">TASA-Ed工作室</a>，<a href=\"https://github.com/leamus\">深林孤鹰</a> licensed <a href=\"https://creativecommons.org/licenses/by-sa/4.0\" target=\"_blank\">CC BY-SA 4.0</a> | Powered by <a href=\"https://theme-hope.vuejs.press\" target=\"_blank\">VuePress Theme Hope</a>',
   copyright: false,
   displayFooter: true,
-  contributors: false,
 
   // // 多语言配置
   // metaLocales: {
