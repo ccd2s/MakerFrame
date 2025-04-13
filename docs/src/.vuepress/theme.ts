@@ -16,7 +16,7 @@ export default hopeTheme({
 
   logo: "assets/image/logo.png",
 
-  repo: "ccd2s/MakerFrameDocs",
+  repo: "TASA-Ed/MakerFrameDocs",
 
   favicon: "favicon.ico",
 
