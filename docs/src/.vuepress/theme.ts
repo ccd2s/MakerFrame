@@ -84,7 +84,10 @@ export default hopeTheme({
       noComment: "这里还没有评论，快来抢沙发！",
       sendBtn: "点击发送",
       uaBadge: true,
-      
+      gravatar: {
+        mirror: "https://weavatar.com/avatar/",
+        params: "sha256=1&d=mp&s=240",
+      },
     },
 
     components: {
