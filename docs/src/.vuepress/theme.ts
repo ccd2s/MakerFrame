@@ -79,7 +79,12 @@ export default hopeTheme({
       provider: "Artalk",
       server: "https://talk.tasaed.top",
       locale: "zh-CN",
-      preferRemoteConf: true,
+      emoticons: "https://api.tasaed.top/artalk/default.json",
+      placeholder: "输入你想说的话吧（请牢记你账号的密码，如果忘记了密码，那么账号将永久丢失）",
+      noComment: "这里还没有评论，快来抢沙发！",
+      sendBtn: "点击发送",
+      uaBadge: true,
+      
     },
 
     components: {

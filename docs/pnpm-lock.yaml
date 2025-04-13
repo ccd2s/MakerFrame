@@ -11,6 +11,9 @@ importers:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.20
         version: 2.0.0-rc.20(@types/node@22.14.1)(sass-embedded@1.86.3)
+      '@vuepress/plugin-comment':
+        specifier: 2.0.0-rc.20
+        version: 2.0.0-rc.20(artalk@2.9.1(marked@14.1.4))(vuepress@2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20(@types/node@22.14.1)(sass-embedded@1.86.3))(vue@3.5.13))
       '@vuepress/plugin-notice':
         specifier: 2.0.0-rc.91
         version: 2.0.0-rc.91(vuepress@2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20(@types/node@22.14.1)(sass-embedded@1.86.3))(vue@3.5.13))
@@ -776,6 +779,24 @@ packages:
     resolution: {integrity: sha512-HQgMBgRoff8Q/6Ig+B8qDdEg/WydMQVZiJunlq5jlt6qoTl5FYJWiVSgXiWjbxcqX2VU4cK6OBJrX0a8Ml4WsA==}
     peerDependencies:
       vuepress: 2.0.0-rc.21
+
+  '@vuepress/plugin-comment@2.0.0-rc.20':
+    resolution: {integrity: sha512-B7Bh6oK/ijdmNgXxk8AJcB+bSCLirAK0y1nM62yieZ66rHTIenoYfCgqqkhrxKp/ABPyjiBPj9TEcgptmJC4bA==}
+    peerDependencies:
+      '@waline/client': ^3.1.0
+      artalk: ^2.7.3
+      sass-loader: ^14.0.0
+      twikoo: ^1.5.0
+      vuepress: 2.0.0-rc.8
+    peerDependenciesMeta:
+      '@waline/client':
+        optional: true
+      artalk:
+        optional: true
+      sass-loader:
+        optional: true
+      twikoo:
+        optional: true
 
   '@vuepress/plugin-comment@2.0.0-rc.94':
     resolution: {integrity: sha512-ag/NskGreFvg2c1CK4dUb34Okq7+8gEk1RZgp4xAqMpnIeBpN69OKSUkjB5RIkBEJWMS+bT65WUXS5J5WL/XKQ==}
@@ -2893,6 +2914,17 @@ snapshots:
       '@vuepress/helper': 2.0.0-rc.94(vuepress@2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20(@types/node@22.14.1)(sass-embedded@1.86.3))(vue@3.5.13))
       vue: 3.5.13
       vuepress: 2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20(@types/node@22.14.1)(sass-embedded@1.86.3))(vue@3.5.13)
+    transitivePeerDependencies:
+      - typescript
+
+  '@vuepress/plugin-comment@2.0.0-rc.20(artalk@2.9.1(marked@14.1.4))(vuepress@2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20(@types/node@22.14.1)(sass-embedded@1.86.3))(vue@3.5.13))':
+    dependencies:
+      '@vuepress/helper': 2.0.0-rc.94(vuepress@2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20(@types/node@22.14.1)(sass-embedded@1.86.3))(vue@3.5.13))
+      giscus: 1.6.0
+      vue: 3.5.13
+      vuepress: 2.0.0-rc.20(@vuepress/bundler-vite@2.0.0-rc.20(@types/node@22.14.1)(sass-embedded@1.86.3))(vue@3.5.13)
+    optionalDependencies:
+      artalk: 2.9.1(marked@14.1.4)
     transitivePeerDependencies:
       - typescript
 
