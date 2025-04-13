@@ -4,7 +4,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://docs-mf.tasaed.top",
 
   author: {
     name: "TASA-Ed工作室",
@@ -13,6 +13,8 @@ export default hopeTheme({
   },
 
   navbarTitle: "",
+
+  fullscreen: true,
 
   logo: "assets/image/logo.png",
 
@@ -29,7 +31,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: '<a href=\"http://localhost:8081/\">鹰歌游戏引擎文档</a> | Copyright © 2025 <a href=\"https://www.tasaed.top\">TASA-Ed工作室</a>，<a href=\"https://github.com/leamus\">深林孤鹰</a> licensed <a href=\"https://creativecommons.org/licenses/by-sa/4.0\" target=\"_blank\">CC BY-SA 4.0</a> | Powered by <a href=\"https://theme-hope.vuejs.press\" target=\"_blank\">VuePress Theme Hope</a>',
+  footer: '<a href=\"https://docs-mf.tasaed.top\">鹰歌游戏引擎文档</a> | Copyright © 2025 <a href=\"https://www.tasaed.top\">TASA-Ed工作室</a>，<a href=\"https://github.com/leamus\">深林孤鹰</a> licensed <a href=\"https://creativecommons.org/licenses/by-sa/4.0\" target=\"_blank\">CC BY-SA 4.0</a> | Powered by <a href=\"https://theme-hope.vuejs.press\" target=\"_blank\">VuePress Theme Hope</a>',
   copyright: false,
   displayFooter: true,
   contributors: false,
