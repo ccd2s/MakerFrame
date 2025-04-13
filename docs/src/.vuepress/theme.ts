@@ -79,6 +79,7 @@ export default hopeTheme({
       provider: "Artalk",
       server: "https://talk.tasaed.top",
       locale: "zh-CN",
+      preferRemoteConf: true,
     },
 
     components: {
