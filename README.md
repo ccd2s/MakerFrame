@@ -1,4 +1,5 @@
 # 鹰歌游戏引擎文档
+[![Netlify Status](https://api.netlify.com/api/v1/badges/75983092-fde6-4c25-8f5f-6e0d7af010fe/deploy-status)](https://app.netlify.com/sites/jovial-sable-a4b76d/deploys)
 
 这里是鹰歌游戏引擎文档的代码储存库，你可以选择访问 [docs-mf.tasaed.top](https://docs-mf.tasaed.top/) 查看实时版本。
 
