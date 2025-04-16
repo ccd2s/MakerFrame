@@ -54,6 +54,13 @@ export default sidebar({
             "network.html",
             "customCommand.html",],
         },
+        {
+          text: "高级教程",
+          icon: "code",
+          collapsible: true,
+          prefix: "advanced/",
+          children: "structure",
+        },
       ],
     },
     {
