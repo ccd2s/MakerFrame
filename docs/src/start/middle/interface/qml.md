@@ -3,7 +3,7 @@ title: QML组件和对象
 author:
   name: 深林孤鹰
   url: https://github.com/leamus
-icon: q
+icon: /assets/image/simpleIcons-qt.svg
 order: 1
 ---
 

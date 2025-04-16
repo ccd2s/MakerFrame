@@ -25,7 +25,7 @@ features:
     details: 可以运行在Windows、Android、iOS、macOS、Linux等主流平台上。
 
   - title: QML支持
-    icon: q
+    icon: /assets/image/simpleIcons-qt.svg
     details: 支持使用QML布局，结合了流行的JS V8引擎。
 
   - title: JS支持
