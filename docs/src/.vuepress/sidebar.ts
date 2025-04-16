@@ -8,7 +8,22 @@ export default sidebar({
       icon: "signs-post",
       prefix: "start/",
       link: "start/",
-      children: "structure",
+      children: [
+        {
+          text: "初级教程",
+          icon: "circle-play",
+          collapsible: true,
+          prefix: "beginner/",
+          children: "structure",
+        },
+        {
+          text: "中级教程",
+          icon: "dice-d6",
+          collapsible: true,
+          prefix: "middle/",
+          children: "structure",
+        },
+      ],
     },
     {
       text: "介绍",
