@@ -86,4 +86,28 @@ features:
 
 - [点击加入](https://qm.qq.com/q/bTB1cZoGze) (群号: 654876441)
 
+## 引擎仓库
+
+```component VPCard
+title: GitHub
+desc: 引擎 GitHub 仓库
+background: rgba(31, 35, 40, 0.15)
+logo: /assets/image/github-dark.svg
+link: https://github.com/leamus/MakerFrame
+```
+```component VPCard
+title: Gitee
+desc: 引擎 Gitee 仓库
+background: rgba(199, 29, 35, 0.15)
+logo: /assets/image/simpleIcons-gitee.svg
+link: https://gitee.com/leamus/MakerFrame
+```
+```component VPCard
+title: Gitee（openKylin）
+desc: 引擎 Gitee 仓库（openKylin）
+background: rgba(27, 92, 222, 0.15)
+logo: /assets/image/simpleIcons-gitee.svg
+link: https://gitee.com/openkylin/maker-frame
+```
+
 <!-- markdownlint-disable -->
