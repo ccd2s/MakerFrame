@@ -1,10 +1,19 @@
-# 一、说明
+---
+title: 技能脚本-自定义技能（上）
+author:
+  name: 深林孤鹰
+  url: https://github.com/leamus
+icon: gear
+order: 4
+---
+
+## 一、说明
 
 &emsp;&emsp;自定义技能包含两种：技能效果动画 和 技能选择。
 
 &emsp;&emsp;这节先讲技能效果动画。
 
-# 二、实现原理
+## 二、实现原理
 
 &emsp;&emsp;技能脚本的 \$playScript 生成器函数定义了技能应该如何播放动画和产生何种效果，只需通过yield一个对象 就能实现，这个对象的定义如下：
 

@@ -1,8 +1,17 @@
-# 一、说明
+---
+title: 升级链
+author:
+  name: 深林孤鹰
+  url: https://github.com/leamus
+icon: up-long
+order: 1
+---
+
+## 一、说明
 
 &emsp;&emsp;升级链也和Buff一样也没有集成在引擎中，也是以扩展和插件的形式提供的。
 
-# 二、实现方式
+## 二、实现方式
 
 &emsp;&emsp;通用脚本的 \$refreshCombatant函数 在游戏中会不停的循环调用，这个函数又会调用 levelUp 函数，这个函数默认又会调用战斗人物脚本（在\$commons对象中）的 levelUpScript 和 levelAlgorithm 函数，这两个函数分别是升级脚本和升级算法，如果没有，则导入全局通用的 commonLevelUpScript 和 commonLevelAlgorithm 函数，这两个函数是通过 JSLevelChain 外部导入的方式提供的（如果没有导入则默认会使用系统的）。两种方法都可以。
 
@@ -32,7 +41,7 @@ function commonLevelAlgorithm(combatant, targetLevel)
 
 &emsp;&emsp;返回：属性条件对象，比如{EXP: 100}；
 
-# 3、注意
+## 三、注意
 
 &emsp;&emsp;详细可见 示例工程；
 

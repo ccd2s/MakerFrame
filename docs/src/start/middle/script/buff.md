@@ -1,8 +1,17 @@
-# 一、说明
+---
+title: Buff系统
+author:
+  name: 深林孤鹰
+  url: https://github.com/leamus
+icon: flask
+order: 3
+---
+
+## 一、说明
 
 &emsp;&emsp;Buff系统其实并没有集成在引擎里，而是通过通用脚本的几个函数来实现的。
 
-# 二、实现原理
+## 二、实现原理
 
 &emsp;&emsp;1、Buff的数据默认存储在战斗人物的 \$\$fightData.\$buffs 中，如果需要支持存档，可以放在\$\$fightData外面。
 
@@ -30,6 +39,6 @@
 tc.\$\$fightData.\$buffs = {};
 ```
 
-# 三、注意
+## 三、注意
 
 &emsp;&emsp;详细可见 示例工程；

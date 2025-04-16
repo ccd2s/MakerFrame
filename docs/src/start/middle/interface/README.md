@@ -1,4 +1,14 @@
-# 一、说明
+---
+title: 界面的层序
+author:
+  name: 深林孤鹰
+  url: https://github.com/leamus
+icon: object-group
+index: false
+order: 4
+---
+
+## 一、说明
 
 &emsp;&emsp;地图的画面从外到内有4个层组成：
 
@@ -8,7 +18,7 @@ game.\$sys.scene：场景，组件位置和大小固定，但会被scale影响
 game.\$sys.map：地图，创建的组件会改变大小和随地图移动
 game.\$sys.ground：地图地板，创建的组件会改变大小和随地图移动
 
-# 二、解释
+## 二、解释
 
 &emsp;&emsp;game.\$sys.screen就是游戏的屏幕，一般你不要去修改它（强制修改会影响到所有的层），但可以读取它的属性。将组件挂载在它的下面能实现屏幕固定（摇杆、信息框、选择框等都是它的子组件，比如你可以挂人物的数据或金钱等）。
 
@@ -18,13 +28,13 @@ game.\$sys.ground：地图地板，创建的组件会改变大小和随地图移
 
 &emsp;&emsp;game.\$sys.map是游戏的整个地图，这个好理解，也是地图角色组件的容器，它的大小也不要去修改，挂载的组件的位置是固定在地图上的，也受game.scale影响。
 
-# 三、使用的地方
+## 三、使用的地方
 
 &emsp;&emsp;1、game.showimage、game.showsprite的\$parent属性。
 
 &emsp;&emsp;2、自定义的组件。
 
-# 四、战斗界面的层序
+## 四、战斗界面的层序
 
 &emsp;&emsp;战斗界面只有3个层序（没有地图概念）：
 
@@ -34,7 +44,7 @@ game.\$sys.ground：地图地板，创建的组件会改变大小和随地图移
 
 &emsp;&emsp;但注意的是，战斗界面受game.\$sys.screen的影响（因为战斗场景组件是game.\$sys.screen的子组件），如果你强制修改了game.\$sys.screen的大小，那么整个战斗界面的所有层也会收到影响。
 
-# 五、示例
+## 五、示例
 
 &emsp;&emsp;1、缩放地图至视窗大小：
 game.scale(Math.min(game.\$sys.viewport.width / game.\$sys.map.width ,game.\$sys.viewport.height / game.\$sys.map.height))

@@ -1,10 +1,19 @@
-# 一、说明
+---
+title: QML组件和对象
+author:
+  name: 深林孤鹰
+  url: https://github.com/leamus
+icon: q
+order: 1
+---
+
+## 一、说明
 
 &emsp;&emsp;QML组件其实就是一个QML对象，定时器、对话框、鼠标区域、包括地图、战斗界面上你看到的任何角色、动画等都是QML组件组成的，不同类型的QML组件有不同的属性，但一般都是从Item（或QtObject）继承而来，都具有一些通用的属性（比如x、y、width、height、visible、opacity、scale等）。
 
 &emsp;&emsp;QML语言和QML组件的相关教程请看高级教程或其他参考教程，这节主要是讲述下自定义QML的组件如何和游戏界面结合起来。
 
-# 二、QML组件的定义
+## 二、QML组件的定义
 
 &emsp;&emsp;学过QML的朋友知道，QML组件有几种定义方式：
 
@@ -16,7 +25,7 @@
 
 &emsp;&emsp;使用Component在qml文件种定义组件并创建组件对象。
 
-# 三、QML组件对象的创建
+## 三、QML组件对象的创建
 
 &emsp;&emsp;组件定义好后就可以用它来创建实际的组件对象了，有以下几种方式：
 
@@ -32,7 +41,7 @@
 
 &emsp;&emsp;区别：如果在QML文档中定义了现有组件，并且希望动态创建该组件的实例，最好使用a。否则使用b：当对象QML本身在运行时生成时，从QML的字符串创建对象是有用的。
 
-# 四、与游戏中的组件对象结合
+## 四、与游戏中的组件对象结合
 
 &emsp;&emsp;一般情况下由于静态创建的对象的parent在已经定义时已经指定，所以我们与游戏结合的对象一般用动态创建的对象（尤其是使用Qt.createQmlObject）；
 

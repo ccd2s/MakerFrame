@@ -1,26 +1,37 @@
-# 一、说明
+---
+title: 通用脚本详解
+author:
+  name: 深林孤鹰
+  url: https://github.com/leamus
+icon: scroll
+index: false
+order: 3
+---
+
+
+## 一、说明
 
 &emsp;&emsp;通用脚本是作为简单的更改就能一定程度上自定义游戏的存在，不满足于视图命令产生的模板游戏，就可以进入这个脚本来修改，难度比视图命令稍高，但比插件扩展要低得多。
 
-# 二、位置
+## 二、位置
 
 &emsp;&emsp;通用脚本的名字是common_script.js，在工程根目录下，如果不存在则引擎会使用默认的系统通用脚本，从主界面->通用脚本就可以看到，点击保存可以产生文件进行修改。
 
-# 三、修改
+## 三、修改
 
 &emsp;&emsp;通用脚本可以自定义的东西很多，大体有以下分类（一般来说，带\$开头的都是系统使用的）：
 
-## 1、配置
+### 1、配置
 
 &emsp;&emsp;配置变量\$config，包含了\$game（游戏配置），\$map（地图）、\$role（角色）、\$spriteEffect（特效）、\$joystick（摇杆）、\$buttons（按钮）、\$window（窗口）、\$styles（样式）、\$names（名称）、\$fight（战斗场景）、\$android（安卓）、\$protoObjects（4个根对象属性）等，修改这些可以一定程度上对游戏进行自定义风格。
 
-## 2、游戏相关
+### 2、游戏相关
 
 &emsp;&emsp;\*\$gameInit、\*\$beforeSave、\*\$beforeLoad、\*\$afterSave、\*\$afterLoad、\*\$gameOverScript函数，分别是：游戏初始化调用（游戏开始、读档时会调用）；存档前调用函数、读档前调用函数；存档后调用函数；读档后调用函数，游戏结束函数。
 
 &emsp;&emsp;其中 *\$beforeSave、\*\$beforeLoad 最好是函数，如果是生成器则不会异步。
 
-## 3、地图模式相关
+### 3、地图模式相关
 
 &emsp;&emsp;\$Combatant：创建战斗人物时的构造函数，你可以在这里自定义战斗人物的属性；
 &emsp;&emsp;\$combatantInfo：战斗人物信息（在状态面板中显示的字符串）；
@@ -30,7 +41,7 @@
 &emsp;&emsp;&emsp;levelUp：级别检测；会调用战斗人物的级别检测函数，如果没有则调用全局的，如果没有则调用系统默认的；
 &emsp;&emsp;&emsp;computeCombatantPropertiesWithExtra：计算 战斗人物所有附加属性；这个函数比较重要，系统默认实现了遍历所有装备和Buff，然后将计算的新属性存在战斗人物对象的\$\$propertiesWithExtra属性中。
 
-## 4、战斗相关
+### 4、战斗相关
 
 &emsp;&emsp;\$commonRunAwayAlgorithm：通用战斗逃跑算法；如果战斗脚本中定义了使用通用战斗逃跑算法，则调用它，默认是50%概率。
 
@@ -70,6 +81,6 @@
 
 &emsp;&emsp;\$fightButtons：战斗界面的按钮；
 
-## 5、其他
+### 5、其他
 
 &emsp;&emsp;\$readSavesInfo：读取存档的信息；默认是3个；

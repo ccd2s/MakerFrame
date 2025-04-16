@@ -1,6 +1,15 @@
-# 一、说明
+---
+title: 技能脚本-简介
+author:
+  name: 深林孤鹰
+  url: https://github.com/leamus
+icon: circle-info
+order: 3
+---
 
-&emsp;&emsp;技能脚本在项目根目录的FightScripts目录下，每个技能一个文件夹，每个文件夹内的fight_script.js就是技能脚本。
+## 一、说明
+
+&emsp;&emsp;技能脚本在项目根目录的FightSkills目录下，每个技能一个文件夹，每个文件夹内的fight_skill.js就是技能脚本。
 
 &emsp;&emsp;技能脚本有 \$createData函数 和 \$commons对象两个成员，\$createData函数 是每创建一个技能都会调用它，所以写在它里的属性数据会有差异化且会被存档，而写在 \$commons对象 中的是通用的。
 
@@ -10,7 +19,7 @@
 
 &emsp;&emsp;建议先用视图编程生成代码再进行修改。
 
-# 二、数据成员
+## 二、数据成员
 
 &emsp;&emsp;数据成员可写在 \$createData函数 和 \$commons对象 中，有：
 
@@ -26,7 +35,7 @@
 
 &emsp;&emsp;你可以在这里加其他任意属性。
 
-# 三、函数成员
+## 三、函数成员
 
 &emsp;&emsp;函数成员一般写在 \$commons对象中；
 

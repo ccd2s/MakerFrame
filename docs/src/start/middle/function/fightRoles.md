@@ -1,4 +1,13 @@
-# 一、说明
+---
+title: 战斗人物脚本
+author:
+  name: 深林孤鹰
+  url: https://github.com/leamus
+icon: r:user
+order: 2
+---
+
+## 一、说明
 
 &emsp;&emsp;战斗人物脚本在项目根目录的FightRoles目录下，每个战斗人物一个文件夹，每个文件夹内的fight_roles.js就是技能脚本。
 
@@ -10,7 +19,7 @@
 
 &emsp;&emsp;建议先用视图编程生成代码再进行修改。
 
-# 二、数据成员
+## 二、数据成员
 
 &emsp;&emsp;数据成员可写在 \$createData函数 和 \$commons对象 中，有：
 
@@ -26,7 +35,7 @@
 
 &emsp;&emsp;你可以在这里加其他任意属性。
 
-# 三、函数成员
+## 三、函数成员
 
 &emsp;&emsp;函数成员一般写在 \$commons对象中；
 

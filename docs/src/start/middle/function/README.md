@@ -4,6 +4,7 @@ author:
   name: 深林孤鹰
   url: https://github.com/leamus
 icon: terminal
+index: false
 order: 2
 ---
 

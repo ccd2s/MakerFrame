@@ -1,4 +1,13 @@
-# 说明
+---
+title: 标题画面
+author:
+  name: 深林孤鹰
+  url: https://github.com/leamus
+icon: bars
+order: 6
+---
+
+## 说明
 
 &emsp;&emsp;系统没有专门的标题画面编辑器，但初学者可以用系统自带的简易标题画面（使用game.menu实现的）：
 
