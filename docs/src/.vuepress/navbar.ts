@@ -5,4 +5,5 @@ export default navbar([
   "/start/",
   "/info/",
   "/projects/",
+  "/other/",
 ]);

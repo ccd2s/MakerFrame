@@ -75,5 +75,11 @@ export default sidebar({
       prefix: "projects/",
       link: "projects/",
     },
+    {
+      text: "其它",
+      icon: "ellipsis",
+      prefix: "other/",
+      link: "other/",
+    },
   ],
 });
