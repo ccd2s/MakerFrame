@@ -75,6 +75,17 @@ features:
     icon: ellipsis
     details: 包括特效支持、回合制战斗、Buff系统等
     link: /start/middle/
+    
+head:
+  - - meta
+    - name: msvalidate.01
+      content: DEEACC6F44A874785939E53AFFB6CDE0
+  - - meta
+    - name: google-site-verification
+      content: zjlfDKwykoC8lT3nIARs5anQ-47ALxbA3KxksN-gi7k
+  - - meta
+    - name: baidu-site-verification
+      content: codeva-2VSfYC1O4s
 
 ---
 
