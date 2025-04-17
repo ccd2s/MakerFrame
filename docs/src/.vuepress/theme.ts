@@ -90,6 +90,12 @@ export default hopeTheme({
       },
     },
 
+    docsearch: {
+      appId: "NNZCDJNBW8",
+      apiKey: "c45b30fc8b8df4259e969fa101b29b33",
+      indexName: "mf-tasaed",
+    },
+
     components: {
       components: ["Badge", "VPCard", "PDF", "SiteInfo", "VPBanner"],
     },

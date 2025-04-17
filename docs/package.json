@@ -13,6 +13,7 @@
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.20",
     "@vuepress/plugin-comment": "2.0.0-rc.20",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.95",
     "@vuepress/plugin-notice": "2.0.0-rc.91",
     "@vuepress/plugin-umami-analytics": "2.0.0-rc.94",
     "artalk": "^2.9.1",
