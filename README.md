@@ -3,6 +3,8 @@
 
 这里是鹰歌游戏引擎文档的代码储存库，你可以选择访问 [docs-mf.tasaed.top](https://docs-mf.tasaed.top/) 查看实时版本。
 
+注意，本文档为非官方仓库，[本家在此](https://github.com/leamus/MakerFrame)。
+
 ## 贡献指南
 
 ### 本地开发

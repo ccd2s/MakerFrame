@@ -36,10 +36,10 @@ export default hopeTheme({
   contributors: true,
   changelog: true,
 
-  // // 多语言配置
-  // metaLocales: {
-  //   editLink: "在 GitHub 上编辑此页",
-  // },
+  // 多语言配置
+  metaLocales: {
+    editLink: "在 GitHub 上编辑此页",
+  },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
@@ -75,7 +75,7 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
-    // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
+    // 基于本文档的站点均需使用自己的评论服务
     comment: {
       provider: "Artalk",
       server: "https://talk.tasaed.top",
