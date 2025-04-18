@@ -321,3 +321,5 @@ game.musicpausing();
 ## 四、使用方式
 
 &emsp;&emsp;
+
+<Catalog />

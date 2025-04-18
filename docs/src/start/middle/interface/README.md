@@ -54,3 +54,5 @@ game.scale(Math.min(game.\$sys.viewport.width / game.\$sys.map.width ,game.\$sys
 game.\$sys.viewport.width = 800;
 game.\$sys.viewport.height = 480
 game.\$sys.viewport.scale = Math.min(game.\$sys.screen.width / game.\$sys.viewport.width ,game.\$sys.screen.height / game.\$sys.viewport.height)
+
+<Catalog />
