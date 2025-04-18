@@ -1,4 +1,14 @@
 // place your custom styles here
 :root {
-  --bg-alt: url("https://docs-mf.tasaed.top/assets/image/bg/alternating-arrowhead.svg");
+  --bg-alt: url("https://docs-mf.tasaed.top/assets/image/bg/alt-light.svg")
+  center/cover;
+  --bg-alt-inverse: url("https://docs-mf.tasaed.top/assets/image/bg/alt-dark.svg")
+  center/cover;
+}
+
+[data-theme="dark"] {
+  --bg-alt: url("https://docs-mf.tasaed.top/assets/image/bg/alt-dark.svg")
+  center/cover;
+  --bg-alt-inverse: url("https://docs-mf.tasaed.top/assets/image/bg/alt-light.svg")
+  center/cover;
 }
