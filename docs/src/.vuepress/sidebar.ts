@@ -39,6 +39,7 @@ export default sidebar({
             {
               text: "战斗",
               icon: "khanda",
+              link: "battle/",
               prefix: "battle/",
               children: "structure",
             },
