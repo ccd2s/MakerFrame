@@ -104,6 +104,14 @@ export default hopeTheme({
     git:{
       contributors: {
         avatar: true,
+        info: [
+          {
+            username: "ccd2s",
+            name: "德二吹风机",
+            alias: ["德二吹风机","TASA-Ed"],
+            email: "tasaedem@outlook.com",
+          },
+        ],
       }
     },
 
