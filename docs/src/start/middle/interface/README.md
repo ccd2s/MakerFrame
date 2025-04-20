@@ -12,11 +12,13 @@ order: 5
 
 &emsp;&emsp;地图的画面从外到内有4个层组成：
 
-game.\$sys.screen：屏幕，创建的组件位置和大小固定（包含所有系统组件，包括战斗场景、摇杆、消息框、对话框等）
-game.\$sys.viewport：视窗，创建的组件位置和大小固定
-game.\$sys.scene：场景，组件位置和大小固定，但会被scale影响
-game.\$sys.map：地图，创建的组件会改变大小和随地图移动
-game.\$sys.ground：地图地板，创建的组件会改变大小和随地图移动
+```js
+game.$sys.screen //屏幕，创建的组件位置和大小固定（包含所有系统组件，包括战斗场景、摇杆、消息框、对话框等）
+game.$sys.viewport //视窗，创建的组件位置和大小固定
+game.$sys.scene //场景，组件位置和大小固定，但会被scale影响
+game.$sys.map //地图，创建的组件会改变大小和随地图移动
+game.$sys.ground //地图地板，创建的组件会改变大小和随地图移动
+```
 
 ## 二、解释
 
@@ -47,12 +49,19 @@ game.\$sys.ground：地图地板，创建的组件会改变大小和随地图移
 ## 五、示例
 
 &emsp;&emsp;1、缩放地图至视窗大小：
-game.scale(Math.min(game.\$sys.viewport.width / game.\$sys.map.width ,game.\$sys.viewport.height / game.\$sys.map.height))
+
+```js
+game.scale(Math.min(game.$sys.viewport.width / game.$sys.map.width ,game.$sys.viewport.height / game.$sys.map.height))
+```
 
 &emsp;&emsp;2、设置视窗大小，并缩放至屏幕大小
 
-game.\$sys.viewport.width = 800;
-game.\$sys.viewport.height = 480
-game.\$sys.viewport.scale = Math.min(game.\$sys.screen.width / game.\$sys.viewport.width ,game.\$sys.screen.height / game.\$sys.viewport.height)
+```js
+game.$sys.viewport.width = 800;
+game.$sys.viewport.height = 480
+game.$sys.viewport.scale = Math.min(game.$sys.screen.width / game.$sys.viewport.width ,game.$sys.screen.height / game.$sys.viewport.height)
+```
 
 <Catalog />
+
+<!-- markdownlint-disable-file MD033 MD013 -->

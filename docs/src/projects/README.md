@@ -58,3 +58,5 @@ v-bind="item"
 ## 更多
 
 - 随时随地通过 PR 添加你的游戏至此。
+
+<!-- markdownlint-disable-file MD033 -->

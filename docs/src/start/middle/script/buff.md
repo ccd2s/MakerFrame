@@ -19,7 +19,8 @@ order: 3
 
 &emsp;&emsp;3、通用脚本的 \$fightRoleChoiceSkillsOrGoodsAlgorithm 函数，可以加入Buff对战斗人物使用技能影响的代码；
 
-&emsp;&emsp;4、通用脚本的 getBuff 是Buff的核心函数，是获得Buff和Buff影响的相关代码，每个Buff是一个对象，存储在 \$\$fightData.\$buffs 中，默认对象的属性有：
+&emsp;&emsp;4、通用脚本的 getBuff 是Buff的核心函数，是获得Buff和Buff影响的相关代码，每个Buff是一个对象，
+存储在 \$\$fightData.\$buffs 中，默认对象的属性有：
 
 * round：回合数；
 * buffScript：Buff播放脚本；
@@ -35,8 +36,8 @@ order: 3
 
 &emsp;&emsp;7、如果Buff不跨战斗，记得在通用脚本的 \$commonFightEndScript 生成器函数中加入：
 
-```
-tc.\$\$fightData.\$buffs = {};
+```js
+tc.$$fightData.$buffs = {};
 ```
 
 ## 三、注意
