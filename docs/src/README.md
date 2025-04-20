@@ -6,7 +6,7 @@ heroImage: assets/image/logo.png
 heroText: 鹰歌游戏引擎
 tagline: 一款具有强大功能的开放式游戏制作引擎✨
 actions:
-  - text: 开始使用
+  - text: 开始使用6
     link: /start/
     icon: signs-post
     type: primary
