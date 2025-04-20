@@ -1,4 +1,4 @@
-name: docs
+name: Build on Ubuntu with Node.js 22, pnpm 10
 
 on:
   pull_request:
