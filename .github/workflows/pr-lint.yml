@@ -1,11 +1,11 @@
-name: Build on Ubuntu with Node.js 22, pnpm 10
+name: Markdownlint
 
 on:
   pull_request:
     branches: ["main"]
 
 jobs:
-  docs:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,5 +34,5 @@ jobs:
         working-directory: ./docs
 
       - name: build
-        run: pnpm docs:build
+        run: pnpm markdownlint-cli2 "**/*.md"
         working-directory: ./docs

@@ -41,7 +41,7 @@ order: 7
 
 &emsp;&emsp;2、main.js中创建组件时，组件的父组件可以是game.\$sys.scene、game.\$sys.container、game.\$sys.container或具体的角色等，挂载在不同的组件下有不同的效果，具体请看main.js文件说明。
 
-## 四、使用方式：
+## 四、使用方式
 
 &emsp;&emsp;main.js函数中，可以导入其他qml或js文件，也可以定义一些函数和变量供游戏中调用，插的使用格式：
 

@@ -13,13 +13,17 @@ order: 1
 
 ## 二、实现方式
 
-&emsp;&emsp;通用脚本的 \$refreshCombatant函数 在游戏中会不停的循环调用，这个函数又会调用 levelUp 函数，这个函数默认又会调用战斗人物脚本（在\$commons对象中）的 levelUpScript 和 levelAlgorithm 函数，这两个函数分别是升级脚本和升级算法，如果没有，则导入全局通用的 commonLevelUpScript 和 commonLevelAlgorithm 函数，这两个函数是通过 JSLevelChain 外部导入的方式提供的（如果没有导入则默认会使用系统的）。两种方法都可以。
+&emsp;&emsp;通用脚本的 \$refreshCombatant函数 在游戏中会不停的循环调用，
+这个函数又会调用 levelUp 函数，这个函数默认又会调用战斗人物脚本（在\$commons对象中）
+的 levelUpScript 和 levelAlgorithm 函数，这两个函数分别是升级脚本和升级算法，
+如果没有，则导入全局通用的 commonLevelUpScript 和 commonLevelAlgorithm 函数，
+这两个函数是通过 JSLevelChain 外部导入的方式提供的（如果没有导入则默认会使用系统的）。两种方法都可以。
 
 &emsp;&emsp;1、升级脚本
 
 &emsp;&emsp;原型：
 
-```
+```js
 function *commonLevelUpScript(combatant)
 ```
 
@@ -33,7 +37,7 @@ function *commonLevelUpScript(combatant)
 
 &emsp;&emsp;原型：
 
-```
+```js
 function commonLevelAlgorithm(combatant, targetLevel)
 ```
 

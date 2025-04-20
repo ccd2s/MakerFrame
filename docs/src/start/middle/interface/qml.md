@@ -35,7 +35,8 @@ order: 1
 
 &emsp;&emsp;3、JS方式动态创建；这种相比上面两种静态定义来说，创建最为灵活，有两种创建方式：
 
-&emsp;&emsp;a、使用文件定义的QML组件 let comp =Qt.createComponent(文件url) 或 定义Component{id: comp;。。。}，然后再用QML组件来创建对象comp.createObject(parent, properties)；
+&emsp;&emsp;a、使用文件定义的QML组件 let comp =Qt.createComponent(文件url)
+或 定义Component{id: comp;。。。}，然后再用QML组件来创建对象comp.createObject(parent, properties)；
 
 &emsp;&emsp;b、直接使用Qt.createQmlObject来创建QML组件对象。
 

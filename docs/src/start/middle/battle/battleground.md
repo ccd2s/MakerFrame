@@ -13,7 +13,7 @@ order: 1
 
 ## 二、命令
 
-### 1、上场：
+### 1、上场
 
 &emsp;&emsp;fight.\$sys.insertFightRole(index, fightrole, teamID);
 

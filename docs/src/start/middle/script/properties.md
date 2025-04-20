@@ -20,7 +20,10 @@ order: 2
 
 ## 三、开始修改
 
-&emsp;&emsp;1、通用脚本：找到\$Combatant函数，这个函数是我们创建战斗人物时的构造函数，\$properties属性就是战斗人物的属性，我们添加属性就在properties对象里添加；这样我们所有的地方都可以引用到这个属性：combatant.\$properties.属性名 或 combatant.\$propertiesWithExtra.属性名。
+&emsp;&emsp;1、通用脚本：找到\$Combatant函数，这个函数是我们创建战斗人物时的构造函数，
+\$properties属性就是战斗人物的属性，我们添加属性就在properties对象里添加；
+这样我们所有的地方都可以引用到这个属性：combatant.\$properties.属性名
+或 combatant.\$propertiesWithExtra.属性名。
 
 &emsp;&emsp;2、如果影响技能，则可以在技能脚本里使用这个属性参与计算；
 

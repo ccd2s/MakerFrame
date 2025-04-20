@@ -41,10 +41,9 @@ order: 2
 
 &emsp;&emsp;那么，整个布局的嵌套结构应该是：
 
-```
-。。。
+```qml
 ColumnLayout {
-  Text {}	//标题
+  Text {} //标题
   RowLayout {
     ColumnLayout {
       Rectangle{}
@@ -63,7 +62,7 @@ ColumnLayout {
 
 &emsp;&emsp;有了大体的结构，剩下的就是填属性来调整各布局的宽高，常用的附加属性有：
 
-```
+```qml
 Layout.preferredWidth: 最合适宽度像素
 Layout.preferredHeight: 最合适高度像素
 Layout.maximumWidth: 最大宽度像素

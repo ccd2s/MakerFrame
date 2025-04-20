@@ -10,13 +10,13 @@ order: 2
 
 ## 一、说明
 
-功能：载入地图资源名为mapRID的地图并执行地图载入事件$start。
+功能：载入地图资源名为mapRID的地图并执行地图载入事件\$start。
 参数：userData是用户传入数据，后期调用的钩子函数会传入；
   forceRepaint表示是否强制重绘（为false时表示如果mapRID与现在的相同，则不重绘）；
 返回：Promise对象（完全载入后状态改变；出错会抛出错误），携带值为地图信息；
 示例：yield game.loadmap('地图资源名');
 
-```
+```js
 yield game.loadmap(mapRID, userData, forceRepait=false)
 ```
 
@@ -32,11 +32,11 @@ yield game.loadmap(mapRID, userData, forceRepait=false)
   pauseGame为显示时是否暂停游戏（游戏主循环暂停，并暂停产生游戏事件）；值为true、false或字符串。如果为true或字符串则游戏会暂停（字符串表示暂停值，不同的暂停值互不影响，只要有暂停值游戏就会暂停；true表示给个随机暂停值）；
   callback是结束时回调函数，如果为非函数则表示让系统自动处理（销毁组件并继续游戏）；
     如果是自定义函数，参数为cb, ...params，cb表示系统处理（销毁组件并继续游戏），请在合适的地方调用 cb(...params)；
-返回：Promise对象（完全载入后状态改变；出错会抛出错误），$params属性为消息框组件对象；如果参数msg为true，则直接创建组件对象并返回（需要自己调用显示函数）；
+返回：Promise对象（完全载入后状态改变；出错会抛出错误），\$params属性为消息框组件对象；如果参数msg为true，则直接创建组件对象并返回（需要自己调用显示函数）；
 示例：yield game.msg('你好，鹰歌');
 
-```
-[yield] game.msg(msg='', interval=20, pretext='', keeptime=0, style={Type: 0b10}, pauseGame=true, callback=true);
+```js
+yield game.msg(msg='', interval=20, pretext='', keeptime=0, style={Type: 0b10}, pauseGame=true, callback=true);
 ```
 
 功能：在屏幕下方显示对话信息；命令用yield关键字修饰表示命令完全运行完毕后再进行下一步。
@@ -84,7 +84,7 @@ yield game.loadmap(mapRID, userData, forceRepait=false)
   style为自定义样式；
   pauseGame同msg的参数；
   callback同msg的参数；
-返回：Promise对象（完全运行完毕后状态改变；携带值为输入的字符串；出错会抛出错误），$params属性为消息框组件对象；如果参数title为true，则直接创建组件对象并返回（需要自己调用显示函数）；
+返回：Promise对象（完全运行完毕后状态改变；携带值为输入的字符串；出错会抛出错误），\$params属性为消息框组件对象；如果参数title为true，则直接创建组件对象并返回（需要自己调用显示函数）；
 示例：let inputText = yield game.input('标题')；
 
 `yield game.input(title='', pretext='', style={}, pauseGame=true, callback=true);`
@@ -106,7 +106,7 @@ yield game.loadmap(mapRID, userData, forceRepait=false)
         \$targetBlocks为定向的地图块坐标数组;
         \$targetPositions为定向的像素坐标数组;
         \$targetBlockAuto为定向的地图块自动寻路坐标数组；
-    $start表示角色是否自动动作（true或false)；
+    \$start表示角色是否自动动作（true或false)；
 返回：成功为组件对象，失败为false。
 示例：let h = game.createhero({RID: '角色资源名', 。。。其他属性});
   let h = game.createhero('角色资源名');   //全部使用默认属性；
@@ -147,9 +147,9 @@ game.createrole(role={});
 game.role(role=-1, props={});
 
 功能：删除地图NPC；
-参数：role可以是NPC的$id，或NPC组件对象，-1表示当前地图所有NPC；
+参数：role可以是NPC的\$id，或NPC组件对象，-1表示当前地图所有NPC；
 返回：删除成功返回true；没有或错误返回false；
-示例：game.delhero('地图NPC的$id');
+示例：game.delhero('地图NPC的\$id');
 game.delrole(role=-1);
 
 功能：将NPC移动到地图 bx、by 位置。
@@ -160,7 +160,7 @@ game.moverole(bx, by, role);
 功能：返回角色的各种坐标，或判断是否在某个地图块坐标上；
 参数：
   role为角色组件（可用hero和role命令返回的组件）；
-    如果为数字或空，则是主角；如果是字符串表示$id，会在 主角和NPC 中查找；
+    如果为数字或空，则是主角；如果是字符串表示\$id，会在 主角和NPC 中查找；
   pos为[bx,by]，返回角色是否在这个地图块坐标上；如果为空则表示返回角色中心所在各种坐标；
 返回：如果是判断，返回true或false；如果返回是坐标，则包括x、y（实际坐标）、bx、by（地图块坐标）、cx、cy（中心坐标）、rx1、ry2、rx2、ry2（影子的左上和右下坐标）、sx、sy（视窗中的坐标）；出错返回false；
 game.rolepos(role, pos=null);
@@ -181,14 +181,17 @@ game.delfighthero(fighthero);
 参数：fighthero为下标，或战斗角色的name，或战斗角色对象，或-1（返回所有战斗主角）；
   type为0表示返回 对象，为1表示只返回名字（可用作选择组件）；
 返回：战斗角色对象、名字字符串或数组；false表示没找到或出错；
-示例：let h = game.fighthero('鹰战士');
-  let h = game.fighthero(0);
-  let arrNames = game.fighthero(-1, 1);
+示例：
+
+```js
+let h = game.fighthero('鹰战士');
+let h = game.fighthero(0);
+let arrNames = game.fighthero(-1, 1);
 game.fighthero(fighthero=-1, type=0);
 
 //获得技能；
 //fighthero为下标，或战斗角色的name，或战斗角色对象；
-//skill为技能资源名，或 标准创建格式的对象（带有RID、Params和其他属性），或技能本身（带有\$rid）；
+//skill为技能资源名，或 标准创建格式的对象（带有RID、Params和其他属性），或技能本身（带有$rid）；
 //skillIndex为替换到第几个（如果为-1或大于已有技能数，则追加）；
 //copyedNewProps是 从skills复制的创建的新技能的属性（skills为技能对象才有效，复制一个新技能同时再复制copyedNewProps属性）；
 //成功返回true；
@@ -219,8 +222,8 @@ game.skill(fighthero, skill=-1, filters={});
 game.addprops(fighthero, props={}, type=[1,1], flags=0b11);
 
 //背包内 获得 count个道具；返回背包中 改变后 道具个数，返回false表示错误。
-//goods可以为 道具资源名、 或 标准创建格式的对象（带有RID、Params和其他属性），或道具本身（带有\$rid），或 下标；
-//count为0表示使用goods内的\$count；
+//goods可以为 道具资源名、 或 标准创建格式的对象（带有RID、Params和其他属性），或道具本身（带有$rid），或 下标；
+//count为0表示使用goods内的$count；
 game.getgoods(goods, count=0);
 
 //背包内 减去count个道具，返回背包中 改变后 道具个数；
@@ -244,12 +247,12 @@ game.usegoods(fighthero, goods);
 
 //直接装备一个道具（不是从背包中）；
 //fighthero为下标，或战斗角色的name，或战斗角色对象；
-//goods可以为 道具资源名、 或 标准创建格式的对象（带有RID、Params和其他属性），或道具本身（带有\$rid），或 下标；
+//goods可以为 道具资源名、 或 标准创建格式的对象（带有RID、Params和其他属性），或道具本身（带有$rid），或 下标；
 //newPosition：如果为空，则使用 goods 的 position 属性来装备；
-//copyedNewProps是 从goods复制的创建的新道具的属性（goods为道具对象才有效，复制一个新道具同时再复制（覆盖）copyedNewProps属性，比如\$count、\$position）；
+//copyedNewProps是 从goods复制的创建的新道具的属性 （goods为道具对象才有效，复制一个新道具同时再复制（覆盖）copyedNewProps属性，比如$count、$position）；
 //返回null表示错误；
 //注意：会将目标装备移除，需要保存则先unload到getgoods；
-game.equip(fighthero, goods, newPosition=undefined, copyedNewProps={\$count: 1});
+game.equip(fighthero, goods, newPosition=undefined, copyedNewProps={$count: 1});
 
 //卸下某装备（所有个数），返回装备对象，没有返回undefined；
 //fighthero为下标，或战斗角色的name，或战斗角色对象；
@@ -266,14 +269,24 @@ game.equipment(fighthero, positionName=null);
 //goods为买的物品rid列表；
 //mygoodsinclude为true表示可卖背包内所有物品，为数组则为数组中可交易的物品列表；
 //callback为交易结束后的脚本。
-//pauseGame为是否暂停游戏；值为true、false或字符串。如果为true或字符串则表示需要暂停等待结束，命令建议用yield关键字修饰；如果为false，则尽量不要用yield关键字；
+//pauseGame为是否暂停游戏；值为true、false或字符串。如果为true或字符串则表示需要暂停等待结束，
+```
+
+命令建议用yield关键字修饰；如果为false，则尽量不要用yield关键字；
+
+```js
 game.trade(goods=[], mygoodsinclude=true, pauseGame=true, callback=true);
 
 //获得金钱；返回金钱数目；
 game.money(m);
 
 //创建定时器；
-//timerName：定时器名称；interval：定时器间隔；times：触发次数（-1为无限）；bGlobal：是否是全局定时器；params为自定义参数（回调时传入）；
+//timerName：定时器名称；interval：定时器间隔；times：触发次数（-1为无限）；bGlobal：
+```
+
+是否是全局定时器；params为自定义参数（回调时传入）；
+
+```js
 //成功返回true；如果已经有定时器则返回false；
 game.addtimer(timerName, interval, times=1, bGlobal=false, params=null);
 
@@ -283,8 +296,8 @@ game.deltimer(timerName, bGlobal=false);
 //播放音乐；
 //musicParams是音乐名或对象（包含RID）；为空表示开始播放之前停止的；
 //  musicParams为对象包含两个属性：
-//    \$loops为循环次数，空或0表示无限循环；
-//    \$callback为状态回调函数；
+//    $loops为循环次数，空或0表示无限循环；
+//    $callback为状态回调函数；
 //成功返回true。
 game.playmusic(musicParams);
 
@@ -293,15 +306,15 @@ game.stopmusic();
 
 //暂停音乐。
 //参数name为暂停名称。
-game.pausemusic(name='\$user');
+game.pausemusic(name='$user');
 
 //继续播放音乐。
 //参数name为暂停名称。
-game.resumemusic(name='\$user');
+game.resumemusic(name='$user');
 
 //将音乐暂停并存栈。一般用在需要播放战斗音乐前。
 game.pushmusic();
-//播放上一次存栈的音乐。一般用在战斗结束后（\$commonFightEndScript已调用，不用写在战斗结束脚本中）。
+//播放上一次存栈的音乐。一般用在战斗结束后（$commonFightEndScript已调用，不用写在战斗结束脚本中）。
 game.popmusic();
 //跳到播放进度（毫秒）
 game.seekmusic(offset=0);
@@ -309,6 +322,7 @@ game.seekmusic(offset=0);
 //状态
 game.musicplaying();
 game.musicpausing();
+```
 
 ## 二、目录结构
 

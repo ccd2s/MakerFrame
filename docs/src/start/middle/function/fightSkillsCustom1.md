@@ -17,14 +17,14 @@ order: 4
 
 &emsp;&emsp;技能脚本的 \$playScript 生成器函数定义了技能应该如何播放动画和产生何种效果，只需通过yield一个对象 就能实现，这个对象的定义如下：
 
-```
+```text
 Combatant：本战斗人物（缺省为释放技能的战斗人物）
 Target：目标战斗人物
 Type：
   1：刷新人物信息（血条），并计算properties_with_extra，隐藏死亡角色；
   2：延时；
     Interval：延时时长
-  3：结算 技能效果，会调用skill_algorithm，参数为SkillParams，会返回执行结果（也可以直接调用game.gf["\$sys_fight_skill_algorithm"](combatant, targetCombatantOrTeamIndex, combatantActionSpriteData.SkillParams)）
+  3：结算 技能效果，会调用skill_algorithm，参数为SkillParams，会返回执行结果（也可以直接调用game.gf["$sys_fight_skill_algorithm"](combatant, targetCombatantOrTeamIndex, combatantActionSpriteData.SkillParams)）
   4：隐藏死亡角色
   10：切换动作
     Name：动作名
