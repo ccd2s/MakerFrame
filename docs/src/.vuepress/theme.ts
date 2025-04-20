@@ -73,6 +73,7 @@ export default hopeTheme({
     vPre: true,
   },
 
+
   // 在这里配置主题提供的插件
   plugins: {
     // 基于本文档的站点均需使用自己的评论服务
@@ -91,6 +92,7 @@ export default hopeTheme({
       },
     },
 
+    // 基于本文档的站点均需使用自己的搜索服务
     docsearch: {
       appId: "NNZCDJNBW8",
       apiKey: "c45b30fc8b8df4259e969fa101b29b33",
@@ -101,9 +103,11 @@ export default hopeTheme({
       components: ["Badge", "VPCard", "PDF", "SiteInfo", "VPBanner"],
     },
 
-    git:{
+    git: {
       contributors: {
+        // 显示贡献者的头像
         avatar: true,
+        // 修复本地贡献者与 GitHub 上的贡献者不一致的问题
         info: [
           {
             username: "ccd2s",
@@ -115,6 +119,13 @@ export default hopeTheme({
       }
     },
 
+    // 在移动设备上显示复制按钮
+    copyCode: {
+      showInMobile: true,
+      duration: 1500,
+    },
+
+    // 基于本文档的站点均需使用自己的图标服务
     icon: {
       assets: "https://kit.fontawesome.com/f5a8b26a3f.js",
     },
