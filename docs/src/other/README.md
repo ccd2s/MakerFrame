@@ -40,5 +40,3 @@ icon: ellipsis
 > 网站背景图使用 [SVGBackgrounds.com](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/) 的图标。
 >
 > 鹰歌游戏引擎采用 [MIT](https://github.com/leamus/MakerFrame/blob/main/LICENSE) 许可。
-
-<!-- markdownlint-disable-file MD013 -->

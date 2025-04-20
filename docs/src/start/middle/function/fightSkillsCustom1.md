@@ -58,5 +58,3 @@ Type：
 ```
 
 &emsp;&emsp;这些可能不太好理解，可以通过技能视图编辑器编译出来的代码对比学习。
-
-<!-- markdownlint-disable-file MD013 -->

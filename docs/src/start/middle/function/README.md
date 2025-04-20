@@ -337,5 +337,3 @@ game.musicpausing();
 &emsp;&emsp;
 
 <Catalog />
-
-<!-- markdownlint-disable-file MD033 MD013 -->

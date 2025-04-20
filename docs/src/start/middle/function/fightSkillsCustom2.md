@@ -125,5 +125,3 @@ function *gfNoChoiceSkill(skill, combatant) {
 
 
 ```
-
-<!-- markdownlint-disable-file MD013 -->

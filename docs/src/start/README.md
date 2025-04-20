@@ -16,5 +16,3 @@ actions:
 > [SVGBackgrounds.com](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/) 的图标
 
 <Catalog />
-
-<!-- markdownlint-disable-file MD033 MD013 -->

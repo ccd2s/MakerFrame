@@ -63,5 +63,3 @@ game.$sys.viewport.scale = Math.min(game.$sys.screen.width / game.$sys.viewport.
 ```
 
 <Catalog />
-
-<!-- markdownlint-disable-file MD033 MD013 -->

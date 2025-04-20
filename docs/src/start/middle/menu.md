@@ -32,5 +32,3 @@ game.scale(Math.min(game.\$sceneSize.width / game.\$mapSize.width ,game.\$sceneS
 &emsp;&emsp;3、使用插件：
 
 &emsp;&emsp;这个方案无疑是最强的也是最难的，只要你有想法和技术，任何界面你都可以做出来。
-
-<!-- markdownlint-disable-file MD013 -->

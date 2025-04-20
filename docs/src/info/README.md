@@ -197,5 +197,3 @@ icon: circle-info
 ![1708171453906](image/README/1708171453906.png)
 
 ![1708171457417](image/README/1708171457417.png)
-
-<!-- markdownlint-disable-file MD013 -->

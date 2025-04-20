@@ -8,5 +8,3 @@ order: 2
 RPG引擎深入、代码编程和插件。
 
 <Catalog />
-
-<!-- markdownlint-disable-file MD033 -->

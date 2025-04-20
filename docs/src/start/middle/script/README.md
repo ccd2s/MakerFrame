@@ -86,5 +86,3 @@ order: 3
 &emsp;&emsp;\$readSavesInfo：读取存档的信息；默认是3个；
 
 <Catalog />
-
-<!-- markdownlint-disable-file MD033 -->
