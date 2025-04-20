@@ -47,7 +47,7 @@ games:
     preview: /assets/image/projects/ying-yu-sha-steam.png
 ---
 
-## 使用 鹰歌游戏引擎 制作的游戏
+# 使用 鹰歌游戏引擎 制作的游戏
 
 <SiteInfo
 v-for="item in $frontmatter.games"
@@ -55,6 +55,6 @@ v-for="item in $frontmatter.games"
 v-bind="item"
 />
 
-## 更多
+# 更多:
 
 - 随时随地通过 PR 添加你的游戏至此。
