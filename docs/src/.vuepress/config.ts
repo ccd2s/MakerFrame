@@ -13,6 +13,7 @@ export default defineUserConfig({
   theme,
 
   plugins: [
+    // 基于本文档的站点均需使用自己的统计服务
     umamiAnalyticsPlugin({
       id: "c4f9bfe8-7cbe-40fd-9e98-63ab935a60e4",
       link: "https://umami.tasaed.top/script.js",
