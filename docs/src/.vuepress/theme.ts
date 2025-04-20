@@ -125,6 +125,7 @@ export default hopeTheme({
         title: "引擎公告",
         content: "因为目前鹰歌游戏引擎已经完善，所以开发者现在的重心并不在这里，不过如果有问题的话也可以去找开发者深林孤鹰咨询。",
         confirm: true,
+        showOnce: true,
         actions: [
           {
             text: "关闭",
