@@ -35,7 +35,9 @@ order: 1
 
 ## 三、主角或角色的动作的6个回调函数
 
-### 1、在角色脚本role.js中定义
+### 1、在脚本中定义
+
+在角色脚本`role.js`中定义
 
 ```js
 //角色/主角 动作开始回调函数（主角行动或调用了playAction）
@@ -81,11 +83,13 @@ function $action_stop(actionName) {
 }
 ```
 
-### 2、可以在init.js、game.gf、game.f、地图脚本上定义的，和上面效果一样的回调函数名
+### 2、在其他脚本上定义
 
-role表示角色，hero表示主角
+可以在`init.js`、`game.gf`、`game.f`、地图脚本上定义的，和上面效果一样的回调函数名
 
-```text
+`role`表示角色，`hero`表示主角
+
+```js
 function $hero_角色名_action_start(actionName)
 function $hero_角色名_action_refresh(currentFrame, actionName)
 function $hero_角色名_action_loop(actionName)
