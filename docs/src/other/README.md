@@ -31,6 +31,12 @@ icon: ellipsis
 
 > 注:拒绝提交没有任何意义、对他人无帮助、杂乱无章、推广、抄袭、引流的内容
 
+### 文档贡献者交流群
+
+注：本群**不是**引擎交流群，非文档贡献者请勿进入。
+
+- [点击加入](https://qm.qq.com/q/9tsBvtRsiY) (群号: 597524393)
+
 ## 开源许可
 
 > 本文档采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可。
