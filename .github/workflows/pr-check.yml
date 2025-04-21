@@ -3,6 +3,8 @@ name: Build on Ubuntu with Node.js 22, pnpm 10
 on:
   pull_request:
     branches: ["main"]
+  push:
+    branches: ["main"]
 
 jobs:
   docs:
