@@ -60,9 +60,9 @@ QML默认可以导入自身所在文件夹下的所有文件（非网络载入�
 * import QtQuick 2.14 //这种比较高级，一般导入的是系统提供的组件或框架引擎提供的组件，自己做这种组件难度比较高，详细可见Qt官方教程
 * impot "文件名.js" as Abc //导入一个JS脚本，脚本内的变量和函数都可以用 Abc.xxx 来使用；
 
-## 四、在鹰歌Maker中使用插件！
+## 四、在鹰歌Maker中使用插件
 
-> 需要知道的是，鹰歌存放插件的文件夹目录为 `/storage/emulated/0/Leamus/MakerFrame/GameMaker/Projects/你的工程/Plugins` 
+> 需要知道的是，鹰歌存放插件的文件夹目录为 `/storage/emulated/0/Leamus/MakerFrame/GameMaker/Projects/你的工程/Plugins`
 
 插件目录为二级目录，简单来说，你需要在 `/Plugins/` 下创建一个新文件夹(建议取为个人昵称或是团队名)，进入该文件夹(存放多个属于您的插件目录)，再次创建一个插件文件夹(建议取名为英文)
 
@@ -159,5 +159,5 @@ if(!game.gd["checked"]){
   }*/
 }
 ```
-只要你创建了 `main.js` (规范)，鹰歌在开始游戏时会自动运行 `main.js` ，所以为了避免不必要的麻烦，你或许可以尝试将 `$load()` 函数通过注释规避错误
 
+只要你创建了 `main.js` (规范)，鹰歌在开始游戏时会自动运行 `main.js` ，所以为了避免不必要的麻烦，你或许可以尝试将 `$load()` 函数通过注释规避错误

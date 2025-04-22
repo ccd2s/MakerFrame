@@ -2,7 +2,7 @@
 title: 角色函数
 author:
   name: Luomic
-  url: https://github.com/leamus
+  url: https://github.com/luomic
 icon: user
 order: 8
 ---
