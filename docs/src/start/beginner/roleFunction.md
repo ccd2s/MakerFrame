@@ -9,6 +9,7 @@ order: 8
 
 
 ## 关于角色函数
+
 * 角色函数包括`创建角色`，`控制角色`，`移除角色`(这里暂且不讨论战斗人物相关函数)。
 * 为了更好区分主角与npc，鹰歌使用了`hero`与`role`两种函数作为区分。
 ## 创建主角/角色
@@ -21,9 +22,9 @@ game.createhero({RID: "资源ID", $name: "主角名字",$speed:速度});
 我们将重要的参数陈列出来：
 
 * **RID**：RID是游戏内部的资源ID，他会引用`角色`一栏的资源，如图，`Role1`，`美奈子`等都是RID
-![角色id](/image/jueseid.png)
+![角色id](image/jueseid.png)
 * **$name**：$name(别忘了`$`号)表示角色名称，会显示在一个角色的头顶上(当然也可以不显示每次)
-![角色id](/image/juesename.png)
+![角色id](image/juesename.png)
 
 * **函数`createhero`,`createrole`参数及其说明**：
 > 无特殊说明，函数前均省略game类。标注默认则表示系统会默认设置该参数
@@ -75,7 +76,7 @@ var npcX = npc.$bx;
 | $by  | 地图块坐标y | `number` |
 | $targetBx  | 定向移动地图块坐标x | `number` |
 | $targetBy  | 定向移动地图块坐标y | `number` |
-| `$$nActionType`  | 角色是否运动<br>10为正在运动 | number |
+| $$nActionType  | 角色是否运动<br>10为正在运动 | `number` |
 | $targetX  | 定向移动像素坐标x | `number` |
 | $targetY  | 定向移动像素坐标y | `number` |
 | $action  | 为0表示暂时静止<br>为1表示随机移动<br>为-1表示禁止移动和操作<br>为2表示定向移动 | `number` |
@@ -83,7 +84,6 @@ var npcX = npc.$bx;
 | $showName  | 为是否头顶显示名字 | `Bool` |
 | $realSize  | 影子大小 | `number` |
 | $start  | 表示角色是否自动动作（true或false) | `String` |
-...
 
 * **删除主角/角色**
 这个非常简单，不多赘述
