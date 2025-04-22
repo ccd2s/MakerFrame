@@ -115,6 +115,12 @@ export default hopeTheme({
             alias: ["德二吹风机","TASA-Ed"],
             email: "tasaedem@outlook.com",
           },
+          {
+            username: "luomic",
+            name: "落",
+            alias: ["Luomic","落"],
+            email: "tasaedem@outlook.com",
+          },
         ],
       }
     },
