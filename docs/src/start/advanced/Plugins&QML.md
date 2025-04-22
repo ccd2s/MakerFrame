@@ -1,5 +1,5 @@
 ---
-title: QML简易教程
+title: 鹰歌插件/QML 教程
 author:
   name: 深林孤鹰
   url: https://github.com/leamus
