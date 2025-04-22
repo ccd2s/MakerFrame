@@ -1,4 +1,4 @@
-name: Markdownlint
+name: MarkdownLint
 
 on:
   pull_request:
@@ -9,7 +9,9 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,6 +37,6 @@ jobs:
         run: pnpm install --frozen-lockfile
         working-directory: ./docs
 
-      - name: build
+      - name: markdownLint
         run: pnpm markdownlint-cli2 "**/*.md"
         working-directory: ./docs
