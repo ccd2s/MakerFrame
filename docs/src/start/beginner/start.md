@@ -4,7 +4,7 @@ author:
   name: Luomic
   url: https://github.com/luomic
 icon: gamepad
-order: 9
+order: 8
 ---
 
 ## 重要提示
@@ -66,18 +66,18 @@ else{
 ## 创建项目之地图编辑器
 
 * 打开鹰歌，选择创建工程
-![创建工程](image/xjgc.png)
+![创建工程](image/start/xjgc.png)
 
 * 选择yes
-![yesyes](image/yesyes.png)
+![yesyes](image/start/yesyes.png)
 
 * 选择地图
-![mapmap](image/mapmap.png)
+![mapmap](image/start/mapmap.png)
 
 我们来认识一下`地图`页面的控件
 
 * 点击新建地图
-![xjdt](image/xjdt.png)
+![xjdt](image/start/xjdt.png)
 
 可以看到许多选项
 
@@ -89,15 +89,15 @@ else{
 **路径**：默认填充，无需更改
 
 * 接下来我们点击选择素材
-![xzsc](image/xzsc.png)
+![xzsc](image/start/xzsc.png)
 
 可以看到，有许多自带素材，我们演示选择草地。
 
 接下来，我们设置地图大小为20x20，地图块大小为32x32，然后点击OK
 
 这是编辑地图的一个演示，我们来看里面的控件
-![dtys](image/dtys.gif)
-![dtbjq](image/dtbjq.png)
+![dtys](image/start/dtys.gif)
+![dtbjq](image/start/dtbjq.png)
 
 * **红色按钮(默认绘制)**
 
@@ -153,10 +153,10 @@ Tips：红色按钮可以多次点击，切换功能呦！
 
 ### 第一部分
 
-![jsbjq](image/2.png)
+![jsbjq](image/start/2.png)
 
 如果你是下列这种(教程只说这种)行走图，选择典型行走图
-![1](image/1.png)
+![1](image/start/1.png)
 
 * 移动速度
 

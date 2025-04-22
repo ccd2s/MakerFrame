@@ -25,6 +25,13 @@ export default sidebar({
             {
               text: "游戏命令详解",
               icon: "terminal",
+              link: "command/",
+              prefix: "command/",
+              children: "structure",
+            },
+            {
+              text: "系统函数详解",
+              icon: "f",
               link: "function/",
               prefix: "function/",
               children: "structure",
