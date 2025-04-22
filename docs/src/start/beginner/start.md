@@ -151,7 +151,7 @@ Tips：红色按钮可以多次点击，切换功能呦！
 
 ### 第一部分
 
-![jsbjq](image/jsbjq.png)
+![jsbjq](image/2.png)
 
 如果你是下列这种(教程只说这种)行走图，选择典型行走图
 ![1](image/1.png)
