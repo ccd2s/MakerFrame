@@ -80,9 +80,9 @@ if(game.gd["事件1"]) {
     `角色1['攻击'] //会返回100`
     `角色1.name = '大鬼' //重新设置`
 
-null：只有一个值，一般用的少
+`null`：只有一个值，一般用的少
 
-undefined：没有赋值变量 和 没有定义的数组下标值、对象key 都是 undefined。
+`undefined`：没有赋值变量 和 没有定义的数组下标值、对象key 都是 undefined。
 比如：
 
 ```javascript
