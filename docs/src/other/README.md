@@ -23,7 +23,7 @@ icon: ellipsis
 
 进入docs目录，运行 `pnpm install` 安装模块，随后使用 `pnpm docs:dev` 启用开发服务器。
 
-注：**不推荐**使用 Node.js 18，因为它即将在 2025 年 4 月 30 日停止支持。
+注：**不推荐**使用 Node.js 18，因为它即将在 2025 年 4 月 30 日停止支持[^node18]。
 
 ### 编写教程
 
@@ -46,3 +46,7 @@ icon: ellipsis
 > 网站背景图使用 [SVGBackgrounds.com](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/) 的图标。
 >
 > 鹰歌游戏引擎采用 [MIT](https://github.com/leamus/MakerFrame/blob/main/LICENSE) 许可。
+
+[^node18]: VuePress 使用 Rolling LTS Requirement，即滚动的 LTS 环境支持。随着 Node.js 18 将在 4 月 30 日 EOL （停止支持），我们即将丢弃 Node.js 18 支持，并将最低版本定位 20.6.0。
+
+    请用户检查自己的环境，并在 4 月 30 日前将项目环境迁移至新的 LTS 环境中，我们推荐使用最新的 22.x 版本。如果你的其他项目依赖于旧版 Node.js，可考虑使用 [nvm](https://github.com/nvm-sh/nvm)。
