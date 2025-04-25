@@ -90,12 +90,8 @@ export default sidebar({
       prefix: "projects/",
       link: "projects/",
     },
-    {
-      text: "其它",
-      icon: "ellipsis",
-      prefix: "other/",
-      link: "other/",
-      children: "structure",
-    },
+    "other/about.md",
+    "other/contribution.md",
+    "other/engineUpdatelog.md"
   ],
 });
