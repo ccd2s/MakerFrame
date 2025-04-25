@@ -90,8 +90,8 @@ export default sidebar({
       prefix: "projects/",
       link: "projects/",
     },
-    "other/about.md",
-    "other/contribution.md",
-    "other/engineUpdatelog.md"
+    "about.md",
+    "contribution.md",
+    "engineUpdatelog.md"
   ],
 });

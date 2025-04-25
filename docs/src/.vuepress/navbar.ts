@@ -8,7 +8,7 @@ export default navbar([
   {
     text: "其它",
     icon: "ellipsis",
-    prefix: "/other/",
+    prefix: "/",
     children: [
       {
         text: "文档",
