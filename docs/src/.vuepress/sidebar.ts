@@ -69,6 +69,13 @@ export default sidebar({
           prefix: "advanced/",
           children: "structure",
         },
+        {
+          text: "电子书教程",
+          icon: "book",
+          collapsible: true,
+          prefix: "ebook/",
+          children: "structure",
+        }
       ],
     },
     {
