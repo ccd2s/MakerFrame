@@ -95,6 +95,7 @@ export default sidebar({
       icon: "ellipsis",
       prefix: "other/",
       link: "other/",
+      children: "structure",
     },
   ],
 });
