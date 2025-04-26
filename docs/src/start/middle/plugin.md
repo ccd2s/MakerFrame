@@ -43,7 +43,7 @@ order: 7
 
 ## 四、使用方式
 
-&emsp;&emsp;main.js函数中，可以导入其他qml或js文件，也可以定义一些函数和变量供游戏中调用，插的使用格式：
+&emsp;&emsp;main.js函数中，可以导入其他qml或js文件，也可以定义一些函数和变量供游戏中调用，插件的使用格式：
 
 &emsp;&emsp;`game.plugin('作者名', '模块名')`
 

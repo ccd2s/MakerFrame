@@ -21,7 +21,9 @@ order: 6
 
 &emsp;&emsp;在地图start事件里加入一句：
 
-game.scale(Math.min(game.\$sceneSize.width / game.\$mapSize.width ,game.\$sceneSize.height / game.\$mapSize.height))
+```js
+game.scale(Math.min(game.$sceneSize.width / game.$mapSize.width ,game.$sceneSize.height / game.$mapSize.height))
+```
 
 &emsp;&emsp;便可以自适应屏幕。
 
