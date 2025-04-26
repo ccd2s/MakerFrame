@@ -63,7 +63,7 @@ features:
 
   - title: 角色编辑器
     icon: user
-    details: 鹰歌自带角色编辑器，支持四向行走图，二向行走图，物品图等
+    details: 鹰歌自带角色编辑器，支持四向行走图，二向行走图，物品图等。
     link: /start/beginner/character.html
 
   - title: 标题画面
@@ -73,7 +73,7 @@ features:
 
   - title: 更多
     icon: ellipsis
-    details: 包括特效支持、回合制战斗、Buff系统等
+    details: 包括特效支持、回合制战斗、Buff系统等。
     link: /start/middle/
     
 head:
