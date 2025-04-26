@@ -1,6 +1,7 @@
 ---
 title: 文档贡献指南
 icon: lightbulb
+date: 2025-04-13
 order: 2
 ---
 
@@ -12,15 +13,15 @@ order: 2
 
 #### **要求**
 
-- 安装 LTS 版本 的 Node.js ^18.19.0, ^20.6.0, ^22.0.0
+- 安装 LTS 版本 的 Node.js ^18.19.0, ^20.6.0, ^22.0.0。
 - 使用 `corepack enable` 启用 Corepack。
-- 安装 pnpm >= 7
+- 安装 pnpm >= 7。
 
 注：**不推荐**使用 Node.js 18，因为它即将在 2025 年 4 月 30 日停止支持[^node18]。
 
 #### **克隆并安装项目**
 
-使用 `git clone https://github.com/TASA-Ed/MakerFrameDocs.git` 将仓库克隆至本地
+使用 `git clone https://github.com/TASA-Ed/MakerFrameDocs.git` 将仓库克隆至本地。
 
 进入docs目录，运行 `pnpm install` 安装模块。
 
@@ -34,7 +35,7 @@ order: 2
 
 将本仓库复刻，随后可以通过开启 Pull Request 将更改提交到本仓库中。
 
-> 注:拒绝提交没有任何意义、对他人无帮助、杂乱无章、推广、抄袭、引流的内容
+> 注:拒绝提交没有任何意义、对他人无帮助、杂乱无章、推广、抄袭、引流的内容。
 
 ### 文档贡献者交流群
 

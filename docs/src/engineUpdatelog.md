@@ -4,6 +4,7 @@ icon: file-word
 author:
   name: 深林孤鹰
   url: https://github.com/leamus
+date: 2022-12-26
 order: 3
 ---
 
@@ -11,7 +12,7 @@ order: 3
 
 ## Todo
 
-正在开发：无限地图（使用Canvas还是QNanoPainter？）、战旗引擎
+正在开发：无限地图（使用Canvas还是QNanoPainter？）、战旗引擎。
 
 ## 版本A.B.C说明
 
