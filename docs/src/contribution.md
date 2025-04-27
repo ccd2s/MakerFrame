@@ -5,7 +5,7 @@ date: 2025-04-13
 order: 2
 ---
 
-关于本文档的贡献指南。
+鹰歌引擎教程需要你的贡献！
 
 ## 文档贡献指南
 
@@ -43,6 +43,16 @@ order: 2
 
 - [点击加入](https://qm.qq.com/q/9tsBvtRsiY) (群号: 597524393)
 
+### 其他
+
+如果说你无法访问GitHub，也无法通过其他特殊手段来访问，那您可以选择：
+
+- 在网站的评论区中指出错误（仅接受错误指出和修改）。
+- 向 [tasaedem@outlook.com](mailto:tasaedem@outlook.com) 发送邮件。
+- 加入 [文档贡献者交流群](#文档贡献者交流群) 并联系群主
+
+注：使用其他方法提交的文档无法在显示页面底部的贡献者列表[^list]中，不过我们会在 [关于](about.md) 页标注以其他方式贡献的贡献者。
+
 [^node18]: VuePress 使用 Rolling LTS Requirement，即滚动的 LTS 环境支持。随着 Node.js 18 将在 4 月 30 日 EOL （停止支持），我们即将丢弃 Node.js 18 支持，并将最低版本定位 20.6.0。
 
     请用户检查自己的环境，并在 4 月 30 日前将项目环境迁移至新的 LTS 环境中，我们推荐使用最新的 22.x 版本。如果你的其他项目依赖于旧版 Node.js，可考虑使用 [nvm](https://github.com/nvm-sh/nvm)。
@@ -50,3 +60,5 @@ order: 2
 [^lint]: 本项目使用 [markdownlint-cli2](https://www.npmjs.com/package/markdownlint-cli2) 格式化md文档，因此你在修改md文档后需要使用 `pnpm markdownlint-cli2 "**/*.md"` 检查错误。
 
     本项目的 Pull Request 状态检查也包括 markdownlint ，只不过这些检查是中立性的，即使报错也可以正常合并（尽管如此，但我们还是推荐你修复完所有错误之后再来提交 PR ）。
+
+[^list]: 因为贡献者列表基于 [git](https://ecosystem.vuejs.press/zh/plugins/development/git.html) 插件自动生成。

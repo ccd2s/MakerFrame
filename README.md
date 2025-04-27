@@ -6,6 +6,8 @@
 
 注意，本文档为非官方仓库，[本家在此](https://github.com/leamus/MakerFrame)。
 
+鹰歌引擎教程需要你的贡献！
+
 ## 贡献指南
 
 ### 本地开发
@@ -42,6 +44,16 @@
 
 - [点击加入](https://qm.qq.com/q/9tsBvtRsiY) (群号: 597524393)
 
+### 其他
+
+如果说你无法访问GitHub，也无法通过其他特殊手段来访问，那您可以选择：
+
+- 在网站的评论区中指出错误（仅接受错误指出和修改）。
+- 向 [tasaedem@outlook.com](mailto:tasaedem@outlook.com) 发送邮件。
+- 加入 [文档贡献者交流群](#文档贡献者交流群) 并联系群主
+
+注：使用其他方法提交的文档无法在显示页面底部的贡献者列表[^list]中，不过我们会在 [关于](https://docs-mf.tasaed.top/about.html) 页标注以其他方式贡献的贡献者。
+
 ## 许可证说明
 
 本项目采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可。
@@ -53,3 +65,5 @@
 [^lint]: 本项目使用 [markdownlint-cli2](https://www.npmjs.com/package/markdownlint-cli2) 格式化md文档，因此你在修改md文档后需要使用 `pnpm markdownlint-cli2 "**/*.md"` 检查错误。
 
     本项目的 Pull Request 状态检查也包括 markdownlint ，只不过这些检查是中立性的，即使报错也可以正常合并（尽管如此，但我们还是推荐你修复完所有错误之后再来提交 PR ）。
+
+[^list]: 因为贡献者列表基于 [git](https://ecosystem.vuejs.press/zh/plugins/development/git.html) 插件自动生成。
