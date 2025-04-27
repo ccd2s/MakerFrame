@@ -119,7 +119,11 @@ export default hopeTheme({
             username: "luomic",
             name: "落",
             alias: ["Luomic","落"],
-            email: "tasaedem@outlook.com",
+          },
+          {
+            username: "leamus",
+            name: "深林孤鹰",
+            alias: ["leamus","深林孤鹰"],
           },
         ],
       }
