@@ -291,6 +291,7 @@ game.role(role=-1, props={});
 
 ```js
 game.delhero('地图NPC的$id');
+
 game.delrole(role=-1);
 ```
 
@@ -306,6 +307,7 @@ game.delrole(role=-1);
 
 ```js
 game.moverole('NPC的$id',6,6);
+
 game.moverole(bx, by, role);
 ```
 
@@ -341,6 +343,7 @@ game.rolepos(role, pos=null);
 
 ```js
 game.createfighthero('战斗角色1'); game.createfighthero({RID: '战斗角色2', Params: {级别: 6}, $name: '鹰战士'});
+
 game.createfighthero(fightrole);
 ```
 
@@ -358,6 +361,7 @@ game.createfighthero(fightrole);
 
 ```js
 game.delfighthero(0); game.delfighthero('鹰战士');
+
 game.delfighthero(fighthero);
 ```
 
@@ -376,8 +380,11 @@ game.delfighthero(fighthero);
 
 ```js
 let h = game.fighthero('鹰战士');
+
 let h = game.fighthero(0);
+
 let arrNames = game.fighthero(-1, 1);
+
 game.fighthero(fighthero=-1, type=0);
 ```
 
@@ -702,8 +709,10 @@ game.resumemusic(name='$user');
 
 ```js
 game.pushmusic();
+
 //播放上一次存栈的音乐。一般用在战斗结束后（$commonFightEndScript已调用，不用写在战斗结束脚本中）。
 game.popmusic();
+
 //跳到播放进度（毫秒）
 game.seekmusic(offset=0);
 ```
@@ -716,6 +725,7 @@ game.seekmusic(offset=0);
 
 ```js
 game.musicplaying();
+
 game.musicpausing();
 ```
 
