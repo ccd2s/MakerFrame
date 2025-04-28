@@ -13,11 +13,11 @@ order: 2
 
 #### **要求**
 
-- 安装 LTS 版本 的 Node.js ^18.19.0, ^20.6.0, ^22.0.0。
+- 安装 LTS 版本 的 Node.js ^20.6.0, ^22.0.0。
 - 使用 `corepack enable` 启用 Corepack。
 - 安装 pnpm >= 7。
 
-注：**不推荐**使用 Node.js 18，因为它即将在 2025 年 4 月 30 日停止支持[^node18]。
+注：[主题](https://theme-hope.vuejs.press/) 已在 v2.0.0-rc.83 版本中移除 Node.js 18 支持[^node18]。
 
 #### **克隆并安装项目**
 
@@ -53,9 +53,9 @@ order: 2
 
 注：使用其他方法提交的文档无法在显示页面底部的贡献者列表[^list]中，不过我们会在 [关于](about.md) 页标注以其他方式贡献的贡献者。
 
-[^node18]: VuePress 使用 Rolling LTS Requirement，即滚动的 LTS 环境支持。随着 Node.js 18 将在 4 月 30 日 EOL （停止支持），我们即将丢弃 Node.js 18 支持，并将最低版本定位 20.6.0。
+[^node18]: VuePress 使用 Rolling LTS Requirement，即滚动的 LTS 环境支持。随着 Node.js 18 将在 4 月 30 日 EOL （停止支持），我们已丢弃 Node.js 18 支持，并将最低版本定位 20.6.0。
 
-    请用户检查自己的环境，并在 4 月 30 日前将项目环境迁移至新的 LTS 环境中，我们推荐使用最新的 22.x 版本。如果你的其他项目依赖于旧版 Node.js，可考虑使用 [nvm](https://github.com/nvm-sh/nvm)。
+    请用户检查自己的环境，并将项目环境迁移至新的 LTS 环境中，我们推荐使用最新的 22.x 版本。如果你的其他项目依赖于旧版 Node.js，可考虑使用 [nvm](https://github.com/nvm-sh/nvm)。
 
 [^lint]: 本项目使用 [markdownlint-cli2](https://www.npmjs.com/package/markdownlint-cli2) 格式化md文档，因此你在修改md文档后需要使用 `pnpm markdownlint-cli2 "**/*.md"` 检查错误。
 
