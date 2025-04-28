@@ -7,7 +7,7 @@ order: 2
 icon: circle-info
 ---
 
-![工程主界面](image/1.引擎简介/1699844936831.png)
+![工程主界面](/assets/image/docs/share/1708171085856.png)
 
 ## 一、工程
 
