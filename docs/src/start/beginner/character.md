@@ -19,23 +19,23 @@ order: 3
 
 a、标准的四向行走图（示例1，大小为128*192）
 
-![四向行走图](image/2.制作角色/1690265886023.png)
+![四向行走图](/assets/image/docs/beginner/character/1690265886023.png)
 
 b、标准的二向行走图
 
-![二向行走图](image/2.制作角色/1690265947320.png)
+![二向行走图](/assets/image/docs/beginner/character/1690265947320.png)
 
 c、一个物品图
 
-![物品图](image/2.制作角色/1690266082739.png)
+![物品图](/assets/image/docs/beginner/character/1690266082739.png)
 
 &emsp;&emsp;2、进入【角色编辑器】，点击【新建角色】，出现角色编辑器界面：
 
-![角色编辑器](image/2.制作角色/1690266205838.png)
+![角色编辑器](/assets/image/docs/beginner/character/1690266205838.png)
 
 &emsp;&emsp;3、导入图片资源：点击“图片资源”：
 
-![导入资源](image/2.制作角色/1690266273885.png)
+![导入资源](/assets/image/docs/beginner/character/1690266273885.png)
 
 &emsp;&emsp;这里“选择图片”是从其他地方选择我们的素材图片并导入，“选择素材”是选择我们之前导入的素材图片，所以第一次我们点击“选择图片”，然后找到图片后点确定。图片导入成功。
 
@@ -66,4 +66,4 @@ c、一个物品图
 
 &emsp;&emsp;此时，我们必须点击“保存”，填写角色资源名后，才能将这个资源真正保存供游戏使用。
 
-![行走图](image/2.制作角色/1699844595800.png)
+![行走图](/assets/image/docs/beginner/character/1699844595800.png)

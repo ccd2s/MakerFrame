@@ -23,9 +23,9 @@ game.createhero({RID: "资源ID", $name: "主角名字",$speed:速度});
 我们将重要的参数陈列出来：
 
 * **RID**：RID是游戏内部的资源ID，他会引用`角色`一栏的资源，如图，`Role1`，`美奈子`等都是RID
-![角色id](image/role/jueseid.png)
+![角色id](/assets/image/docs/middle/roleFunction/jueseid.png)
 * **$name**：$name(别忘了`$`号)表示角色名称，会显示在一个角色的头顶上(当然也可以不显示每次)
-![角色id](image/role/juesename.png)
+![角色id](/assets/image/docs/middle/roleFunction/juesename.png)
 
 * **函数`createhero`,`createrole`参数及其说明**：
 

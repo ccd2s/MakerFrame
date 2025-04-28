@@ -67,21 +67,21 @@ else{
 
 * 打开鹰歌，选择创建工程。
 
-![创建工程](image/start/xjgc.png)
+![创建工程](/assets/image/docs/beginner/start/xjgc.png)
 
 * 选择yes。
 
-![确认窗口](image/start/yesyes.png)
+![确认窗口](/assets/image/docs/beginner/start/yesyes.png)
 
 * 选择地图。
 
-![地图按钮](image/start/mapmap.png)
+![地图按钮](/assets/image/docs/beginner/start/mapmap.png)
 
 我们来认识一下 `地图` 页面的控件。
 
 * 点击新建地图。
 
-![新建地图](image/start/xjdt.png)
+![新建地图](/assets/image/docs/beginner/start/xjdt.png)
 
 可以看到许多选项。
 
@@ -94,7 +94,7 @@ else{
 
 * 接下来我们点击选择素材。
 
-![选择素材](image/start/xzsc.png)
+![选择素材](/assets/image/docs/beginner/start/xzsc.png)
 
 可以看到，有许多自带素材，我们演示选择草地。
 
@@ -102,9 +102,9 @@ else{
 
 这是编辑地图的一个演示，我们来看里面的控件。
 
-![绘制演示](image/start/dtys.gif)
+![绘制演示](/assets/image/docs/beginner/start/dtys.gif)
 
-![地图绘制](image/start/dtbjq.png)
+![地图绘制](/assets/image/docs/beginner/start/dtbjq.png)
 
 * **红色按钮(默认绘制)**
 
@@ -160,11 +160,11 @@ Tips：红色按钮可以多次点击，切换功能呦！
 
 ### 第一部分
 
-![角色编辑器](image/start/2.png)
+![角色编辑器](/assets/image/docs/beginner/start/2.png)
 
 如果你是下列这种(教程只说这种)行走图，选择典型行走图。
 
-![典型行走图](image/start/1.png)
+![典型行走图](/assets/image/docs/beginner/start/1.png)
 
 * 移动速度
   * 角色默认移动速度，期望在(0.05-0.1)。
