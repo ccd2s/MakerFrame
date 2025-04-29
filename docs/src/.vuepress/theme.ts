@@ -17,6 +17,12 @@ export default hopeTheme({
 
   logo: "/assets/image/logo.png",
 
+  navbarLayout: {
+    start: ["Brand"],
+    center: ["Links"],
+    end: ["qqGroupLink", "Repo", "Outlook", "Search"],
+  },
+
   repo: "TASA-Ed/MakerFrameDocs",
 
   favicon: "favicon.ico",
