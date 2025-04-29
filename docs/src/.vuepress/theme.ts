@@ -15,7 +15,7 @@ export default hopeTheme({
 
   fullscreen: true,
 
-  logo: "assets/image/logo.png",
+  logo: "/assets/image/logo.png",
 
   repo: "TASA-Ed/MakerFrameDocs",
 
@@ -138,6 +138,18 @@ export default hopeTheme({
     // 基于本文档的站点均需使用自己的图标服务
     icon: {
       assets: "https://kit.fontawesome.com/f5a8b26a3f.js",
+    },
+
+    feed: {
+      rss: true,
+      image: "/assets/image/logo.png",
+      icon: "/assets/image/TwemojiEagle.svg",
+      channel: {
+        copyright: "Copyright © 2025 TASA-Ed工作室，深林孤鹰 licensed CC BY-SA 4.0",
+        ttl: 1440,
+        image: "/assets/image/logo.png",
+        icon: "/assets/image/TwemojiEagle.svg",
+      },
     },
 
     notice: [
