@@ -49,7 +49,7 @@ features:
   - title: 屏幕自适应
     icon: object-group
     details: 在任何分辨率，各种不同大小的屏幕下有相同的显示效果。
-    link: /start/middle/interface.html
+    link: /start/middle/interface/
 
   - title: 网络支持
     icon: globe
