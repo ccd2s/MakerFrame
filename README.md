@@ -1,10 +1,11 @@
+<!-- markdownlint-disable -->
 <p align="center">
     <a href="https://github.com/leamus/MakerFrame" target="_blank" rel="noopener noreferrer">
         <img width="100" src="https://raw.githubusercontent.com/TASA-Ed/MakerFrameDocs/refs/heads/main/docs/src/.vuepress/public/assets/image/logo.png" alt="MakerFrame" />
     </a>
 </p>
 
-<h1 align="center"><b>MakerFrame Game Engine Documentation</b></h1>
+<h1 align="center"><b>MakerFrame Documentation</b></h1>
 
 <p align="center">
 <a href="https://app.netlify.com/sites/jovial-sable-a4b76d/deploys"><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/75983092-fde6-4c25-8f5f-6e0d7af010fe/deploy-status"/></a>

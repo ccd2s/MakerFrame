@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 <p align="center">
     <a href="https://github.com/leamus/MakerFrame" target="_blank" rel="noopener noreferrer">
         <img width="100" src="https://raw.githubusercontent.com/TASA-Ed/MakerFrameDocs/refs/heads/main/docs/src/.vuepress/public/assets/image/logo.png" alt="鹰歌游戏引擎" />
