@@ -1,19 +1,19 @@
-<p style="text-align: center;">
+<p align="center">
     <a href="https://github.com/leamus/MakerFrame" target="_blank" rel="noopener noreferrer">
         <img width="100" src="https://raw.githubusercontent.com/TASA-Ed/MakerFrameDocs/refs/heads/main/docs/src/.vuepress/public/assets/image/logo.png" alt="鹰歌游戏引擎" />
     </a>
 </p>
 
-<h1 style="text-align: center;"><b>鹰歌游戏引擎文档</b></h1>
+<h1 align="center"><b>鹰歌游戏引擎文档</b></h1>
 
-<p style="text-align: center;">
+<p align="center">
 <a href="https://app.netlify.com/sites/jovial-sable-a4b76d/deploys"><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/75983092-fde6-4c25-8f5f-6e0d7af010fe/deploy-status"/></a>
 <a href="https://github.com/TASA-Ed/MakerFrameDocs/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/TASA-Ed/MakerFrameDocs?color=8ef6e4&style=square"/></a>
 <a href="https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-check.yml"><img alt="Build" src="https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-check.yml/badge.svg"/></a>
 <a href="https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-lint.yml"><img alt="Lint" src="https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-lint.yml/badge.svg"/></a>
 </p>
 
-<p style="text-align: center;">
+<p align="center">
 <a href="README.md">English</a>，<a href="README_zh_CN.md">中文</a>
 </p>
 
