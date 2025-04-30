@@ -1,67 +1,64 @@
-# 鹰歌游戏引擎文档
+<p style="text-align: center;">
+    <a href="https://github.com/leamus/MakerFrame" target="_blank" rel="noopener noreferrer">
+        <img width="100" src="https://raw.githubusercontent.com/TASA-Ed/MakerFrameDocs/refs/heads/main/docs/src/.vuepress/public/assets/image/logo.png" alt="MakerFrame" />
+    </a>
+</p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/75983092-fde6-4c25-8f5f-6e0d7af010fe/deploy-status)](https://app.netlify.com/sites/jovial-sable-a4b76d/deploys)
-[![Build](https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-check.yml/badge.svg)](https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-check.yml)
-[![Lint](https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-lint.yml/badge.svg)](https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-lint.yml)
+<h1 style="text-align: center;"><b>MakerFrame Game Engine Documentation</b></h1>
 
-这里是鹰歌游戏引擎文档的代码储存库，你可以选择访问 [docs-mf.tasaed.top](https://docs-mf.tasaed.top/) 查看实时版本。
+<p style="text-align: center;">
+<a href="https://app.netlify.com/sites/jovial-sable-a4b76d/deploys"><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/75983092-fde6-4c25-8f5f-6e0d7af010fe/deploy-status"/></a>
+<a href="https://github.com/TASA-Ed/MakerFrameDocs/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/TASA-Ed/MakerFrameDocs?color=8ef6e4&style=square"/></a>
+<a href="https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-check.yml"><img alt="Build" src="https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-check.yml/badge.svg"/></a>
+<a href="https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-lint.yml"><img alt="Lint" src="https://github.com/TASA-Ed/MakerFrameDocs/actions/workflows/pr-lint.yml/badge.svg"/></a>
+</p>
 
-注意，本文档为非官方仓库，[本家在此](https://github.com/leamus/MakerFrame)。
+<p style="text-align: center;">
+<a href="README.md">English</a>，<a href="README_zh_CN.md">中文</a>
+</p>
 
-鹰歌引擎教程需要你的贡献！
+---
 
-## 贡献指南
+Here is the code repository for the Eagle Song Game Engine documentation, and you can optionally visit [docs-mf.tasaed.top](https://docs-mf.tasaed.top/) to view a live version.
 
-### 本地开发
+Note: that this document is an unofficial repository, [original is here](https://github.com/leamus/MakerFrame).
 
-#### **要求**
+The MakerFrame Game Engine Documentation needs your contribution!
 
-- 安装 LTS 版本 的 Node.js ^20.6.0, ^22.0.0。
-- 使用 `corepack enable` 启用 Corepack。
-- 安装 pnpm >= 7。
+## Contribution Guide
 
-注：Node.js 18 已与 2025 年 4 月 30 日停止支持。
+### Local Development
 
-#### **克隆并安装项目**
+#### **Requirements**
 
-使用 `git clone https://github.com/TASA-Ed/MakerFrameDocs.git` 将仓库克隆至本地。
+- Install LTS Versions of Node.js Node.js ^20.6.0, ^22.0.0。
+- Use `corepack enable` enable Corepack。
+- Install pnpm >= 7。
 
-进入docs目录，运行 `pnpm install` 安装模块。
+Note: Node.js v18 has reached End-Of-Life on April 30, 2025.
 
-#### **项目的运行与开发**
+#### **Clone and install the project**
 
-- 使用 `pnpm docs:dev` 启用开发服务器。
-- 使用 `pnpm build` 构建项目。
-- 使用 `pnpm markdownlint-cli2 "**/*.md"` 格式化项目[^lint]。
+Clone the repository locally using `git clone https://github.com/TASA-Ed/MakerFrameDocs.git`.
 
-### 编写教程
+Go to the docs directory and run `pnpm install` to install the module.
 
-将本仓库复刻，随后可以通过开启 Pull Request 将更改提交到本仓库中。
+#### **Project operation and development**
 
-> 注:拒绝提交没有任何意义、对他人无帮助、杂乱无章、推广、抄袭、引流的内容。
+- Use `pnpm docs:dev` to enable the development server.
+- Use `pnpm build` to build the project.
+- Use `pnpm markdownlint-cli2 "**/*.md"` formatting project[^lint].
 
-### 文档贡献者交流群
+### Preparation of tutorials
 
-注：本群**不是**引擎交流群，非文档贡献者请勿进入。
+Duplicate this repository, and then you can commit the changes to this repository by turning on Pull Request.
 
-- [点击加入](https://qm.qq.com/q/9tsBvtRsiY) (群号: 597524393)
+> Note:Refuse to submit content that doesn't make any sense, doesn't help others, is cluttered, promotes, plagiarizes, or attracts traffic.
 
-### 其他
+## Description of license
 
-如果说你无法访问GitHub，也无法通过其他特殊手段来访问，那您可以选择：
-
-- 在网站的评论区中指出错误（仅接受错误指出和修改）。
-- 向 [tasaedem@outlook.com](mailto:tasaedem@outlook.com) 发送邮件。
-- 加入 [文档贡献者交流群](#文档贡献者交流群) 并联系群主
-
-注：使用其他方法提交的文档无法在显示页面底部的贡献者列表[^list]中，不过我们会在 [关于](https://docs-mf.tasaed.top/about.html) 页标注以其他方式贡献的贡献者。
-
-## 许可证说明
-
-本项目采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可。
+This project is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 [^lint]: 本项目使用 [markdownlint-cli2](https://www.npmjs.com/package/markdownlint-cli2) 格式化md文档，因此你在修改md文档后需要使用 `pnpm markdownlint-cli2 "**/*.md"` 检查错误。
 
     本项目的 Pull Request 状态检查也包括 markdownlint ，只不过这些检查是中立性的，即使报错也可以正常合并（尽管如此，但我们还是推荐你修复完所有错误之后再来提交 PR ）。
-
-[^list]: 因为贡献者列表基于 [git](https://ecosystem.vuejs.press/zh/plugins/development/git.html) 插件自动生成。
