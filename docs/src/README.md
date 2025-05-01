@@ -4,7 +4,7 @@ title: 主页
 icon: home
 heroImage: assets/image/logo.png
 heroText: 鹰歌游戏引擎
-footer: '<a href="https://www.netlify.com"><img src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg" alt="Deploys by Netlify" /></a><br/>Copyright © 2025 <a href=\"https://www.tasaed.top\">TASA-Ed工作室</a>，<a href=\"https://github.com/leamus\">深林孤鹰</a> licensed <a href=\"https://creativecommons.org/licenses/by-sa/4.0\" target=\"_blank\">CC BY-SA 4.0</a> | Powered by <a href=\"https://theme-hope.vuejs.press\" target=\"_blank\">VuePress Theme Hope</a>'
+footer: <a href="https://www.netlify.com" target="_blank"><img src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg" alt="Deploys by Netlify" /></a><br/>Copyright © 2025 <a href="https://www.tasaed.top" target="_blank">TASA-Ed工作室</a>，<a href="https://github.com/leamus" target="_blank">深林孤鹰</a> licensed <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a> | Powered by <a href="https://theme-hope.vuejs.press" target="_blank">VuePress Theme Hope</a>
 tagline: 一款具有强大功能的开放式游戏制作引擎✨
 actions:
   - text: 开始使用
