@@ -11,6 +11,13 @@ order: 1
 
 [![使用 Netlify 构建](https://api.netlify.com/api/v1/badges/75983092-fde6-4c25-8f5f-6e0d7af010fe/deploy-status)](https://app.netlify.com/sites/jovial-sable-a4b76d/deploys)
 
+## 特别鸣谢
+
+- 感谢 [Netlify](https://www.netlify.com) 提供的开源计划。
+- 感谢 [深林孤鹰](https://github.com/leamus) 提供的文档。
+- 感谢 [落](https://github.com/luomic) 帮助完善文档。
+- 感谢所有支持我的人。
+
 ## 开源许可
 
 - 本文档采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可。
