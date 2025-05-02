@@ -2,6 +2,7 @@
 title: 关于
 icon: circle-info
 date: 2025-04-16
+footer: <a href="https://www.netlify.com" target="_blank"><img src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg" alt="Deploys by Netlify" /></a><br/>Copyright © 2025 <a href="https://www.tasaed.top" target="_blank">TASA-Ed工作室</a>，<a href="https://github.com/leamus" target="_blank">深林孤鹰</a> licensed <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a> | Powered by <a href="https://theme-hope.vuejs.press" target="_blank">VuePress Theme Hope</a>
 order: 1
 ---
 

@@ -58,7 +58,7 @@ Duplicate this repository, and then you can commit the changes to this repositor
 
 ## Description of license
 
-This project is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+This project is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and all content submitted to this project will be licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
 [^lint]: 本项目使用 [markdownlint-cli2](https://www.npmjs.com/package/markdownlint-cli2) 格式化md文档，因此你在修改md文档后需要使用 `pnpm markdownlint-cli2 "**/*.md"` 检查错误。
 

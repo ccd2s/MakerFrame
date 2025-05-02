@@ -45,6 +45,8 @@ order: 2
 
 ### 其他
 
+本项目采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可，向本项目提交的所有内容都将采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可。
+
 如果说你无法访问GitHub，也无法通过其他特殊手段来访问，那您可以选择：
 
 - 在网站的评论区中指出错误（仅接受错误指出和修改）。
