@@ -29,6 +29,9 @@ export default hopeTheme({
 
   docsDir: "docs/src",
 
+  // 页面信息
+  pageInfo: ["Author", "Date", "PageView", "ReadingTime", "Word"],
+
   // 导航栏
   navbar,
 
@@ -39,12 +42,28 @@ export default hopeTheme({
   footer: '<a href=\"https://docs-mf.tasaed.top\">鹰歌游戏引擎文档</a> | Copyright © 2025 <a href=\"https://www.tasaed.top\">TASA-Ed工作室</a>，<a href=\"https://github.com/leamus\">深林孤鹰</a> licensed <a href=\"https://creativecommons.org/licenses/by-sa/4.0\" target=\"_blank\">CC BY-SA 4.0</a> | Powered by <a href=\"https://theme-hope.vuejs.press\" target=\"_blank\">VuePress Theme Hope</a>',
   copyright: false,
   displayFooter: true,
+
+  // Git
   contributors: "content",
   changelog: true,
 
   // 多语言配置
   metaLocales: {
     editLink: "在 GitHub 上编辑此页",
+  },
+
+  routeLocales: {
+    notFoundMsg: ["此页面不存在...","看起来你访问了一个失效的链接","我们是怎么来到这儿的？","这里什么也没有...","这 是 四 零 四 !","什么都没有哦，什么都没有哦","啥都木有..."]
+  },
+
+  // ...?
+  encrypt: {
+    config: {
+      "/eagle.html": {
+        password: ["song"],
+        hint: "Eagle like What?",
+      },
+    },
   },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
