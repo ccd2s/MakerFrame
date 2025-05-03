@@ -2,6 +2,7 @@
 title: 案例
 icon: splotch
 order: 1
+author: false
 
 games:
   - name: 侠道仙缘

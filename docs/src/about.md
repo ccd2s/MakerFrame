@@ -2,6 +2,7 @@
 title: 关于
 icon: circle-info
 date: 2025-04-16
+author: false
 footer: <a href="https://www.netlify.com" target="_blank"><img src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg" alt="Deploys by Netlify" /></a><br/>Copyright © 2025 <a href="https://www.tasaed.top" target="_blank">TASA-Ed工作室</a>，<a href="https://github.com/leamus" target="_blank">深林孤鹰</a> licensed <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a> | Powered by <a href="https://theme-hope.vuejs.press" target="_blank">VuePress Theme Hope</a>
 order: 1
 ---
@@ -19,6 +20,22 @@ order: 1
 - 感谢 [落](https://github.com/luomic) 帮助完善文档。
 - 感谢所有支持我的人。
 
+## 赞助
+
+我们独立开发者也不容易，如果能赞助那就更好了。
+
+### 赞助引擎
+
+给引擎开发者赞助。
+
+- [爱发电](https://afdian.com/a/Leamus)
+
+### 赞助文档
+
+给文档提供者赞助。
+
+- [爱发电](https://afdian.com/a/tasafoe3469)
+
 ## 开源许可
 
 - 本文档采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可。
@@ -32,3 +49,7 @@ order: 1
 - 鹰歌游戏引擎采用 [MIT](https://github.com/leamus/MakerFrame/blob/main/LICENSE) 许可。
 
 - Qt 图标使用 [Simple Icons](https://github.com/simple-icons/simple-icons) 采用 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) 许可。
+
+---
+
+_~~eagle like song~~_.
