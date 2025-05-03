@@ -2,9 +2,15 @@
 :root {
   --bg-alt: url("https://docs-mf.tasaed.top/assets/image/bg/alt-light.svg");
   --bg-alt-inverse: url("https://docs-mf.tasaed.top/assets/image/bg/alt-dark.svg");
+
+  --vpcard-github: rgba(31, 35, 40, 0.15);
+  --vpcard-github-inverse: rgb(71, 71, 71);
 }
 
 [data-theme="dark"] {
   --bg-alt: url("https://docs-mf.tasaed.top/assets/image/bg/alt-dark.svg");
   --bg-alt-inverse: url("https://docs-mf.tasaed.top/assets/image/bg/alt-light.svg");
+
+  --vpcard-github: rgb(71, 71, 71);
+  --vpcard-github-inverse: rgba(31, 35, 40, 0.15);
 }
