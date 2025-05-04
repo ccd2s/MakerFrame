@@ -11,4 +11,4 @@ order: 1
 
 ## 遇到问题？
 
-PDF 组件使用的是嵌入式 PDF 阅读器，但并非所有浏览器都支持嵌入式 PDF 阅读器（如: 现在没有任何移动浏览器完美支持此功能），因此你可能需要 [手动访问](https://docs-mf.tasaed.top/assets/pdf/pdfQmlBookInChinese.pdf) 来查看/下载此 PDF 。
+PDF 组件使用的是 [PDF.js](https://mozilla.github.io/pdf.js/) 阅读器，但可能因为您的浏览器内核版本过旧导致无法正常使用（至少需要 Chrome 110+，Firefox ESR+，Safari 16.4+），因此建议您更新您的浏览器或 [手动访问](https://docs-mf.tasaed.top/assets/pdf/pdfQmlBookInChinese.pdf) 来查看/下载此 PDF 。
