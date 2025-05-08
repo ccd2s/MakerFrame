@@ -167,7 +167,7 @@ export default hopeTheme({
 
     // 基于本文档的站点均需使用自己的图标服务
     icon: {
-      assets: "https://kit.fontawesome.com/f5a8b26a3f.js",
+      assets: ["/assets/fontawesome/js/brands.min.js","/assets/fontawesome/js/solid.min.js","/assets/fontawesome/js/regular.min.js","/assets/fontawesome/js/fontawesome.min.js"]
     },
 
     feed: {
