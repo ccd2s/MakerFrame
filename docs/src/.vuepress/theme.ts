@@ -52,10 +52,6 @@ export default hopeTheme({
     editLink: "在 GitHub 上编辑此页",
   },
 
-  routeLocales: {
-    notFoundMsg: ["此页面不存在...","看起来你访问了一个失效的链接","我们是怎么来到这儿的？","这里什么也没有...","这 是 四 零 四 !","什么都没有哦，什么都没有哦","啥都木有..."]
-  },
-
   // ...?
   encrypt: {
     config: {
