@@ -7,7 +7,7 @@ import "../styles/notFoundPublic404.scss";
 import { Public404 } from "./notFoundPublicScript.js";
 
 export default defineComponent({
-    name: "NotFoundPublic",
+    name: "notFoundPublic",
 
     setup() {
         const { routeLocale, themeLocale } = useData();
