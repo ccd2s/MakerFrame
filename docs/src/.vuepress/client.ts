@@ -8,9 +8,9 @@ export default defineClientConfig({
   enhance: ({ app }) => {
     app.component("qqGroupLink", qqGroupLink);
   },
-  ///* 测试用
+  /* 测试用
   layouts: {
     NotFound: () => h(NotFound, {}, () => h(NotFoundPublic)),
   },
-  //*/
+  */
 });

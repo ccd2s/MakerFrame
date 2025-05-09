@@ -1,7 +1,7 @@
 export function Public404(renderTargetId) {
     // 创建<style>元素
     const style = document.createElement('style');
-    style.textContent = '.vp-footer-wrapper{display: none;}.vp-page.not-found{display: block !important;max-width: var(--Public404-width) !important;padding: calc(var(--navbar-height) + 1rem) 0rem 0rem !important;}.actions{margin-bottom:1rem !important;}';
+    style.textContent = '.vp-footer-wrapper{display: none;}.vp-page.not-found{display: block !important;max-width: var(--Public404-width) !important;}.actions{margin-bottom:1rem !important;}';
 
     // 将样式添加到<head>中
     document.head.appendChild(style);
