@@ -67,7 +67,7 @@ export default hopeTheme({
 
   // 此处开启了很多功能用于演示，你应仅保留用到的功能。
   markdown: {
-    align: true,
+    // align: true,
     // attrs: true,
     component: true,
     figure: true,
@@ -75,22 +75,23 @@ export default hopeTheme({
     imgLazyload: true,
     imgSize: true,
     spoiler: true,
-    // stylize: [
-    //   {
-    //     matcher: "Recommended",
-    //     replacer: ({ tag }) => {
-    //       if (tag === "em")
-    //         return {
-    //           tag: "Badge",
-    //           attrs: { type: "tip" },
-    //           content: "Recommended",
-    //         };
-    //     },
-    //   },
-    // ],
+    mark: true,
+    stylize: [
+      {
+        matcher: /^\*.*/,
+        replacer: ({ tag, attrs, content }) => {
+          if (tag === "mark")
+            return {
+              tag: "span",
+              attrs: { ...attrs, style: "color:rgba(255, 29, 35, 0.85);" },
+              content,
+            };
+        },
+      },
+    ],
     sub: true,
     sup: true,
-    tasklist: true,
+    // tasklist: true,
     vPre: true,
   },
 

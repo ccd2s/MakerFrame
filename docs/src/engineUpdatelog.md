@@ -24,7 +24,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 
 1、增加：底层加入加载Qt插件（可以用Qt插件和QML插件来扩展功能了）；
 2、增加：各种字符转换函数；
-*3、修改：修改函数名 loadSpriteEffect 为 getSpriteEffect，unloadSpriteEffect 为 putSpriteEffect，loadRole 为 createRole；
+==\*3、修改：修改函数名 loadSpriteEffect 为 getSpriteEffect，unloadSpriteEffect 为 putSpriteEffect，loadRole 为 createRole；==
 4、修改：将SCodes、QNanoPainter、Libhv、SerialPort、QZXing、Lua、SDL、QtWebAPP改为Qt插件，框架引擎不再依赖它们，可以热插拔使用；
 5、增加：给 异步 增加$context（上下文）和$defer（结束时回调函数）功能；
 6、增加：QML-Push库；
@@ -33,21 +33,21 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 9、增加：game.showimage和game.showsprite的坐标功能；
 10、修改：增强sl_fileRead和sl_fileWrite二进制读写功能；
 11、增强：game.usegoods功能；
-**12、修改：game.usegoods、game.equip、game.unload的实现流程和方式（所有道具脚本的$equipScript需要修改）；
-**13、修改：game.equip和game.unload为异步，调用时加yield，且道具脚本中新增和修改了相关函数；
-*14、修改：地图和角色的RID和名称分离；
+==\*\*12、修改：game.usegoods、game.equip、game.unload的实现流程和方式（所有道具脚本的$equipScript需要修改）；==
+==\*\*13、修改：game.equip和game.unload为异步，调用时加yield，且道具脚本中新增和修改了相关函数；==
+==\*14、修改：地图和角色的RID和名称分离；==
 15、新增：文件/缓存的文本/二进制高级读写（包括QIODevice、QBuffer、QFile、QFileDevice、QFileInfo、QDataStream、QTextStream类的封装）；
 16、新增：游戏加速功能；
 17、新增：音乐和音量大小函数：game.musicvolume、game.soundeffectvolume；
-**18、修改：将所有game.$sys.components中的组件对象移动在game.$sys.caches下，将所有fight.$sys.components中的组件对象移动在fight.$sys.caches下，game.$sys.components、fight.$sys.components只作为组件模板来创建组件对象，并改名所有的组件模板名称（去掉comp前缀并大写开头）；
-*19、修改：角色坐标的$x、$y含义改变为中心点放在这个坐标上（影响命令：createhero、hero、createrole、role）；
-*20、修改：角色的其他属性改变的是组件属性，而非data属性；
-*21、修改：将我自己给特定对象定义的一些便捷属性/方法的名字，前面改为 $$ 开头（比如$$type、$$json、$$keys、$$values、$$format、$$replaceAll、$$insert、$$parent、$$then、$$catch、$$toString、$$toJson等），防止和引擎中一些对象的属性冲突；
-**22、修改：将game.over改为game.restart（重启游戏），对应通用脚本需要改变，运行机制也有改变；
+==\*\*18、修改：将所有game.$sys.components中的组件对象移动在game.$sys.caches下，将所有fight.$sys.components中的组件对象移动在fight.$sys.caches下，game.$sys.components、fight.$sys.components只作为组件模板来创建组件对象，并改名所有的组件模板名称（去掉comp前缀并大写开头）；==
+==\*19、修改：角色坐标的$x、$y含义改变为中心点放在这个坐标上（影响命令：createhero、hero、createrole、role）；==
+==\*20、修改：角色的其他属性改变的是组件属性，而非data属性；==
+==\*21、修改：将我自己给特定对象定义的一些便捷属性/方法的名字，前面改为 $$ 开头（比如$$type、$$json、$$keys、$$values、$$format、$$replaceAll、$$insert、$$parent、$$then、$$catch、$$toString、$$toJson等），防止和引擎中一些对象的属性冲突；==
+==\*\*22、修改：将game.over改为game.restart（重启游戏），对应通用脚本需要改变，运行机制也有改变；==
 23、修改：将几个异步命令（msg、talk等）返回的Promise，绑定了它自身的$resolve和$reject函数，用来外部控制其状态；
 24、新增：Pymo（AVG游戏引擎）工程兼容插件；
 25、新增：BBKRPG脚本兼容插件；
-**26、修改：删除了部分兼容旧工程的代码，注意旧工程要修改相关代码为新写法；
+==\*\*26、修改：删除了部分兼容旧工程的代码，注意旧工程要修改相关代码为新写法；==
 27、修复：鹰歌窗口切换时出现的焦点错误问题；
 28、修复：多窗口时风格问题；
 29、修复：Async异步的一个Bug，并作优化；
@@ -55,7 +55,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 31、修复：talk组件没有销毁的问题；
 32、修复：道具在战斗中$completeScript没有及时调用的Bug；
 33、修复：购买道具时道具没有放入背包的Bug；
-*34、修改：将原来全局的FrameManager、Platform、UserInfo、GameCore、global对象改名为$Frame、$Platform、$UserInfo、$GameCore、$global（原来的也保留，但推荐用新的）；
+==\*34、修改：将原来全局的FrameManager、Platform、UserInfo、GameCore、global对象改名为$Frame、$Platform、$UserInfo、$GameCore、$global（原来的也保留，但推荐用新的）；==
 35、修复：将 busyIndicator 放在 overlay 组件下，一定程度上保证了小概率误触导致焦点乱跑（比如 Menu 在点击隐藏动画时一瞬间还可以点击且焦点改变的BUG）；
 36、优化：将几个js作为对象挂在了全局下，可以避免每次导入时创建一次，也避免了一个 QML导入js文件有可能导致此js文件无法访问全局变量的坑；
 37、修改：JSEngine改名为JSLoader；
@@ -116,7 +116,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 1、增加：封装了Libhv的HTTPServer来实现简单的HTTP服务器；
 2、增加：QWebApp库（后期再封装）；
 3、增加：QextSerialPort串口库；
-**4、修改：将TapSDK更新到v4最新版（GameMakerGlobal.qml中也多了tds_ClientToken属性必须设置），实名认证函数也有变化，且旧游戏需要Tap后台提工单升级SDK版本；
+==\*\*4、修改：将TapSDK更新到v4最新版（GameMakerGlobal.qml中也多了tds_ClientToken属性必须设置），实名认证函数也有变化，且旧游戏需要Tap后台提工单升级SDK版本；==
 5、修改：TapAD更新到最新版；
 6、新增：安卓端最新支持 能使用文件管理器选择鹰歌打开任何文件（可以作为万能播放器使用），QML文件默认直接运行；
 7、新增：安卓端最新支持 能使用Scheme URL（比如用链接来传递数据）；
@@ -145,7 +145,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 1、修复：可视化的一些小bug，优化操作体验和参数界面；
 2、修复：QML初始化时无法使用FrameManager、Platform等对象（放在CPP中注入）；
 3、修复：网络访问，出错时不保存错误信息的问题；
-**4、修复：重写加解密算法，解决UTF16转UTF8时的代理对问题；
+==\*\*4、修复：重写加解密算法，解决UTF16转UTF8时的代理对问题；==
 5、其他：优化很多代码、调整很多小细节、修复一些Bugs；
 
 ## 2024/10/10：发布 1.13.7.241010 版本（Updater 1.5.15.241010版本，框架 1.5.1.241010版本）
@@ -157,7 +157,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 5、修复：战斗人物准备显示问题 和 背包道具的使用和装备Bug；
 6、优化：重构并整理优化Java代码（将大部分扩展代码移动到了Module中，供热更新修改方便）；
 7、新增：安卓Notification通知栏相关功能；
-8、修复：Qt的 java.lang.ClassNotFoundException: Didn't find class "org.qtproject.qt5.android.network.QtNetwork" 错误；
+8、修复：Qt 的 `java.lang.ClassNotFoundException:Didn't find class "org.qtproject.qt5.android.network.QtNetwork"` 错误；
 9、修改：更新Tap和CSJ扩展库为最新；
 10、修改：Updater的一些新代码兼容 和 HTTPReply的sg_finished信号参数；
 11、其他：优化代码、修复一些Bugs；
@@ -166,24 +166,24 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 
 1、增加：Windows下打包安卓的功能；
 2、修复：队列中运行exitGame报错问题；
-*3、优化：getgoods函数；
+==\*3、优化：getgoods函数；==
 4、其他：优化代码、修复很多Bugs；
 
 ## 2024/9/19：发布 1.13.5.240919 版本（框架 1.4.5.240919版本）
 
 1、修改：将AsyncScriptQueue改名为ScriptQueue；
 2、修改：优化背包、交易内的道具列表样式；
-**3、修改：通用脚本的$showGoodsName实现；
+==\*\*3、修改：通用脚本的$showGoodsName实现；==
 4、增加：异步脚本AsyncScript类，增加waitAll函数等待所有生成器执行完毕；
 5、修复：常年来的一个Bug，QML会释放CPP的QObject及子类对象的问题（Qt的坑）；
 6、修复：角色编辑器 中 p按钮播放错误的问题；
 7、修复：角色的动作使用特效（特效为序列图片文件时）的路径错误；
-**8、修改：JSEngine的load和unload函数，将参数文件名和文件路径合并为一个参数；
+==\*\*8、修改：JSEngine的load和unload函数，将参数文件名和文件路径合并为一个参数；==
 9、修改：控制广告点击频率，增加广告调试参数；
 10、优化：角色的数据结构和一些实现；
 11、修复：如果退出错误时会导致后续工作没有进行（比如恢复旋转屏幕）；
 12、增加：增加角色的名字文本风格设置；
-*13、修改：角色的说话风格配置放在$role配置里；
+==\*13、修改：角色的说话风格配置放在$role配置里；==
 14、修改：游戏退出时，游戏的所有释放代码会按正常流程走（之前是所有yield强制返回），解决了游戏退出时有可能需要一些IO等待的需求；
 15、增加：通用脚本增加自定义按键事件处理函数；
 16、其他：优化代码、修复很多Bugs；
@@ -193,14 +193,14 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 1、新增：完善了底层文件函数的封装；
 2、修复：导入工程时工程文件夹名缺少问题；
 3、修复：一些 枚举 没有注册到 QML 的问题；
-*4、增强：game.role、game.hero 的搜索对象功能；
-*5、增加：战斗人物、道具、技能 的 $id，默认为$rid（参数为字符串时）或 $rid + 随机字符（参数为对象时），且字符串搜索时按$id；
+==\*4、增强：game.role、game.hero 的搜索对象功能；==
+==\*5、增加：战斗人物、道具、技能 的 $id，默认为$rid（参数为字符串时）或 $rid + 随机字符（参数为对象时），且字符串搜索时按$id；==
 6、增加：game.playsoundeffect(soundeffectName, channel=-1)命令，可以异步调用；
-*7、增强：game.pausesoundeffect、game.resumesoundeffect命令，使之支持单个音频channel的暂停和继续；
+==\*7、增强：game.pausesoundeffect、game.resumesoundeffect命令，使之支持单个音频channel的暂停和继续；==
 8、修改：创建音频播放通道（目前9个），将所有待播放音频，根据规则放入到这9个通道中播放；
 9、增强：广告插件函数改为可异步写法；
 10、增强：异步脚本队列和异步脚本对函数和生成器的运行方式不同（函数和生成器函数会在下一个事件循环中运行，而生成器是立即运行）；
-**11、修改：game.msg的style参数去掉Type，用MinWidth、MaxWidth、MinHeight、MaxHeight取代；
+==\*\*11、修改：game.msg的style参数去掉Type，用MinWidth、MaxWidth、MinHeight、MaxHeight取代；==
 12、增加：game.talk的style参数增加MinHeight、MaxHeight；
 13、修复：一个严重的bug，缓存的特效信号会无限连接函数；
 14、修复：战斗结束后组件没有清除的问题；
@@ -231,8 +231,8 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 
 ## 2024/7/29：发布 1.13.2.240729 版本（框架 1.4.2.240729版本）
 
-1、*修改：将game.playvideo也改为可异步；
-2、**修改：将 game.loadmap、game.usegoods、game.load、game.gameover、game.plugin、game.save 修改为 yield 即可（统一用法），剩下的init和release不常用就不改了；
+==\*1、修改：将game.playvideo也改为可异步；==
+==\*\*2、修改：将 game.loadmap、game.usegoods、game.load、game.gameover、game.plugin、game.save 修改为 yield 即可（统一用法），剩下的init和release不常用就不改了；==
 3、增加：由于XMLHttpRequest不能设置Cookies、User-Agent等头，所以用Qt的QNetworkAccessManager、QNetworkRequest、QNetworkReply封装了一个网络访问函数request，用法和之前的一样；
 4、修改：角色编辑器 中头像，宽高如果或为0，则隐藏；
 5、修改：插件管理 和 插件下载，返回主插件页面时刷新；
@@ -249,7 +249,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 7、修复：交易无法关闭菜单Bug、定时器事件触发时变量名写错Bug、GameMenu有个组件名写错Bug；
 8、增强：游戏 读档和退出 时资源释放机制（各游戏组件释放会调用回调函数、定时器释放后会停止并触发）；
 9、增加：引擎可以将qrc打包为rcc资源，也可以解包；
-**10、将底层提供的槽函数（sl_开头）和信号（sg_开头）全部严格按标准重命名了，使用FrameManager和Platform的系统函数要注意改一下了！
+==\*\*10、将底层提供的槽函数（sl_开头）和信号（sg_开头）全部严格按标准重命名了，使用FrameManager和Platform的系统函数要注意改一下了！==
 11、优化：很多代码；
 
 ## 2024/7/16：发布 1.12.4.240716 版本
@@ -289,28 +289,28 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 4、修改：插件的$load函数增加 路径 参数；
 5、增强：战斗脚本 的实现，比如逃跑代码；
 6、修改：将战斗事件队列 合并到 地图事件中（为了避免战斗脚本使用 yield game.命令 执行后无法回到战斗代码下一句）；
-**7、修改：通用脚本中的战斗的 三个按钮 功能实现；
+==\*\*7、修改：通用脚本中的战斗的 三个按钮 功能实现；==
 8、其他：优化、修改 事件队列相关实现；
 9、角色编辑器和特效编辑器的预览图设置了最大大小，过大不会再看不到编辑器界面；
-**10、将之前改的 game.loadmap、game.usegoods、game.load、game.gameover、game.plugin、game.save、game.$sys.init、game.$sys.release 命令改为前面必须加 yield*，这样解决了各种莫名其妙的问题（因为 game.run 参数为-2立即执行，中断后再次恢复时，传递的值可能不是执行命令后返回的值）；
+==\*\*10、将之前改的 game.loadmap、game.usegoods、game.load、game.gameover、game.plugin、game.save、game.$sys.init、game.$sys.release 命令改为前面必须加 yield\*，这样解决了各种莫名其妙的问题（因为 game.run 参数为-2立即执行，中断后再次恢复时，传递的值可能不是执行命令后返回的值）；==
 11、可视化指令相应调整；
 12、其他Bug修复；
 
 ## 2024/6/24：发布 1.11.5.240624 版本
 
-*1、将 game.save、game.usegoods、game.gameover、game.plugin 做成同步执行了（前加yield），也尽力兼容了异步执行（只有一种情况可能会产生逻辑错误：如果你命令前不写yield，则会导致你这条命令并没有完全执行完毕（如果含有异步指令）又去执行余下的代码，然后又去返回执行命令里异步代码 产生顺序错误）；
+==\*1、将 game.save、game.usegoods、game.gameover、game.plugin 做成同步执行了（前加yield），也尽力兼容了异步执行（只有一种情况可能会产生逻辑错误：如果你命令前不写yield，则会导致你这条命令并没有完全执行完毕（如果含有异步指令）又去执行余下的代码，然后又去返回执行命令里异步代码 产生顺序错误）；==
 2、修复：事件队列 运行后返回给yield的值没有更新问题；
 3、修复：载入特效问题；
 4、修复：游戏退出时没有清空事件队列有可能会执行额外脚本而出现报错；
 5、修改：游戏退出时为强制运行完毕脚本，而非等待运行完毕；
 6、修复：游戏中读档卡死问题；
 7、修改：引擎默认为最大化而不是全屏；
-8、修复：通用模板的一个 生成器 忘记加*号；
+8、修复：通用模板的一个 生成器 忘记加\*号；
 9、大幅优化代码，增强脚本队列功能；
 
 ## 2024/6/21：发布 1.11.4.240621 版本
 
-*1、修改 game.load 为同步执行（前加yield），解决运行 game.load 后脚本延迟执行导致的问题；
+==\*1、修改 game.load 为同步执行（前加yield），解决运行 game.load 后脚本延迟执行导致的问题；==
 2、修改 release 函数，取消 清空事件队列；
 3、将GameVisualScript组件改为系统VisualScript组件，可以适用于更广（框架或其他引擎）的功能；
 4、修正 可视化命令 没有载入 鹰歌插件自定义的可视化脚本；
@@ -323,13 +323,13 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 
 1、虚拟坐标 增加 可修改相对根组件（原来只能是屏幕rootWindow）；
 2、调试功能 的可见窗口调整为不包括 按钮栏（修改了虚拟坐标根组件）；
-*3、修改可视化命令“运算”，删除了第一个参数（定义）；
+==\*3、修改可视化命令“运算”，删除了第一个参数（定义）；==
 
 ## 2024/6/10：发布 1.11.2.240610 版本
 
 1、修复 game.loadmap 地图载入失败时事件队列不会运行的问题；
 2、修复 game.delsprite 和 game.delimage 遗漏的 $parent 为4的分支，并优化；
-*3、修改和完善 可视化代码 的一些命令和提示；
+==\*3、修改和完善 可视化代码 的一些命令和提示；==
 4、其他优化和调整；
 
 ## 2024/6/7：发布 1.11.1.240607 版本
@@ -337,14 +337,14 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 1、调整音乐停止时不能修改状态为暂停；
 2、增强 fight.over 函数功能；
 3、增加游戏退出函数（game.$sys.exit()）；
-*4、修改 game.loadmap 为同步执行（前加yield），让它的地图脚本运行完毕后再执行它的下一条命令；解决因地图脚本延迟执行导致的一些问题，比如多次执行时导致地图开始脚本多次运行，并调整成功地返回值为true；
+==\*4、修改 game.loadmap 为同步执行（前加yield），让它的地图脚本运行完毕后再执行它的下一条命令；解决因地图脚本延迟执行导致的一些问题，比如多次执行时导致地图开始脚本多次运行，并调整成功地返回值为true；==
 5、修改 game.load 函数为同步执行；
-*6、通用脚本：删掉 gameExit 函数，改为 gameRelease(gameExit)并修改其实现代码；修改 gameInit 实现代码；
+==\*6、通用脚本：删掉 gameExit 函数，改为 gameRelease(gameExit)并修改其实现代码；修改 gameInit 实现代码；==
 
 ## 2024/6/1：发布 1.10.7.240601 版本
 
 1、修改 角色、特效 的模板解析偏移坐标代码兼容windows和linux（回车符的区别）；
-*2、修改 showsprite、delsprite、showimage、delimage 细节；
+==\*2、修改 showsprite、delsprite、showimage、delimage 细节；==
 3、修复 释放资源时调用 unload 为 load 错误；
 4、战斗人物的状态条加入 $spacing 间隔；
 5、修复使用 game.showsprite 显示文件序列特效时警告；
@@ -354,7 +354,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 
 1、qml内核增加 Cycle 库，用来处理和打印循环引用的对象，方便调试（对象和数组用 xxx.toJson 函数，或 toJson(xxx)）；
 2、修复安卓下 Qt5的3D提示Found no suitable importer plugin for QUrl错误（Qt5.15.2的so文件丢失Bug）；
-*3、按钮增加 $pressed和$released（$clicked过时）；
+==\*3、按钮增加 $pressed和$released（$clicked过时）；==
 4、game.showimage 和 game.showsprite 命令增加参数 $pressed、$released、$pressAndHold 3个事件函数；
 5、修复 游戏开始 没有保存脚本的Bug（感谢网友：小哈）；
 6、修复所有可视化第一次进入时无法保存的Bug；
@@ -365,22 +365,22 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 2、4个编辑器加入脚本错误检测；
 3、修复应用不活动时，焦点设置无效问题（貌似是QML Bug，改为forceActiveFocus()就好了）；
 4、解决战斗载入脚本报错时无法操作和退出战斗场面问题；
-*5、将 objTmpSprites 和 objTmpImage 合并为 objTmpComponents（注意showsprite和showimage的id不能混淆）；
+==\*5、将 objTmpSprites 和 objTmpImage 合并为 objTmpComponents（注意showsprite和showimage的id不能混淆）；==
 6、优化 delimage和delsprite；
-*7、修改加密方式（移位和异或都与key长度有关了，这样会更乱一些）；
+==\*7、修改加密方式（移位和异或都与key长度有关了，这样会更乱一些）；==
 8、修改HTTP通信请求格式为Json方式；
 9、内核增加sl_gzipCompress、sl_gzipUncompress、sl_fromHex、sl_toHex函数；
-*10、压缩函数的type默认值调整为0；
+==\*10、压缩函数的type默认值调整为0；==
 11、http request支持gzip压缩；
-*12、默认加密方式加入压缩和Base64编码；
-*13、大幅优化细节；
+==\*12、默认加密方式加入压缩和Base64编码；==
+==\*13、大幅优化细节；==
 
 ## 2024/5/9：发布 1.10.4.240509 版本（框架 1.3.29.240505版本）
 
 1、qml支持载入外部动态链接库，并载入特定参数的函数；
 2、qml支持载入外部Dex库（安卓），并载入特定参数的函数；
 3、调整 game.movehero 参数，使之和 game.moverole 一致（这两个函数废弃，可以用game.hero 和 game.role代替）；
-*4、增加通用脚本的$combatantIsValid函数，去除引擎对战斗角色HP[0]的依赖；
+==\*4、增加通用脚本的$combatantIsValid函数，去除引擎对战斗角色HP[0]的依赖；==
 5、新增资源模板（创建新工程时提示）；
 6、绕过 QML的一个坑（视图的元素不会立即释放）导致的Image警告；
 7、优化 图片管理 、音频管理、视频管理（加入图片缩放移动旋转、播放进度条、按键调节进度等细节）；
@@ -395,11 +395,11 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 4、优化地图编辑器测试时保留默认值；
 5、热重载加入是否启用热重载选项；
 6、将 地图脚本 复制到 game.f 中，优化各个事件的实现方式（删除了 地图脚本 的判断）；
-*7、调整 game.playmusic 的参数，使之风格一致；
+==\*7、调整 game.playmusic 的参数，使之风格一致；==
 8、修复 在线版 地图编辑器 快速退出时闪退问题（还是QML的Loader Bug）；
 9、修复 game.trade 命令卖物品参数无效问题；
 10、将所有 Loader 改为异步加载，配合 等待控件，杜绝了所有因 Loader 的Bug引起的闪退；
-*11、增加 GameMakerGlobal 单例引起的数据错误 的警告提示；
+==\*11、增加 GameMakerGlobal 单例引起的数据错误 的警告提示；==
 
 ## 2024/4/27：发布 1.10.2.240427 版本
 
@@ -409,9 +409,9 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 4、修复角色$direction无效问题；
 5、增加 音乐播放状态（$music_state） 和 视频播放状态（$video_state） 回调函数；
 6、优化所有事件代码；
-*7、调整角色动作回调函数名（去掉ed，统一风格）；
+==\*7、调整角色动作回调函数名（去掉ed，统一风格）；==
 8、忙碌标记加入屏蔽鼠标；
-*9、调整game.addprops第4个参数；
+==\*9、调整game.addprops第4个参数；==
 10、其他优化；
 
 ## 2024/4/22：发布 1.10.1.240422 版本
@@ -419,7 +419,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 1、修复game.equip装备位置的一个Bug；
 2、调整增强 角色、特效 编辑器；
 3、增加 道具、战斗角色、战斗脚本、技能 的额外属性；
-*4、调整 可视化指令 显示特效 和 显示图片；
+==\*4、调整 可视化指令 显示特效 和 显示图片；==
 5、修复可视化编译的一个Bug；
 6、增强game.talk功能；
 7、修复（回滚）之前修改$rid产生的严重Bug，和 4个getXxxObject 函数的问题；
@@ -430,7 +430,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 12、修复角色编辑器一个小错误；
 13、所有编辑器加入名称判断、覆盖警告，优化其稳定性；
 14、绕过QML的一个Bug（Loader异步载入组件时被释放容易造成闪退，只有在线版出现，因为在线版的Loader是异步）；
-*15、修复通用脚本中获取Buff函数的params.Override参数判断错误Bug；
+==\*15、修复通用脚本中获取Buff函数的params.Override参数判断错误Bug；==
 16、修复开始脚本可视化读取为空的Bug；
 17、修复其他bugs和优化N多代码；
 
@@ -487,7 +487,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 
 1、调整引擎细节，优化代码；
 2、引擎 新增支持 序列图片文件 格式（类似传奇的序列图片文件和坐标txt文件），修改角色编辑器支持；
-*3、调整角色的action函数名为playSprite，改变实现方式；
+==\*3、调整角色的action函数名为playSprite，改变实现方式；==
 
 ## 2024/4/4：发布 1.8.2.240404 版本
 
@@ -499,13 +499,13 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 ## 2024/3/28：发布 1.8.1.240328 版本
 
 1、增加碰撞后离开调用（函数参数不同）；
-*2、调整碰撞参数顺序；
+==\*2、调整碰撞参数顺序；==
 3、修复HotLoader报错时不显示界面问题和不重载qml问题；
 4、优化地图编辑器、角色编辑器和特效编辑器操作细节；
-*5、合并Role资源和Sprite资源目录（注意将Resources/Roles目录的文件移动到Resources/Sprites目录）；
+==\*5、合并Role资源和Sprite资源目录（注意将Resources/Roles目录的文件移动到Resources/Sprites目录）；==
 6、修复 脚本出错时，开始游戏不能再次进入的问题；
 7、game.addtimer增加参数，回调函数增加和调整参数；
-*8、调整 showvideo、showsprite、delsprite、showimage、delimage 的参数，修复一点问题；
+==\*8、调整 showvideo、showsprite、delsprite、showimage、delimage 的参数，修复一点问题；==
 
 ## 2024/3/23：发布 1.7.21.240323 版本（框架 1.3.28.240323版本）
 
@@ -622,7 +622,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 ## 2024/1/6：发布 1.7.5.240106 版本（框架 1.3.24.240106 版本）
 
 1、特效加入偏移配置；
-2、修复 A*算法定向移动的bug；
+2、修复 `A*` 算法定向移动的bug；
 3、整理优化代码；
 
 ## 2024/1/1：发布 1.7.4.240101 版本
@@ -765,7 +765,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 
 1、修复个小Bug（主角$targetX和$targetY写错）；
 2、增加主角和角色定向移动类型（$targetBlocks和$targetPositions为数组，$targetBlockAuto为自动寻路）；
-3、增加A*算法；
+3、增加 `A*` 算法；
 4、移动start脚本里的init、save和load函数 到 通用脚本的gameInit、beforeSave、beforeLoad、afterSave、afterLoad函数；
 
 ## 2023/11/02：发布 1.6.8.231102 版本
