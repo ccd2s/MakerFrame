@@ -42,7 +42,7 @@ C表示Bug修复或新增功能，完全兼容旧工程；
 **18、修改：将所有game.$sys.components中的组件对象移动在game.$sys.caches下，将所有fight.$sys.components中的组件对象移动在fight.$sys.caches下，game.$sys.components、fight.$sys.components只作为组件模板来创建组件对象，并改名所有的组件模板名称（去掉comp前缀并大写开头）；
 *19、修改：角色坐标的$x、$y含义改变为中心点放在这个坐标上（影响命令：createhero、hero、createrole、role）；
 *20、修改：角色的其他属性改变的是组件属性，而非data属性；
-*21、修改：将我自己给特定对象定义的一些便捷属性/方法的名字，前面改为 $$ 开头（比如$$type、$$json、$$then、$$catch等），防止和引擎中一些对象的属性冲突；
+*21、修改：将我自己给特定对象定义的一些便捷属性/方法的名字，前面改为 $$ 开头（比如$$type、$$json、$$keys、$$values、$$format、$$replaceAll、$$insert、$$parent、$$then、$$catch、$$toString、$$toJson等），防止和引擎中一些对象的属性冲突；
 **22、修改：将game.over改为game.restart（重启游戏），对应通用脚本需要改变，运行机制也有改变；
 23、修改：将几个异步命令（msg、talk等）返回的Promise，绑定了它自身的$resolve和$reject函数，用来外部控制其状态；
 24、新增：Pymo（AVG游戏引擎）工程兼容插件；
@@ -55,7 +55,11 @@ C表示Bug修复或新增功能，完全兼容旧工程；
 31、修复：talk组件没有销毁的问题；
 32、修复：道具在战斗中$completeScript没有及时调用的Bug；
 33、修复：购买道具时道具没有放入背包的Bug；
-34、其他：优化调整很多代码和细节，修复一些Bugs；
+*34、修改：将原来全局的FrameManager、Platform、UserInfo、GameCore、global对象改名为$Frame、$Platform、$UserInfo、$GameCore、$global（原来的也保留，但推荐用新的）；
+35、修复：将 busyIndicator 放在 overlay 组件下，一定程度上保证了小概率误触导致焦点乱跑（比如 Menu 在点击隐藏动画时一瞬间还可以点击且焦点改变的BUG）；
+36、优化：将几个js作为对象挂在了全局下，可以避免每次导入时创建一次，也避免了一个 QML导入js文件有可能导致此js文件无法访问全局变量的坑；
+37、修改：JSEngine改名为JSLoader；
+38、其他：优化调整很多代码和细节，修复一些Bugs；
 
 ## 2025/2/2：发布 1.15.2.250202 版本（框架 1.6.5.250202版本）
 

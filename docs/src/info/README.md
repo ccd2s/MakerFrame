@@ -126,7 +126,43 @@ icon: circle-info
 4. 落雪的工程和游戏（已上架好游快爆）；
 5. 金牌服务的建议和游戏工程；
 6. 网友（落冥迦、工作台等人）的参与使用；
-7. 所有鹰歌使用的第三方的扩展、插件、库、SDK等的作者、机构、公司；
+7. 所有鹰歌使用的第三方的扩展、插件、库、SDK等的作者、机构、公司。
+
+## 技术方面（杂记）
+
+1. 跨平台，包括Windows、Linux（Ubuntu）MacOS、IOS、Android（Java、JNI）开发；
+  安卓：包括两种JNI调用方式、权限、亮度、震动、GPS、锁屏 等；
+2. IOCP模型高并发、TCP（Socket的加解密）、UDP；
+3. dbghelp（奔溃/异常退出拦截，日志和提示）；
+4. 日志 和 qDebug输出拦截；
+5. 耗时任务 多线程+异步 完成（MessageHandlerInfo写日志 和 数据库 读写）；
+6. 屏幕自适应（布局、比例缩放和虚拟屏幕几种方式）；
+7. 热更新（so库的载入、jar/dex文件的更新和载入）；
+8. exe、动态链接库 的加载器；
+9. SQLite（加密）和MySql（Json字段的增删查改）；
+10. CPU、硬盘、主板等序列号获取、加密（注册码制作）；
+11. 静态、动态库（lib、dll、a、so等）的编写和使用；
+12. 池 模型；
+13. 生产、消费者模型；
+14. 随系统启动、奔溃重启；
+15. QML（包括一些算法、JSLoader库、 Async异步脚本队列、队列信号事件调用、QQuickPaintedItem、C++执行脚本 等实现）；
+16. 各种三方库（比如qnanopainter库，基于opengl的QPaint方式绘图，绘图效率非常高！）的编译和集成；
+17. 多媒体播放（包括精灵、图片、音频、视频）；
+18. 手机浏览器；
+19. Qt基础：
+  事件、信号和槽；QSettings 和 自定义类型的读写；pro文件的配置等；
+20. JS、QML、Qt类型、对象互转、互相访问，QDataStream、QByteArray、QString使用和发送；JS对象和JSON互转和发送等；
+21. HTTP网络访问（NetworkAccessManager）；
+22. 单例类、二进制兼容写法（d指针）；
+23. 多线程 和 控制；
+24. 图形特效、动画；
+25. new和delete的重载、扩展（在IOCP源码中）；
+26. 模型和视图（QTable）；
+27. 托盘；
+28. 窗体样式、响应方式；
+29. MQTT、串口通信；
+30. CRC16、CRC32；
+31. 读写Excel；
 
 ![工程主界面](/assets/image/docs/share/1708171085856.png)
 
