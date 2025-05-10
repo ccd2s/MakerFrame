@@ -20,7 +20,7 @@
 
 ---
 
-Here is the code repository for the Eagle Song Game Engine documentation, and you can optionally visit [docs-mf.tasaed.top](https://docs-mf.tasaed.top/) to view a live version.
+Here is the code repository for the MakerFrame Game Engine documentation, and you can optionally visit [docs-mf.tasaed.top](https://docs-mf.tasaed.top/) to view a live version.
 
 Note: that this document is an unofficial repository, [original is here](https://github.com/leamus/MakerFrame).
 

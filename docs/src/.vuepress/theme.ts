@@ -57,7 +57,7 @@ export default hopeTheme({
     config: {
       "/eagle.html": {
         password: ["song"],
-        hint: "Eagle like What?",
+        hint: "What does the eagle like?",
       },
     },
   },
