@@ -45,5 +45,6 @@ export default {
   },
   ignores: [
     "**/node_modules/**",
+    "**/*.snippet.md",
   ],
 };
