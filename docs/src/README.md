@@ -74,7 +74,7 @@ features:
 
   - title: 更多
     icon: ellipsis
-    details: 包括特效支持、回合制战斗、Buff系统等。
+    details: 包括打包功能、特效支持、回合制战斗、Buff系统等。
     link: /start/middle/
     
 head:
