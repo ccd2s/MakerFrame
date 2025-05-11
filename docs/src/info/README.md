@@ -166,7 +166,11 @@ icon: circle-info
 
 ![工程主界面](/assets/image/docs/share/1708171085856.png)
 
-![引擎主界面](/assets/image/docs/share/1688900858750.png)
+![引擎主界面（运行在 Android 上）](/assets/image/docs/share/1688900858750.png)
+
+![引擎运行在 Windows 11 上](/assets/image/docs/info/MakerFrame_on_windows.png)
+
+![引擎运行在 Lubuntu（Linux）上](/assets/image/docs/info/MakerFrame_on_Lubuntu.png)
 
 ![绘制地图](/assets/image/docs/info/1708171208981.png)
 
@@ -177,10 +181,6 @@ icon: circle-info
 ![游戏试玩](/assets/image/docs/info/1708171307219.png)
 
 ![游戏试玩](/assets/image/docs/info/1708171312436.png)
-
-![游戏试玩](/assets/image/docs/info/1708171316887.png)
-
-![游戏试玩](/assets/image/docs/info/1708171322447.png)
 
 ![游戏试玩](/assets/image/docs/info/1708171328874.png)
 
@@ -204,12 +204,6 @@ icon: circle-info
 
 ![游戏试玩](/assets/image/docs/info/1708171375737.png)
 
-![游戏试玩](/assets/image/docs/info/1708171382124.png)
-
-![游戏试玩](/assets/image/docs/info/1708171387785.png)
-
-![游戏试玩](/assets/image/docs/info/1708171392611.png)
-
 ![游戏试玩](/assets/image/docs/info/1708171396923.png)
 
 ![游戏试玩](/assets/image/docs/info/1708171400425.png)
@@ -219,8 +213,6 @@ icon: circle-info
 ![SCP 2.5D游戏试玩](/assets/image/docs/info/1708171409421.png)
 
 ![游戏试玩](/assets/image/docs/info/1708171413450.png)
-
-![游戏试玩](/assets/image/docs/info/1708171418054.png)
 
 ![没有撤退可言游戏主界面](/assets/image/docs/info/1708171425538.png)
 
