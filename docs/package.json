@@ -11,19 +11,19 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.22",
-    "@vuepress/plugin-comment": "2.0.0-rc.102",
-    "@vuepress/plugin-docsearch": "2.0.0-rc.102",
-    "@vuepress/plugin-feed": "2.0.0-rc.102",
-    "@vuepress/plugin-git": "2.0.0-rc.102",
-    "@vuepress/plugin-notice": "2.0.0-rc.102",
-    "@vuepress/plugin-umami-analytics": "2.0.0-rc.102",
+    "@vuepress/bundler-vite": "2.0.0-rc.23",
+    "@vuepress/plugin-comment": "2.0.0-rc.104",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.104",
+    "@vuepress/plugin-feed": "2.0.0-rc.104",
+    "@vuepress/plugin-git": "2.0.0-rc.104",
+    "@vuepress/plugin-notice": "2.0.0-rc.104",
+    "@vuepress/plugin-umami-analytics": "2.0.0-rc.104",
     "artalk": "^2.9.1",
     "markdownlint-cli2": "^0.18.0",
     "sass-embedded": "^1.88.0",
     "vue": "^3.5.13",
-    "vuepress": "2.0.0-rc.22",
-    "vuepress-theme-hope": "2.0.0-rc.87"
+    "vuepress": "2.0.0-rc.23",
+    "vuepress-theme-hope": "2.0.0-rc.88"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
