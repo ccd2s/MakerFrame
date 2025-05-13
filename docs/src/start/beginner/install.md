@@ -19,11 +19,9 @@ icon: download
 
 ## 一、安装
 
-&emsp;&emsp;这个我就不多说了，下载对应平台的安装包/压缩包就行，尽量使用最新版来体验最新的功能。另外，除了鹰歌运行环境一般需要手动升级（情况很少），引擎大部分（包括内核、引擎）都是自己热更新的，不需要手动下载更新，非常方便。
+&emsp;&emsp;这个我就不多说了，在 Releases 页下载对应平台的安装包/压缩包就行，尽量使用最新版来体验最新的功能。另外，除了鹰歌运行环境一般需要手动升级（情况很少），引擎大部分（包括内核、引擎）都是自己热更新的，不需要手动下载更新，非常方便。
 
-* [点此前往下载页（github）](https://github.com/leamus/MakerFrame/releases/tag/%E9%B9%B0%E6%AD%8C%E8%BD%AF%E4%BB%B6%E6%A1%86%E6%9E%B6%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E7%83%AD%E6%9B%B4%E6%96%B0%E7%89%88)
-* [点此前往下载页（gitee）](https://gitee.com/leamus/MakerFrame/releases/tag/v1.5.17.250101+v1.6.6.250209+v1.15.3.250209)
-* [点此前往下载页（gitee-openkylin）](https://gitee.com/openkylin/maker-frame/releases/tag/v1.5.17.250101+v1.6.6.250209+v1.15.3.250209)
+<!-- @include: ../engineReleases.snippet.md -->
 
 ## 二、运行
 
