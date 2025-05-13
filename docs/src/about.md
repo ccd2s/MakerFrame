@@ -18,7 +18,7 @@ order: 1
 - 感谢 [Netlify](https://www.netlify.com) 提供的开源计划。
 - 感谢 [深林孤鹰](https://github.com/leamus) 提供的文档。
 - 感谢 [落](https://github.com/luomic) 帮助完善文档。
-- 感谢所有支持我的人。
+- 感谢所有支持我们的人。
 
 ## 赞助
 
@@ -26,13 +26,13 @@ order: 1
 
 ### 赞助引擎
 
-给引擎开发者赞助。
+给引擎开发者 深林孤鹰 赞助。
 
 - [爱发电](https://afdian.com/a/Leamus)
 
 ### 赞助文档
 
-给文档提供者赞助。
+给文档提供者 TASA-Ed 工作室 赞助。
 
 - [爱发电](https://afdian.com/a/tasafoe3469)
 

@@ -60,6 +60,6 @@ Duplicate this repository, and then you can commit the changes to this repositor
 
 This project is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and all content submitted to this project will be licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
-[^lint]: 本项目使用 [markdownlint-cli2](https://www.npmjs.com/package/markdownlint-cli2) 格式化md文档，因此你在修改md文档后需要使用 `pnpm markdownlint-cli2 "**/*.md"` 检查错误。
+[^lint]: This project uses [markdownlint-cli2](https://www.npmjs.com/package/markdownlint-cli2) to format md documents, so you need to use `pnpm markdownlint-cli2 "**/*.md"` to check for errors after modifying `.md` documents.
 
-    本项目的 Pull Request 状态检查也包括 markdownlint ，只不过这些检查是中立性的，即使报错也可以正常合并（尽管如此，但我们还是推荐你修复完所有错误之后再来提交 PR ）。
+    The Pull Request status checks for this project also include markdownlint, except that they are neutral and can be merged normally even if an error is reported (nevertheless, we recommend that you fix all the errors before submitting the PR).
