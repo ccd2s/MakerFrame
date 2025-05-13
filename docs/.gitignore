@@ -1,15 +1,7 @@
-# Node modules
+
 **/node_modules/**
-
-# Vuepress Cache
 src/.vuepress/.cache/
-# Vuepress Temp
 src/.vuepress/.temp/
-# Vuepress Output
 src/.vuepress/dist/
-
-# JetBrains IDE
 .idea/
-
-# macOS
 .DS_Store
