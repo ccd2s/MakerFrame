@@ -7,6 +7,8 @@ export default {
         "div",
         "span",
         "br",
+        "p",
+        "img",
         "template",
         "script",
         "style",

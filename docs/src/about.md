@@ -7,7 +7,12 @@ footer: <a href="https://www.netlify.com" target="_blank"><img src="https://www.
 order: 1
 ---
 
-关于本文档。
+<div style="vertical-align: middle;text-align: center" id="studioTitle">
+    <img id="studioLogo" src="/assets/image/tasaedLogo104.png" alt="TASA-Ed工作室" width="39" height="39">
+    <span id="studioText" style="font-size: 50px;color: #243842;font-weight: bolder;">&thinsp;TASA-Ed</span>
+    <br/>
+    <p>本文档由 TASA-Ed 工作室 提供</p>
+</div>
 
 ## 构建
 
