@@ -20,6 +20,7 @@ export default navbar([
       {
         text: "引擎",
         children: [
+          "faq.md",
           "engineUpdatelog.md"
         ],
       }

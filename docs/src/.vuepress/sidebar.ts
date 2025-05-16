@@ -92,6 +92,7 @@ export default sidebar({
     },
     "about.md",
     "contribution.md",
+    "faq.md",
     "engineUpdatelog.md"
   ],
 });
