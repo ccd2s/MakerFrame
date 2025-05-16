@@ -3,7 +3,7 @@ title: 关于
 icon: circle-info
 date: 2025-04-16
 author: false
-footer: <a href="https://www.netlify.com" target="_blank"><img src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg" alt="Deploys by Netlify" /></a><br/>Copyright © 2025 <a href="https://www.tasaed.top">TASA-Ed工作室</a>，<a href="https://github.com/leamus">深林孤鹰</a> licensed <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a> | 萌ICP备<a href="https://icp.gov.moe/?keyword=20258272" target="_blank">20258272</a>号<br/>Powered by <a href="https://vuejs.press" target="_blank">VuePress</a> | Theme by <a href="https://theme-hope.vuejs.press" target="_blank">Hope</a>
+footer: <a href="https://www.netlify.com" target="_blank"><img src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg" alt="Deploys by Netlify" /></a><br/>Copyright © 2025 <a href="https://www.tasaed.top">TASA-Ed工作室</a>，<a href="https://github.com/leamus">深林孤鹰</a>，<a href="https://qm.qq.com/q/bTB1cZoGze">鹰歌游戏引擎社区</a> licensed <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a> | 萌ICP备<a href="https://icp.gov.moe/?keyword=20258272" target="_blank">20258272</a>号<br/>Powered by <a href="https://vuejs.press" target="_blank">VuePress</a> | Theme by <a href="https://theme-hope.vuejs.press" target="_blank">Hope</a>
 order: 1
 ---
 
@@ -43,7 +43,7 @@ order: 1
 
 ## 开源许可
 
-- 本文档采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可。
+- 本文档采用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可，署名给 TASA-Ed 工作室，深林孤鹰和鹰歌游戏引擎社区。
 
 - 网站大部分图标使用 [Font Awesome](https://fontawesome.com/) 采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可。
 
