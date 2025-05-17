@@ -4,7 +4,7 @@ export default sidebar({
   "/": [
     "",
     {
-      text: "开始使用",
+      text: "使用教程",
       icon: "signs-post",
       prefix: "start/",
       link: "start/",
@@ -90,9 +90,9 @@ export default sidebar({
       prefix: "projects/",
       link: "projects/",
     },
+    "faq.md",
     "about.md",
     "contribution.md",
-    "faq.md",
     "engineUpdatelog.md"
   ],
 });

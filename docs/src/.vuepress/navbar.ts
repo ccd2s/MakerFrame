@@ -5,6 +5,7 @@ export default navbar([
   "/start/",
   "/info/",
   "/projects/",
+  "/faq.md",
   {
     text: "其它",
     icon: "ellipsis",
@@ -20,7 +21,6 @@ export default navbar([
       {
         text: "引擎",
         children: [
-          "faq.md",
           "engineUpdatelog.md"
         ],
       }
