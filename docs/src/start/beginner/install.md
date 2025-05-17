@@ -17,11 +17,21 @@ icon: download
 * 鹰歌框架软件（目前有Win、Linux和安卓版本）
 * 细心、耐心和恒心
 
-## 一、安装
+## 一、安装教程
 
-这个我就不多说了，在 Releases 页下载对应平台的安装包/压缩包就行，尽量使用最新版来体验最新的功能。另外，除了鹰歌运行环境一般需要手动升级（情况很少），引擎大部分（包括内核、引擎）都是自己热更新的，不需要手动下载更新，非常方便。
+首先，前往 Releases 页：
 
 <!-- @include: ../engineReleases.snippet.md -->
+
+Windows版本需要将Qt环境（Qt_v5.15.16_win_x64）和框架引擎（MakerFrame_鹰歌框架引擎_win_x64_vXXX）解压并放在一起，然后双击 `_运行鹰歌.bat` 即可。
+
+Android版本需要下载 `MakerFrame_鹰歌框架引擎_Updater_xxx_armeabi-v7a.apk` 或 `MakerFrame_鹰歌框架引擎_Updater_xxx_arm64-v8a.apk` ，一般下载后者。
+
+Linux版本目前只支持Debian系，需要下载 `MakerFrame_鹰歌框架引擎_Updater_Linux_x64_xxx.deb` ，同时可以在OpenKylin系统的应用商店下载。
+
+苹果iOS、macOS、其他架构Linux（RedHat、UOS国产化系统、Arm架构相关）等：已经适配，但由于精力和经济问题（iOS应用市场还需要付费上架），以后再发布。
+
+另外，除了鹰歌运行环境一般需要手动升级（情况很少），引擎大部分（包括内核、引擎）都是自己热更新的，不需要手动下载更新，非常方便。
 
 ## 二、运行
 
