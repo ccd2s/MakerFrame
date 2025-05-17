@@ -11,11 +11,11 @@ export default hopeTheme({
     email: "studio@tasaed.top",
   },
 
+  logo: "/assets/image/logo.png",
+
   navbarTitle: "",
 
   fullscreen: true,
-
-  logo: "/assets/image/logo.png",
 
   navbarLayout: {
     start: ["Brand"],
@@ -62,10 +62,6 @@ export default hopeTheme({
     },
   },
 
-  // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
-  // hotReload: true,
-
-  // 此处开启了很多功能用于演示，你应仅保留用到的功能。
   markdown: {
     // align: true,
     // attrs: true,
@@ -134,9 +130,7 @@ export default hopeTheme({
 
     git: {
       contributors: {
-        // 显示贡献者的头像
         avatar: true,
-        // 修复本地贡献者与 GitHub 上的贡献者不一致的问题
         info: [
           {
             username: "ccd2s",
@@ -158,13 +152,17 @@ export default hopeTheme({
       }
     },
 
+    pwa: {
+      update: "hint",
+      favicon: "/favicon.ico",
+    },
+
     // 在移动设备上显示复制按钮
     copyCode: {
       showInMobile: true,
       duration: 1500,
     },
 
-    // 基于本文档的站点均需使用自己的图标服务
     icon: {
       assets: ["/assets/fontawesome/js/brands.min.js","/assets/fontawesome/js/solid.min.js","/assets/fontawesome/js/regular.min.js","/assets/fontawesome/js/fontawesome.min.js"]
     },

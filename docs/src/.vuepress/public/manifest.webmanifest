@@ -1,0 +1,22 @@
+{
+  "name": "鹰歌游戏引擎文档",
+  "short_name": "鹰歌文档",
+  "description": "关于鹰歌游戏引擎的文档。",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "lang": "zh-CN",
+  "background_color": "#fff",
+  "theme_color": "#3bba81",
+  "icons": [
+    {
+      "src": "/assets/image/logo.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/image/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
