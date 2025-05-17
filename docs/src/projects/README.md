@@ -32,7 +32,7 @@ games:
   - name: 封魔传记
     desc: CC 游戏工作室
     logo: /assets/image/projects/feng-mo-zhuan-ji-logo.png
-    url: https://www.3839.com/a/164540.htm
+    url: https://www.taptap.cn/app/683317
     preview: /assets/image/projects/feng-mo-zhuan-ji.png
 
   - name: 英语杀（TapTap）

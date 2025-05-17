@@ -76,6 +76,7 @@ export default hopeTheme({
     imgSize: true,
     spoiler: true,
     mark: true,
+    footnote: true,
     stylize: [
       {
         matcher: /^\*.*/,
