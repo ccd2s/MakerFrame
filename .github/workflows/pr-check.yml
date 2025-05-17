@@ -1,4 +1,4 @@
-name: Build on Ubuntu with Node.js 22, pnpm 10
+name: Build Test
 
 on:
   pull_request:
@@ -19,12 +19,12 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: set pnpm
+      - name: Set pnpm 10
         uses: pnpm/action-setup@v4
         with:
           version: 10
 
-      - name: set Node.js
+      - name: Set Node.js 22
         uses: actions/setup-node@v4
         with:
           # 选择要使用的 node 版本
@@ -33,10 +33,10 @@ jobs:
           cache: pnpm
           cache-dependency-path: docs/pnpm-lock.yaml
 
-      - name: install
+      - name: Install Modules
         run: pnpm install --frozen-lockfile
         working-directory: ./docs
 
-      - name: build
-        run: pnpm docs:build
+      - name: Build on Ubuntu
+        run: pnpm vuepress-vite build src
         working-directory: ./docs

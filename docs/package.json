@@ -1,7 +1,7 @@
 {
-  "name": "MakerFrameDocs",
+  "name": "makerframe_docs",
   "description": "MakerFrame Game Engine Documentation",
-  "version": "1.8.14+20250516",
+  "version": "1.9.0+20250517",
   "license": "CC BY-SA 4.0",
   "type": "module",
   "scripts": {
