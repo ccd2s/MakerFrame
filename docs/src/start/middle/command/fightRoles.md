@@ -9,21 +9,21 @@ order: 2
 
 ## 一、说明
 
-&emsp;&emsp;战斗人物脚本在项目根目录的FightRoles目录下，每个战斗人物一个文件夹，每个文件夹内的fight_roles.js就是技能脚本。
+战斗人物脚本在项目根目录的FightRoles目录下，每个战斗人物一个文件夹，每个文件夹内的fight_roles.js就是技能脚本。
 
-&emsp;&emsp;战斗人物脚本有 \$createData函数 和 \$commons对象两个成员，
+战斗人物脚本有 \$createData函数 和 \$commons对象两个成员，
 \$createData函数是每创建一个战斗人物都会调用它（会替换通用脚本的\$Combatant函数创建的对象），所以写在它里的属性数据会有差异化且会被存档，
 而写在 \$commons对象 中的是通用的。
 
-&emsp;&emsp;二者还有个区别就是 \$createData函数 里的数据一旦产生就不再受技能脚本影响，而 \$commons对象 里的数据是在游戏开始时载入的，所以会受脚本的影响。
+二者还有个区别就是 \$createData函数 里的数据一旦产生就不再受技能脚本影响，而 \$commons对象 里的数据是在游戏开始时载入的，所以会受脚本的影响。
 
-&emsp;&emsp;战斗人物脚本的根proto是 {\$objectType: 1}。
+战斗人物脚本的根proto是 {\$objectType: 1}。
 
-&emsp;&emsp;建议先用视图编程生成代码再进行修改。
+建议先用视图编程生成代码再进行修改。
 
 ## 二、数据成员
 
-&emsp;&emsp;数据成员可写在 \$createData函数 和 \$commons对象 中，有：
+数据成员可写在 \$createData函数 和 \$commons对象 中，有：
 
 ```text
 $name：字符串；战斗人物名字。
@@ -35,11 +35,11 @@ $skills：数组；拥有技能列表。
 $equipment：对象；所有装备。
 ```
 
-&emsp;&emsp;你可以在这里加其他任意属性。
+你可以在这里加其他任意属性。
 
 ## 三、函数成员
 
-&emsp;&emsp;函数成员一般写在 \$commons对象中；
+函数成员一般写在 \$commons对象中；
 
 ```text
 $actions：战斗人物的所有动作。

@@ -9,20 +9,20 @@ order: 3
 
 ## 一、说明
 
-&emsp;&emsp;技能脚本在项目根目录的FightSkills目录下，每个技能一个文件夹，每个文件夹内的fight_skill.js就是技能脚本。
+技能脚本在项目根目录的FightSkills目录下，每个技能一个文件夹，每个文件夹内的fight_skill.js就是技能脚本。
 
-&emsp;&emsp;技能脚本有 \$createData函数 和 \$commons对象两个成员，\$createData函数 是每创建一个技能都会调用它，
+技能脚本有 \$createData函数 和 \$commons对象两个成员，\$createData函数 是每创建一个技能都会调用它，
 所以写在它里的属性数据会有差异化且会被存档，而写在 \$commons对象 中的是通用的。
 
-&emsp;&emsp;二者还有个区别就是 \$createData函数 里的数据一旦产生就不再受技能脚本影响，而 \$commons对象 里的数据是在游戏开始时载入的，所以会受脚本的影响。
+二者还有个区别就是 \$createData函数 里的数据一旦产生就不再受技能脚本影响，而 \$commons对象 里的数据是在游戏开始时载入的，所以会受脚本的影响。
 
-&emsp;&emsp;技能脚本的根proto是 {\$objectType: 3}。
+技能脚本的根proto是 {\$objectType: 3}。
 
-&emsp;&emsp;建议先用视图编程生成代码再进行修改。
+建议先用视图编程生成代码再进行修改。
 
 ## 二、数据成员
 
-&emsp;&emsp;数据成员可写在 \$createData函数 和 \$commons对象 中，有：
+数据成员可写在 \$createData函数 和 \$commons对象 中，有：
 
 ```text
 $name：字符串；技能名。
@@ -35,11 +35,11 @@ $targetCount：整型；选择目标数；-1为全体；>0为个数；数组为�
 
 注意：如果\$choiceScript为null，则根据这两项来选择系统的技能选择机制，反之这两个参数无效。
 
-&emsp;&emsp;你可以在这里加其他任意属性。
+你可以在这里加其他任意属性。
 
 ## 三、函数成员
 
-&emsp;&emsp;函数成员一般写在 \$commons对象中；
+函数成员一般写在 \$commons对象中；
 
 ```text
 $choiceScript：生成器函数；选择脚本系统，如果为null，则通过 $targetFlag 和 $targetCount 来使用系统通用的技能选择系统，如果自定义则使用自定义的技能选择系统（后面会详细介绍）。
