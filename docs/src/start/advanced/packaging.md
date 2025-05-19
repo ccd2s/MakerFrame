@@ -123,7 +123,7 @@ order: 1
 
 ![在终端中输入](/assets/image/docs/advanced/packaging/PowerShell_Android.png)
 
-如果一切正常的话，则会输出：
+如果一切正常的话，则会输出类似以下的日志：
 
 ```bash
 I: Using Apktool 2.11.1 on Game.APK with 8 threads
