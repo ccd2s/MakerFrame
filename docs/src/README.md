@@ -96,28 +96,28 @@ head:
 
 ## 引擎仓库
 
-```component VPCard
-title: GitHub
-desc: 引擎 GitHub 仓库
-background: var(--vpcard-github)
-logo: /assets/image/github-dark.svg
-link: https://github.com/leamus/MakerFrame
-```
-
-```component VPCard
-title: Gitee
-desc: 引擎 Gitee 仓库
-background: rgba(199, 29, 35, 0.15)
-logo: /assets/image/simpleIcons-gitee.svg
-link: https://gitee.com/leamus/MakerFrame
-```
-
-```component VPCard
-title: Gitee（openKylin）
-desc: 引擎 Gitee 仓库（openKylin）
-background: rgba(27, 92, 222, 0.15)
-logo: /assets/image/simpleIcons-gitee.svg
-link: https://gitee.com/openkylin/maker-frame
-```
+<div class="vp-card-container">
+  <VPCard
+    title="GitHub"
+    desc="引擎 GitHub 仓库"
+    logo="/assets/image/github-dark.svg"
+    link="https://github.com/leamus/MakerFrame"
+    background=var(--vpcard-github)
+  />
+  <VPCard
+    title="Gitee"
+    desc="引擎 Gitee 仓库"
+    logo="/assets/image/simpleIcons-gitee.svg"
+    link="https://gitee.com/leamus/MakerFrame"
+    background="rgba(199, 29, 35, 0.15)"
+  />
+  <VPCard
+    title="Gitee（openKylin）"
+    desc="引擎 Gitee 仓库（openKylin）"
+    logo="/assets/image/simpleIcons-gitee.svg"
+    link="https://gitee.com/openkylin/maker-frame"
+    background="rgba(27, 92, 222, 0.15)"
+  />
+</div>
 
 <!-- markdownlint-disable -->

@@ -111,7 +111,7 @@ order: 1
 
 我们选择是即可，然后我们等待一会，将会弹出这个弹窗：
 
-![成功弹窗](/assets/image/docs/advanced/packaging/Success_Android_Win.png)
+![成功弹窗](/assets/image/docs/advanced/packaging/Success_Android_Windows.png)
 
 我们需要安装 [Java](https://www.java.com/zh-CN/download/) 和 [Apktool](https://apktool.org/docs/install) ，如果已安装可以跳过这个操作。
 
@@ -145,11 +145,74 @@ Press any key to continue . . .
 
 ### 2.在 Android 上打包
 
-持续更新中，敬请期待...
+首先你需要来到引擎的 Releases 页面：
+
+<!-- @include: ../engineReleases.snippet.md -->
+
+随后下载 `MakerFrame_Package_Android_ALL_xxx.zip` 和 `MakerFrame_GameRuntime_Android_ALL_xxx.zip`。
+
+![下载 =305x678](/assets/image/docs/advanced/packaging/Env_Android_Android.jpg)
+
+之后将两个压缩包移动到 `<引擎文件夹>\GameMaker\Games` 中，**不要解压！**
+
+![移动压缩包 =305x678](/assets/image/docs/advanced/packaging/MoveZip_Android_Android.jpg)
+
+需要注意的是，两个压缩包的名称前缀分别要有 `MakerFrame_Package_Android_` 和 `MakerFrame_GameRuntime_Android_` ，否则引擎是无法识别出来的。
+
+当然，两个压缩包的名称弄反了倒是也可以正常运行，但还是不推荐那么做。
+
+记住比较小的那个是 `MakerFrame_GameRuntime_Android_xxx.zip` ，比较大的那个是 `MakerFrame_Package_Android_xxx.zip` 就行。
+
+上述操作完成之后我们就可以来到引擎工程的打包项目界面，我们选择打包Android：
+
+![选择 打包Android =305x678](/assets/image/docs/advanced/packaging/Select_Android_Android.jpg)
+
+之后我们会来到这个界面：
+
+![打包Android =305x678](/assets/image/docs/advanced/packaging/Packing_Android_Android.jpg)
+
+然后按照下图的样式来填写：
+
+![填写 =305x678](/assets/image/docs/advanced/packaging/Packing_Input_Android_Android.jpg)
+
+打包文件夹的路径不能包含特殊字符，包名必须按照规范[^packageName]来写，图标的路径前面必须加上 `file:` 如果已经有了则不用加，当然你也可以不选择图标，默认会使用引擎图标，填写完成之后点击生成即可。
+
+如果上述复制压缩包的操作正确的话就会弹出这个弹窗：
+
+![弹窗 选择 是 =480x502](/assets/image/docs/advanced/packaging/Dialog_Android_Android.jpg)
+
+我们选择是即可，然后安卓打包较慢需要耐心等待一会，将会弹出这个弹窗：
+
+![成功弹窗 =639x480](/assets/image/docs/advanced/packaging/Success_Android_Android.jpg)
+
+我们需要安装 [Apktool M](https://maximoff.su/apktool/?lang=zh) ，如果已安装可以跳过这个操作。
+
+随后我们在 Apktool M 中打开弹窗中所提到的文件夹，文件夹的上方会有一个 `编译此项目`，点击它：
+
+![点击编译此项目 =305x678](/assets/image/docs/advanced/packaging/Apktool_M_Compile.jpg)
+
+一般我们使用默认选项，点击确定：
+
+![使用默认选项 点击确定 =305x678](/assets/image/docs/advanced/packaging/Apktool_M_Default.jpg)
+
+如果一切正常的话，则会输出类似以下的日志：
+
+![点击确定 =305x678](/assets/image/docs/advanced/packaging/Apktool_M_Success.jpg)
+
+意思是打包到了 `<打包文件夹>/Game.APK` 中，打包出的APK可以直接安装。
+
+### 3.常见问题
+
+* 一、无法选择图标，报错 `【Critical】[!Platform]Exception Occured: java.lang.NumberFormatException: For input string:xxx`。
+  * 新版本安卓中不能从最近，图片，下载内容里面选择，只能从本机目录中选择。
+* 二、Apktool M 打包报错 `W: xxx.png: error: failed to read PNG signature: file does not start with PNG signature.`
+  * 这通常是因为你的图标不是一个正确的 PNG 文件，必须选择一个 PNG 文件才能继续打包。
 
 ## 五、其它
 
 由于时间精力成本问题，目前只有 Windows、Android 的打包环境文件，如果需要其他的打包环境可以联系深林孤鹰。
+
+本教程仍需补充。
 
 [^runtimeZip]: 一个是 Qt 环境文件一个是引擎文件，前者一般比较大且固定，后者会随着引擎的更新而更新
 
