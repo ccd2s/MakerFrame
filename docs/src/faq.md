@@ -40,7 +40,7 @@ date: 2025-05-13
 
 在从老版本引擎升级到新版本引擎后你可能会出现白屏的问题：
 
-![白屏 =243x540](/assets/image/docs/faq/Android_White.png "白屏")
+![白屏 =243x540](/assets/image/docs/faq/Android_White.png)
 
 这种情况下引擎会一直显示白屏，且无法查看错误日志，也无法打开控制台。
 
