@@ -105,7 +105,7 @@ function $role_角色名_action_pause(actionName)
 function $role_角色名_action_stop(actionName)
 ```
 
-### 示例
+### 3、示例
 
 1、如果需要走路停止后播放站立动作，这样写：
 
