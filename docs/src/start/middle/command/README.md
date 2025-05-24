@@ -729,4 +729,66 @@ game.musicplaying();
 game.musicpausing();
 ```
 
+### 播放视频
+
+功能：播放视频
+
+参数：
+
+- `videoParams` 是视频名称或对象（包含RID）
+  - `videoParams` 为对象包含两个属性：
+    - `$videoOutput`（包括x、y、width、height等）
+    - `$mediaPlayer`
+  - 也可以 `$x`、`$y`、`$width`、`$height`。
+
+示例：
+
+```js
+game.playvideo(videoName, properties={});
+// 结束播放。
+game.stopvideo()
+```
+
+### 显示图片
+
+功能：显示图片
+
+参数：
+
+- `imageParams` 为图片名或对象（包含RID）
+- `id` 为图片标识（用来控制和删除）
+- `imageParams` 为对象：包含 `Image组件` 的所有属性 和 `$x`、`$y`、`$width`、`$height`、`$parent` 等属性；还包括 `$clicked`、`$doubleClicked` 事件的回调函数；
+  - `x`、`y`、`width`、`height` 和 `$x`、`$y`、`$width`、`$height` 是坐标和宽高，每组（带\$和不带\$）只需填一种；
+    - 不带\$表示按像素；
+    - 带\$的属性有以下几种格式：
+      - `$x`、`$y`：如果为数字，则表示坐标是按固定长度（厘米）为单位的长度（跨平台用）；
+      - 如果为 `数组[n, t]`，则n表示值，t表示类型：t为0、1分别和直接填`x`、`y` 和 `$x`、`$y` 作用相同；为2表示全屏的百分比；为3表示居中后偏移多少像素，为4表示居中后偏移多少固定长度；
+      - `$width`、`$height`：如果为数字，则表示按固定长度（厘米）为单位的长度（跨平台用）；
+      - 如果为 `数组[n, t]`，则n表示值，t表示类型：t为0、1分别和直接填`width`、`height` 和 `$width`、`$height` 作用 相同；为2表示全屏的多少倍；为3表示自身的多少倍；为4表示是 固定宽高比 的多少倍；
+  - `$parent`：0表示显示在屏幕上（默认）；1表示显示在屏幕上（受scale影响）；2表示显示在地图上；字符串表示显示在某个角色上；
+
+示例：
+
+```js
+game.showimage(imageParams, id=undefined);
+```
+
+### 删除图片
+
+功能：删除图片
+
+参数：
+
+- `idParams` 为：
+  - -1：全部屏幕上的图片组件；
+  - 数字：屏幕上的图片标识；
+  - 字符串：角色上的图片标识；
+  - 对象：包含 `$id` 和 `$parent` 属性（同showimage）；
+
+示例：
+
+```js
+game.delimage(idParams);
+```
+
 <Catalog />
