@@ -783,12 +783,94 @@ game.showimage(imageParams, id=undefined);
   - -1：全部屏幕上的图片组件；
   - 数字：屏幕上的图片标识；
   - 字符串：角色上的图片标识；
-  - 对象：包含 `$id` 和 `$parent` 属性（同showimage）；
+  - 对象：包含 `$id` 和 `$parent` 属性（同 `showimage` ）；
 
 示例：
 
 ```js
 game.delimage(idParams);
+```
+
+### 显示特效
+
+功能：显示特效
+
+参数：
+
+- `spriteParams` 为特效名或对象（包含RID）；`id` 为特效标识（用来控制和删除）
+- `spriteParams` 为对象：包含 `SpriteEffect` 组件 的所有属性 和 `$x`、`$y`、`$width`、`$height`、`$parent` 等属性；还包括 `$clicked`、`$doubleClicked`、`$looped`、`$finished` 事件的回调函数；
+  - `x`、`y`、`width`、`height` 和 `$x`、`$y`、`$width`、`$height` 是坐标和宽高，每组（带\$和不带\$）只需填一种；
+    - 不带\$表示按像素；
+    - 带\$的属性有以下几种格式：
+      - `$x`、`$y`：如果为数字，则表示坐标是按固定长度（厘米）为单位的长度（跨平台用）；
+      - 如果为 `数组[n, t]`，则n表示值，t表示类型：t为0、1分别和直接填`x`、`y` 和 `$x`、`$y` 作用相同；为2表示全屏的百分比；为3表示居中后偏移多少像素，为4表示居中后偏移多少固定长度；
+      - `$width`、`$height`：如果为数字，则表示按固定长度（厘米）为单位的长度（跨平台用）；
+      - 如果为 `数组[n, t]`，则n表示值，t表示类型：t为0、1分别和直接填`width`、`height` 和 `$width`、`$height` 作用 相同；为2表示全屏的多少倍；为3表示自身的多少倍；为4表示是 固定宽高比 的多少倍；
+  - `$parent`：0表示显示在屏幕上（默认）；
+    - 1表示显示在屏幕上（受scale影响）；
+    - 2表示显示在地图上；
+    - 字符串表示显示在某个角色上；
+
+示例：
+
+```js
+game.showsprite(spriteParams, id=undefined);
+```
+
+### 删除特效
+
+功能：删除特效
+
+参数：
+
+- `idParams`为：
+  - -1：全部屏幕上的特效组件；
+  - 数字：屏幕上的特效标识；
+  - 字符串：角色上的特效标识；
+  - 对象：包含 `$id` 和 `$parent` 属性（同 `showsprite`）；
+
+示例：
+
+```js
+game.delsprite(idParams=-1);
+```
+
+### 设置操作
+
+功能：设置操作，遥感可用和可见、键盘可用；
+
+参数：
+
+- `$gamepad` 的 `$visible` 和 `$enabled`，`$keyboard` 的 `$enabled`；
+- 参数为空则返回遥感组件，可自定义；
+
+```js
+game.control(config={});
+```
+
+### 游戏杂项
+
+功能：包含一些对游戏的操作函数。
+
+示例：
+
+```js
+// 将场景缩放n倍；可以是小数。
+game.scale(n);
+// 场景跟随某个角色。
+game.setscenerole(r);
+// 暂停游戏。
+game.pause();
+// 继续游戏。
+game.goon();
+// 设置游戏刷新率（interval毫秒）。
+game.interval(interval);
+
+// 暂停time毫秒。
+[yield]
+game.wait(time);
+// 返回start~end之间的随机整数（包含start，不包含end）。
+game.rnd(start, end);
 ```
 
 <Catalog />
