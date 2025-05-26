@@ -636,7 +636,7 @@ game.addtimer(timerName, interval, times=1, bGlobal=false, params=null);
 
 ### 删除定时器
 
-功能：删除定时器。
+功能：删除定时器；
 
 示例：
 
@@ -665,7 +665,7 @@ game.playmusic(musicParams);
 
 ### 停止音乐
 
-功能：停止音乐。
+功能：停止音乐；
 
 示例：
 
@@ -675,7 +675,7 @@ game.stopmusic();
 
 ### 暂停音乐
 
-功能：暂停音乐。
+功能：暂停音乐；
 
 参数：
 
@@ -689,7 +689,7 @@ game.pausemusic(name='$user');
 
 ### 继续播放音乐
 
-功能：继续播放音乐。
+功能：继续播放音乐；
 
 参数：
 
@@ -703,7 +703,7 @@ game.resumemusic(name='$user');
 
 ### 存栈音乐
 
-功能：将音乐暂停并存栈。一般用在需要播放战斗音乐前。
+功能：将音乐暂停并存栈。一般用在需要播放战斗音乐前；
 
 示例：
 
@@ -719,7 +719,7 @@ game.seekmusic(offset=0);
 
 ### 音乐状态
 
-功能：音乐状态
+功能：音乐状态；
 
 示例：
 
@@ -731,7 +731,7 @@ game.musicpausing();
 
 ### 播放视频
 
-功能：播放视频
+功能：播放视频；
 
 参数：
 
@@ -751,7 +751,7 @@ game.stopvideo()
 
 ### 显示图片
 
-功能：显示图片
+功能：显示图片；
 
 参数：
 
@@ -775,7 +775,7 @@ game.showimage(imageParams, id=undefined);
 
 ### 删除图片
 
-功能：删除图片
+功能：删除图片；
 
 参数：
 
@@ -793,11 +793,11 @@ game.delimage(idParams);
 
 ### 显示特效
 
-功能：显示特效
+功能：显示特效；
 
 参数：
 
-- `spriteParams` 为特效名或对象（包含RID）；`id` 为特效标识（用来控制和删除）
+- `spriteParams` 为特效名或对象（包含RID）；`id` 为特效标识（用来控制和删除）；
 - `spriteParams` 为对象：包含 `SpriteEffect` 组件 的所有属性 和 `$x`、`$y`、`$width`、`$height`、`$parent` 等属性；还包括 `$clicked`、`$doubleClicked`、`$looped`、`$finished` 事件的回调函数；
   - `x`、`y`、`width`、`height` 和 `$x`、`$y`、`$width`、`$height` 是坐标和宽高，每组（带\$和不带\$）只需填一种；
     - 不带\$表示按像素；
@@ -819,7 +819,7 @@ game.showsprite(spriteParams, id=undefined);
 
 ### 删除特效
 
-功能：删除特效
+功能：删除特效；
 
 参数：
 
@@ -848,17 +848,135 @@ game.delsprite(idParams=-1);
 game.control(config={});
 ```
 
-### 游戏杂项
+### 显示窗口
 
-功能：包含一些对游戏的操作函数。
+功能：显示一个窗口；
+
+参数：
+
+- `params`
+  - `$id`：0b1为主菜单；0b10为战斗人物信息；0b100为道具信息；0b1000为系统菜单；
+  - `$value`：战斗人物信息时为下标；
+  - `$visible`：为false表示关闭窗口；
+- `style`：样式
+  - 包括 `MaskColor`、`BorderColor`、`BackgroundColor`、`ItemFontSize`、`ItemFontColor`、`ItemBackgroundColor1`、`ItemBackgroundColor2`、`TitleFontSize`、`TitleBackgroundColor`、`TitleFontColor`、`ItemBorderColor`；
+- `pauseGame`：是否暂停游戏；
 
 示例：
+
+```js
+game.window(params=null, style={}, pauseGame=true);
+```
+
+### 存档
+
+功能：将 `game.gd` 存为文件，开头为 $$ 的键不会保存；
+
+参数：
+
+- `showName`：显示名；
+- `compressionLevel`：压缩级别（1-9，-1为默认，0为不压缩）；
+
+返回：成功返回true 或 存储字符串；
+
+示例：
+
+```js
+// 存档（将game.gd存为 文件，开头为 $$ 的键不会保存）
+yield game.save(文件名, showName="", compressionLevel=-1);
+```
+
+### 读档
+
+功能：读取数据到 `game.gd`；
+
+返回：成功返回true，失败返回false；
+
+示例：
+
+```js
+// 读档（读取数据到 game.gd）
+yield game.load(文件名);
+```
+
+### 检查存档
+
+功能：检测存档是否存在且正确；
+
+返回：失败返回false，成功返回存档对象（包含 `Name` 和 `Data`）；
+
+示例：
+
+```js
+// 检测存档是否存在且正确
+game.checksave(文件名);
+```
+
+### 读取json文件
+
+功能：读取一个JSON文件；
+
+参数：
+
+- `fileName`：**绝对或相对路径**的文件名；
+- `filePath`：文件的**绝对路径**，如果为空，则 `fileName` 为相对于本项目根路径；
+
+返回：失败返回null，成功返回解析后对象；
+
+示例：
+
+```js
+// 读取json文件
+game.loadjson(fileName, filePath="");
+```
+
+### 执行脚本命令
+
+功能：执行脚本命令（注意：此命令会将脚本放入game系统脚本引擎中等候执行，一般用来在Maker中载入外部脚本文件）；
+
+示例：
+
+```js
+game.run(vScript, scriptProps=-1, ...params);
+```
+
+### 执行脚本文件
+
+功能：执行脚本文件（注意：此命令会将脚本放入game系统脚本引擎中等候执行，一般用来在Maker中载入外部脚本文件）；
+
+参数：
+
+- `fileName`：**绝对或相对路径**的文件名；
+- `filePath`：文件的**绝对路径**，如果为空，则 `fileName` 为相对于本项目根路径；
+
+示例：
+
+```js
+// 执行脚本文件
+game.script(fileName, filePath);
+
+// 脚本上次返回的值
+game.lastreturn;
+// 脚本上次返回的值（return+yield）
+game.lastvalue;
+```
+
+### 杂项
+
+包含一些杂项。
+
+#### 场景相关
 
 ```js
 // 将场景缩放n倍；可以是小数。
 game.scale(n);
 // 场景跟随某个角色。
 game.setscenerole(r);
+```
+
+#### 游戏相关
+
+```js
 // 暂停游戏。
 game.pause();
 // 继续游戏。
@@ -871,6 +989,16 @@ game.interval(interval);
 game.wait(time);
 // 返回start~end之间的随机整数（包含start，不包含end）。
 game.rnd(start, end);
+
+// 游戏结束（调用游戏结束脚本）；
+yield game.gameover(params);
+```
+
+#### 杂项
+
+```js
+//返回 JS 的 new Date()对象。
+game.date();
 ```
 
 <Catalog />
