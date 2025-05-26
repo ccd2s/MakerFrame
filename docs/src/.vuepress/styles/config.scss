@@ -1,5 +1,10 @@
-// you can change config here
 $theme-color: (
-        light: rgb(59, 186, 129),
-        dark: rgb(30, 52, 140),
+        (
+                light: rgb(59, 186, 129),
+                dark: rgb(30, 140, 90),
+        ),
+        (
+                light: rgb(33, 150, 243),
+                dark: rgb(30, 52, 140),
+        )
 );

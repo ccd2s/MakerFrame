@@ -5,23 +5,7 @@ import sidebar from "./sidebar.js";
 export default hopeTheme({
   hostname: "https://docs-mf.tasaed.top",
 
-  author: {
-    name: "TASA-Ed工作室",
-    url: "https://www.tasaed.top",
-    email: "studio@tasaed.top",
-  },
-
   logo: "/assets/image/logo.png",
-
-  navbarTitle: "",
-
-  fullscreen: true,
-
-  navbarLayout: {
-    start: ["Brand"],
-    center: ["Links"],
-    end: ["qqGroupLink", "Repo", "Outlook", "Search"],
-  },
 
   repo: "TASA-Ed/MakerFrameDocs",
 
@@ -29,10 +13,23 @@ export default hopeTheme({
 
   docsDir: "docs/src",
 
+  author: {
+    name: "TASA-Ed工作室",
+    url: "https://www.tasaed.top",
+    email: "studio@tasaed.top",
+  },
+
   // 页面信息
   pageInfo: ["Author", "Date", "PageView", "ReadingTime", "Word"],
 
   // 导航栏
+  fullscreen: true,
+  navbarTitle: "",
+  navbarLayout: {
+    start: ["Brand"],
+    center: ["Links"],
+    end: ["qqGroupLink", "Repo", "Outlook", "Search"],
+  },
   navbar,
 
   // 侧边栏
@@ -63,14 +60,11 @@ export default hopeTheme({
   },
 
   markdown: {
-    // align: true,
-    // attrs: true,
     component: true,
     figure: true,
     gfm: true,
     imgLazyload: true,
     imgSize: true,
-    spoiler: true,
     mark: true,
     footnote: true,
     stylize: [
@@ -87,16 +81,10 @@ export default hopeTheme({
       },
     ],
     include: true,
-    // sub: true,
-    // sup: true,
-    // tasklist: true,
     vPre: true,
   },
 
-
-  // 在这里配置主题提供的插件
   plugins: {
-    // 基于本文档的站点均需使用自己的评论服务
     comment: {
       provider: "Artalk",
       server: "https://talk.tasaed.top",
@@ -112,7 +100,6 @@ export default hopeTheme({
       },
     },
 
-    // 基于本文档的站点均需使用自己的搜索服务
     docsearch: {
       appId: "NNZCDJNBW8",
       apiKey: "c45b30fc8b8df4259e969fa101b29b33",
@@ -153,7 +140,7 @@ export default hopeTheme({
     },
 
     pwa: {
-      update: "hint",
+      update: "force",
       favicon: "/favicon.ico",
     },
 
@@ -183,13 +170,17 @@ export default hopeTheme({
       {
         path: "/",
         title: "引擎公告",
-        content: "因为目前鹰歌游戏引擎已经完善，所以开发者现在的重心并不在这里，不过如果有问题的话也可以去找开发者深林孤鹰咨询。",
+        content: "因为目前鹰歌游戏引擎已经完善，所以鹰歌开发者现在的重心并不在这里，不过如果有问题的话也可以去找开发者深林孤鹰咨询。",
         confirm: true,
         showOnce: true,
         actions: [
           {
-            text: "关闭",
+            text: "加入Q群",
+            link: "https://jq.qq.com/?_wv=1027&k=rATJyxGK",
             type: "primary",
+          },
+          {
+            text: "关闭",
           }
         ],
       },
