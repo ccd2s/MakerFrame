@@ -170,13 +170,13 @@ export default hopeTheme({
       {
         path: "/",
         title: "引擎公告",
-        content: "因为目前鹰歌游戏引擎已经完善，所以鹰歌开发者现在的重心并不在这里，不过如果有问题的话也可以去找开发者深林孤鹰咨询。",
+        content: "因为目前鹰歌游戏引擎已经完善，所以现在开发者深林孤鹰的重心并不在这里，不过如果有问题的话也可以去找开发者深林孤鹰咨询。",
         confirm: true,
         showOnce: true,
         actions: [
           {
             text: "加入Q群",
-            link: "https://jq.qq.com/?_wv=1027&k=rATJyxGK",
+            link: "https://qm.qq.com/q/bTB1cZoGze",
             type: "primary",
           },
           {
