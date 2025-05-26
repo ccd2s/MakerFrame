@@ -21,7 +21,8 @@ export default sidebar({
           icon: "dice-d6",
           collapsible: true,
           prefix: "middle/",
-          children: ["intro.html",
+          children: [
+            "intro.html",
             {
               text: "游戏命令详解",
               icon: "terminal",
@@ -51,7 +52,7 @@ export default sidebar({
               children: "structure",
             },
             {
-              text: "界面的层序",
+              text: "界面",
               icon: "object-group",
               link: "interface/",
               prefix: "interface/",
@@ -60,7 +61,8 @@ export default sidebar({
             "menu.html",
             "plugin.html",
             "network.html",
-            "customCommand.html",],
+            "customCommand.html",
+          ],
         },
         {
           text: "高级教程",

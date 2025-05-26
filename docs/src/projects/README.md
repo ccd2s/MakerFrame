@@ -3,7 +3,6 @@ title: 案例
 icon: splotch
 order: 1
 author: false
-
 games:
   - name: 侠道仙缘
     desc: 吾爱游戏制作者
@@ -58,4 +57,4 @@ v-bind="item"
 
 ## 更多
 
-- 随时随地通过 PR 添加你的游戏至此。
+- 随时随地通过 Pull Request 添加你的游戏至此。
