@@ -140,7 +140,7 @@ export default hopeTheme({
     },
 
     pwa: {
-      update: "force",
+      update: "hint",
       favicon: "/favicon.ico",
     },
 
