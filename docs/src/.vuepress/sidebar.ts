@@ -38,7 +38,7 @@ export default sidebar({
               children: "structure",
             },
             {
-              text: "通用脚本详解",
+              text: "脚本",
               icon: "scroll",
               link: "script/",
               prefix: "script/",
