@@ -19,7 +19,6 @@ actions:
   - text: 案例
     icon: splotch
     link: /projects/
-
 features:
   - title: 跨平台
     icon: layer-group
@@ -76,7 +75,6 @@ features:
     icon: ellipsis
     details: 包括打包功能、特效支持、回合制战斗、Buff系统等。
     link: /start/middle/
-    
 head:
   - - meta
     - name: msvalidate.01
@@ -87,7 +85,6 @@ head:
   - - meta
     - name: baidu-site-verification
       content: codeva-2VSfYC1O4s
-
 ---
 
 ## 官方 QQ 群
