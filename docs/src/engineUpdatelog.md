@@ -26,25 +26,25 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 2、增加：各种字符转换函数；
 ==\*3、修改：修改函数名 loadSpriteEffect 为 getSpriteEffect，unloadSpriteEffect 为 putSpriteEffect，loadRole 为 createRole；==
 4、修改：将SCodes、QNanoPainter、Libhv、SerialPort、QZXing、Lua、SDL、QtWebAPP改为Qt插件，框架引擎不再依赖它们，可以热插拔使用；
-5、增加：给 异步 增加$context（上下文）和$defer（结束时回调函数）功能；
+5、增加：给 异步 增加`$context`（上下文）和`$defer`（结束时回调函数）功能；
 6、增加：QML-Push库；
 7、增加：应用程序的一些相关函数；
-8、增加：关闭音效game.stopsoundeffect函数；
-9、增加：game.showimage和game.showsprite的坐标功能；
+8、增加：关闭音效`game.stopsoundeffect`函数；
+9、增加：`game.showimage`和`game.showsprite`的坐标功能；
 10、修改：增强sl_fileRead和sl_fileWrite二进制读写功能；
-11、增强：game.usegoods功能；
+11、增强：`game.usegoods`功能；
 ==\*\*12、修改：game.usegoods、game.equip、game.unload的实现流程和方式（所有道具脚本的$equipScript需要修改）；==
 ==\*\*13、修改：game.equip和game.unload为异步，调用时加yield，且道具脚本中新增和修改了相关函数；==
 ==\*14、修改：地图和角色的RID和名称分离；==
 15、新增：文件/缓存的文本/二进制高级读写（包括QIODevice、QBuffer、QFile、QFileDevice、QFileInfo、QDataStream、QTextStream类的封装）；
 16、新增：游戏加速功能；
-17、新增：音乐和音量大小函数：game.musicvolume、game.soundeffectvolume；
+17、新增：音乐和音量大小函数：`game.musicvolume`、`game.soundeffectvolume`；
 ==\*\*18、修改：将所有game.$sys.components中的组件对象移动在game.$sys.caches下，将所有fight.$sys.components中的组件对象移动在fight.$sys.caches下，game.$sys.components、fight.$sys.components只作为组件模板来创建组件对象，并改名所有的组件模板名称（去掉comp前缀并大写开头）；==
 ==\*19、修改：角色坐标的$x、$y含义改变为中心点放在这个坐标上（影响命令：createhero、hero、createrole、role）；==
 ==\*20、修改：角色的其他属性改变的是组件属性，而非data属性；==
 ==\*21、修改：将我自己给特定对象定义的一些便捷属性/方法的名字，前面改为 $$ 开头（比如$$type、$$json、$$keys、$$values、$$format、$$replaceAll、$$insert、$$parent、$$then、$$catch、$$toString、$$toJson等），防止和引擎中一些对象的属性冲突；==
 ==\*\*22、修改：将game.over改为game.restart（重启游戏），对应通用脚本需要改变，运行机制也有改变；==
-23、修改：将几个异步命令（msg、talk等）返回的Promise，绑定了它自身的$resolve和$reject函数，用来外部控制其状态；
+23、修改：将几个异步命令（msg、talk等）返回的Promise，绑定了它自身的`$resolve`和`$reject`函数，用来外部控制其状态；
 24、新增：Pymo（AVG游戏引擎）工程兼容插件；
 25、新增：BBKRPG脚本兼容插件；
 ==\*\*26、修改：删除了部分兼容旧工程的代码，注意旧工程要修改相关代码为新写法；==
@@ -53,7 +53,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 29、修复：Async异步的2个Bug，并作优化；
 30、修复：无法删除旧插件的Bug；
 31、修复：talk组件没有销毁的问题；
-32、修复：道具在战斗中$completeScript没有及时调用的Bug；
+32、修复：道具在战斗中`$completeScript`没有及时调用的Bug；
 33、修复：购买道具时道具没有放入背包的Bug；
 ==\*34、修改：将原来全局的FrameManager、Platform、UserInfo、GameCore、global对象改名为$Frame、$Platform、$UserInfo、$GameCore、$global（原来的也保留，但推荐用新的）；==
 35、修复：将 busyIndicator 放在 overlay 组件下，一定程度上保证了小概率误触导致焦点乱跑（比如 Menu 在点击隐藏动画时一瞬间还可以点击且焦点改变的BUG）；
@@ -61,7 +61,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 37、修改：JSEngine改名为JSLoader；
 38、优化：音效和视频的播放控制；
 39、优化：打包安卓时增加了选项，修复了路径和图标问题；
-40、新增：game.$data为一个对象，可以保存与运行工程生命周期一致的数据；
+40、新增：新增`game.g`对象，可以保存与运行工程生命周期一致的数据；
 41、新增：地图事件总处理函数：
 
 * `game.gf['$map']`
@@ -71,7 +71,10 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 前两者当且仅当不存在 `game.gf['$事件名_map']` 和 `game.gf['$事件名_map_leave']` 的时候才调用；
 42、修复：无主角时屏幕固定在0,0的位置问题；
 43、新增：菜单项文字可折行；
-44、其他：优化调整很多代码和细节，修复一些Bugs；
+44、修复：子窗口内容有可能不会铺满窗口的Bug；
+45、修改：`game.addtimer`的最后一个参数，回调函数的参数同时也修改；
+46、新增：定时器全局处理函数（`game.gf['timer']`）；
+47、其他：优化调整很多代码和细节，修复一些Bugs；
 
 ## 2025/2/2：发布 1.15.2.250202 版本（框架 1.6.5.250202版本）
 
