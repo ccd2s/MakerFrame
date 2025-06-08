@@ -1,5 +1,5 @@
 ---
-title: 系统函数讲解
+title: 系统函数
 index: false
 icon: circle-play
 ---

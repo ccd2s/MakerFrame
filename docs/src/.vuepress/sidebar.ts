@@ -24,14 +24,14 @@ export default sidebar({
           children: [
             "intro.html",
             {
-              text: "游戏命令详解",
+              text: "游戏命令",
               icon: "terminal",
               link: "command/",
               prefix: "command/",
               children: "structure",
             },
             {
-              text: "系统函数详解",
+              text: "系统函数",
               icon: "f",
               link: "function/",
               prefix: "function/",
