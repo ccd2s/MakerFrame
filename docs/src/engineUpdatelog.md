@@ -75,7 +75,7 @@ C表示修订号，一般是Bug修复或新增功能，完全兼容旧工程；
 ==*45、修改：game.addtimer的最后一个参数，回调函数的参数同时也修改；==
 46、新增：定时器全局处理函数（`game.gf['timer']`）；
 47、新增：`game.time` 属性，返回当前时间戳；
-==*48、修改：game.http为函数，返回XMLHttpRequest对象；==
+==*48、修改：game.http为函数，返回XMLHttpRequest对象；game.date为$CommonLibJS.formatDate函数；==
 49、其他：优化调整很多代码和细节，修复一些Bugs；
 
 ## 2025/2/2：发布 1.15.2.250202 版本（框架 1.6.5.250202版本）
