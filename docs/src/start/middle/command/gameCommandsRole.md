@@ -538,3 +538,97 @@ game.trade(goods=[], mygoodsinclude=true, pauseGame=true, callback=true);
 ```js
 game.money(m=0);
 ```
+
+### 结束战斗
+
+功能：结束战斗并调用战斗结束脚本，可以使用 `game` 属性；
+
+参数：
+
+- `r`：-1为失败并调用战斗结束脚本，1为胜利并调用战斗结束脚本，0为平局并调用战斗结束脚本；
+
+示例：
+
+```js
+fight.over(r=0);
+```
+
+### 战斗提示框
+
+功能：弹出提示框；
+
+参数：
+
+- `msg`：为提示文字，支持 `HTML` 标签；
+- `interval`：为文字显示间隔，为 `0` 则不使用；
+- `pretext`：为预显示的文字；
+- `pauseGame`：为显示时是否暂停游戏（游戏主循环暂停，并暂停产生游戏事件）；值为 `true` 、 `false` 或字符串。如果为 `true` 或字符串则游戏会暂停（字符串表示暂停值，不同的暂停值互不影响，只要有暂停值游戏就会暂停；`true` 表示给个随机暂停值）；
+
+示例：
+
+```js
+[yield]
+fight.msg(msg, interval=60, pretext='', type=2, pauseGame=true)
+```
+
+### 获得Buff
+
+功能：`combatant` 获得 `Buff`；
+
+参数：
+
+- `buffCode`：12345分别表示 毒乱封眠 属性，`params` 是参数，`override` 表示是否覆盖（如果不覆盖，则属性名后加时间戳来防止重复）；
+  - `1` 毒：`params`有 `buffName`、`round`、`harmType`（`1` 为直接减 `harmValue`，`2` 为剩余 `HP` 的 `harmValue` 倍）、`harmValue`、`flags`；
+  - `2` 乱、`3` 封、`4` 眠：`buffName`、`round`、`flags`；
+  - `5` 属性：`buffName`、`round`、`properties`、`flags`；
+    - `properties`：`[属性名, 值, type]`：`type` 为 `0` 表示相加，`type` 为 `1` 表示 与属性相乘；
+      - `flags`：表示 毒乱封眠属性 类型，也可以表示 `buff类型`，实质就是决定什么时候运行脚本（见 `commonBuffScript`）；
+
+示例：
+
+```js
+fight.getbuff(combatant, buffCode, params={}, override=true);
+```
+
+### 切换战斗背景图片
+
+功能：切换战斗背景图片；
+
+参数：
+
+- `image`：为图片名
+
+示例：
+
+```js
+fight.background(image);
+```
+
+### 战斗执行脚本命令
+
+功能：执行脚本命令；
+
+注意：此命令会将脚本放入fight系统脚本引擎中等候执行，一般用来在Maker中载入外部脚本文件
+
+示例：
+
+```js
+fight.run(vScript, scriptProps=-1, ...params);
+```
+
+### 获取战斗角色的所有技能
+
+功能：得到某个战斗角色的 所有 普通技能 和 技能；
+
+参数：
+
+- `types`：技能的 `type`，系统默认 `0` 为普通攻击，`1` 为技能；
+- `flags`：`0b1`，战斗人物自身拥有的技能：所有道具所有的普通攻击；`0b10`：战斗人物拥有的所有装备上附带的所有的技能；
+
+返回：数组：`[技能名数组, 技能数组]`；
+
+示例：
+
+```js
+fight.$sys.getCombatantSkills(combatant, types=[0, 1], flags=0b11);
+```
